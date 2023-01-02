@@ -1,5 +1,5 @@
 ---
-title: "Taxonomie"
+title: "Index des mots-clés"
 description: "Classement des contenus de Geotribu par mot-clé."
 hide:
   - navigation
