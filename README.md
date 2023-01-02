@@ -1,8 +1,8 @@
 # Site web dédié à la contribution à Geotribu
 
-![Deploy to Github Pages](https://github.com/geotribu/website/workflows/Deploy%20to%20Github%20Pages/badge.svg)
-![Pull Request Checker](https://github.com/geotribu/website/workflows/Pull%20Request%20Checker/badge.svg)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/geotribu/website/main.svg)](https://results.pre-commit.ci/latest/github/geotribu/website/main)
+![Deploy to Github Pages](https://github.com/geotribu/site-contribuer/workflows/Deploy%20to%20Github%20Pages/badge.svg)
+![Pull Request Checker](https://github.com/geotribu/site-contribuer/workflows/Pull%20Request%20Checker/badge.svg)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/geotribu/site-contribuer/main.svg)](https://results.pre-commit.ci/latest/github/geotribu/site-contribuer/main)
 
 ----
 
