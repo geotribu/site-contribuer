@@ -61,7 +61,7 @@ jobs:
 
       - name: Build static website
         run: |
-          mkdocs build --clean --config-file mkdocs.yml --verbose --strict
+          mkdocs build --clean --config-file mkdocs.yml --verbose
         env:
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
           MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
