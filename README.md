@@ -86,10 +86,6 @@ Quand un contenu est modifié, le site est automatiquement rechargé.
 
 ----
 
-## Contribuer
-
-Pour la procédure détaillée, consulter [la section dédiée sur le site](https://static.geotribu.fr/contribuer/introduction/).
-
 ## Soutenir
 
 Afin de pérenniser le site, nous avons ouvert un compte sur Liberapay : <https://liberapay.com/Geotribu/>.
