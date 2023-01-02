@@ -30,7 +30,7 @@ C'est **ce dernier qui fait foi**.
 Cette page détaille les principes de la rédaction en [Markdown] pour Geotribu.
 
 !!! info "En savoir plus"
-    Consulter [l'article "Comprendre le rendu Markdown"](/contribuer/internal/markdown_engine/#specificites).
+    Consulter [l'article "Comprendre le rendu Markdown"](/internal/markdown_engine/#specificites).
 
 ----
 
@@ -45,7 +45,7 @@ Quelques règles de base sont listées ci-dessous, notamment celles pour lesquel
 
 ### Unicité du titre de niveau 1
 
-Le Markdown étant destiné à être du HTML, il ne peut y avoir qu'un titre de niveau 1 défini par balise `#`. Il peut cependant y avoir un titre alternatif défini dans [l'en-tête via la clé `title:`](/contribuer/guides/metadata_yaml_frontmatter/) et qui est utilisé dans le menu de navigation.
+Le Markdown étant destiné à être du HTML, il ne peut y avoir qu'un titre de niveau 1 défini par balise `#`. Il peut cependant y avoir un titre alternatif défini dans [l'en-tête via la clé `title:`](/guides/metadata_yaml_frontmatter/) et qui est utilisé dans le menu de navigation.
 
 > Référence : [MD025 - Multiple top-level headings in the same document](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md025)
 
@@ -176,15 +176,15 @@ Cela permet :
 <!-- markdownlint-disable MD034 MD038 -->
 === "Markdown"
     ```markdown
-    - :name_badge: pas bien : <https://static.geotribu.fr/rdp/2022/rdp_2022-12-16/#le-mobiliscope>
-    - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)](https://static.geotribu.fr/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
+    - :name_badge: pas bien : <{{ config.extra.geotribu_main_site }}/rdp/2022/rdp_2022-12-16/#le-mobiliscope>
+    - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)]({{ config.extra.geotribu_main_site }}/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
     - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site](/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
     - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle](../../rdp/2022/rdp_2022-12-16.md#le-mobiliscope)
     ```
 
 === "Rendu"
-    - :name_badge: pas bien : <https://static.geotribu.fr/rdp/2022/rdp_2022-12-16/#le-mobiliscope>
-    - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)](https://static.geotribu.fr/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
+    - :name_badge: pas bien : <{{ config.extra.geotribu_main_site }}/rdp/2022/rdp_2022-12-16/#le-mobiliscope>
+    - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)]({{ config.extra.geotribu_main_site }}/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
     - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site](/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
     - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle](../../rdp/2022/rdp_2022-12-16.md#le-mobiliscope)
 <!-- markdownlint-enableMD034 -->
@@ -195,5 +195,5 @@ Cela permet :
 
 Pour favoriser l'adoption de ces règles et contrôler leur application, plusieurs outils sont mis en place dans le processus de contribution :
 
-- l'outil de vérification de la syntaxe (_linter_) Markdown, [`markdownlint-cli` est configuré (voir la page dédiée)](/contribuer/internal/markdown_linter/)
-- des scripts automatiques au moment des contributions : [les git hooks (voir la page dédiée)](/contribuer/internal/git_hooks_precommit/)
+- l'outil de vérification de la syntaxe (_linter_) Markdown, [`markdownlint-cli` est configuré (voir la page dédiée)](/internal/markdown_linter/)
+- des scripts automatiques au moment des contributions : [les git hooks (voir la page dédiée)](/internal/git_hooks_precommit/)

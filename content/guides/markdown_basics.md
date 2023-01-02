@@ -35,7 +35,7 @@ Le _[markdown]_ est une syntaxe extensible et son rendu dépend de l'outil utili
 C'est **ce dernier qui fait foi**.
 
 !!! tip
-    Pour comprendre comment fonctionne le rendu des contenus, consulter [l'article dédié](/contribuer/internal/markdown_engine/).
+    Pour comprendre comment fonctionne le rendu des contenus, consulter [l'article dédié](/internal/markdown_engine/).
 
 #### Bien démarrer
 
@@ -67,7 +67,7 @@ N'importe quel éditeur de texte suffit pour rédiger en [Markdown]. Ci-dessous,
 !!! tip
     Le choix du Markdown pour Geotribu a été détaillé dans l'article [Du HTML au Markdown (et vice-versa)](/articles/2020/2020-09-11_html2markdown/). Il contient quelques éléments de compréhension sur la syntaxe et un petit TP pour s'exercer.
 
-[Prochaine étape : respecter et valider la syntaxe :fontawesome-solid-forward:](/contribuer/guides/markdown_quality/){: .md-button }
+[Prochaine étape : respecter et valider la syntaxe :fontawesome-solid-forward:](/guides/markdown_quality/){: .md-button }
 {: align=middle }
 
 ----
@@ -180,7 +180,7 @@ En plus des ressources, à suivre quelques exemples de base.
     * en général, on utilise l'astérisque ou alors le tiret.
 <!-- markdownlint-enable MD046 -->
 
-[Prochaine étape : respecter et valider la syntaxe :fontawesome-solid-forward:](/contribuer/guides/markdown_quality/){: .md-button }
+[Prochaine étape : respecter et valider la syntaxe :fontawesome-solid-forward:](/guides/markdown_quality/){: .md-button }
 {: align=middle }
 
 <!-- Hyperlinks references -->

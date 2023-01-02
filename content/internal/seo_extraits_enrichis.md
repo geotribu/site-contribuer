@@ -14,7 +14,7 @@ tags:
 
 # Utilisation de l'en-tête pour le web sémantique et les extraits enrichis
 
-Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](/contribuer/guides/metadata_yaml_frontmatter/).
+Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](/guides/metadata_yaml_frontmatter/).
 
 Pourquoi ? car c'est ainsi que le site génère des données structurées standardisées qui sont notamment utilisées pour les extraits enrichis des moteurs de recherche.
 
@@ -39,7 +39,7 @@ Il existe de nombreux schémas décrivant différents types d'objets : _Article_
 
 ![logo Jinja](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/jinja.png "logo Jinja"){: .img-rdp-news-thumb }
 
-Au moment de la [transformation des fichiers markdown en fichiers HTML](/contribuer/internal/markdown_engine/), le site génère un objet au format [JSON-LD] (_JSON Linked Data_), intégré à la page HTML, à partir de plusieurs éléments :
+Au moment de la [transformation des fichiers markdown en fichiers HTML](/internal/markdown_engine/), le site génère un objet au format [JSON-LD] (_JSON Linked Data_), intégré à la page HTML, à partir de plusieurs éléments :
 
 - l'en-tête fournit l'essentiel des informations : date, auteur(s), mots-clés, description, image, etc.
 - l'URL : permet d'affiner le type de contenu, notamment pour distinguer un article d'une revue de presse.

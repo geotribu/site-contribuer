@@ -123,7 +123,7 @@ Par défaut, toutes les images sont concernées sauf :
 - les emojis
 
 Il est possible de désactiver le mode galerie sur une image en particulier en lui attribuant la balise `{: .off-glb }`.  
-Il est possible de désactiver le mode galerie sur tout une page en ajoutant `glightbox: false` à [l'en-tête du fichier](/contribuer/guides/metadata_yaml_frontmatter/)
+Il est possible de désactiver le mode galerie sur tout une page en ajoutant `glightbox: false` à [l'en-tête du fichier](/guides/metadata_yaml_frontmatter/)
 
 === "Markdown"
 

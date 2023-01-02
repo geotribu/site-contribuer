@@ -23,7 +23,7 @@ tags:
 Afin de ne pas reproduire le drame du crash de la base de données (voir [l'article sur la petite histoire de Geotribu](/articles/2020/2020-08-31_geotribu_histoire/)), le site recréé en 2020 est pensé pour maximiser la résilience :
 
 - il s'agit d'un site statique : aucune base de données n'est à optimiser/maintenir/sécuriser, exceptée [celle des commentaires](/articles/2021/2021-05-14_commentaires_migration_disqus_isso/) mais qui n'est pas critique pour le fonctionnement global
-- les contenus sont rédigés en [Markdown](/contribuer/guides/markdown_basics/), une syntaxe ouverte, lisible même dans sa forme "brute" et compatible avec énormément d'outils capables de la rendre en version "nette"
+- les contenus sont rédigés en [Markdown](/guides/markdown_basics/), une syntaxe ouverte, lisible même dans sa forme "brute" et compatible avec énormément d'outils capables de la rendre en version "nette"
 - les contenus sont donc des fichiers à plat stockés sur GitHub dont l'infrastructure est à l'évidence infiniment plus robuste que ce que l'on serait en mesure de proposer par nous-mêmes
 - le principe de contribution étant fortement lié au système de versionnement décentralisé [Git], des copies des contenus existent sur différentes machines
 

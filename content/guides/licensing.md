@@ -36,14 +36,14 @@ Une licence par défaut a été choisie par [l'équipe](/team/). Sauf mention co
 
 ## Choisir une autre licence
 
-Chaque auteur/e peut également choisir d'indiquer une licence différente ou bien de mettre davantage en avant la licence par défaut en insérant un bloc plus complet directement dans le corps du contenu, généralement après le [le bloc auteur](/contribuer/guides/authoring/#bloc-auteur).
+Chaque auteur/e peut également choisir d'indiquer une licence différente ou bien de mettre davantage en avant la licence par défaut en insérant un bloc plus complet directement dans le corps du contenu, généralement après le [le bloc auteur](/guides/authoring/#bloc-auteur).
 
 ### Syntaxe
 
 #### Désactiver la licence par défaut
 
 Cette étape n'est utile que si vous souhaitez utiliser une licence différente de celle par défaut.  
-Il suffit de modifier [l'en-tête de la page](/contribuer/guides/metadata_yaml_frontmatter/) ainsi :
+Il suffit de modifier [l'en-tête de la page](/guides/metadata_yaml_frontmatter/) ainsi :
 
 ```yaml
 license: beerware

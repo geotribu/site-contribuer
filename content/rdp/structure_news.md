@@ -41,7 +41,7 @@ Pour avoir une idéé concrète de ce à quoi ressemble une news en Markdown, co
 - [x] Ne pas utiliser de balises HTML brutes dans le texte, exception faite des `iframe` et des intégrations tierces (tweets...)
 - [x] Ne pas abuser des mises en évidence (**gras**, *italique*...) afin de garder l'équite de lisibilité entre les contenus
 
-[Consulter les règles de rédaction de Geotribu :material-ruler-square:](/contribuer/guides/markdown_quality/){: .md-button .md-button--primary }
+[Consulter les règles de rédaction de Geotribu :material-ruler-square:](/guides/markdown_quality/){: .md-button .md-button--primary }
 {: align=middle }
 
 ----
@@ -56,7 +56,7 @@ Il n'est parfois pas évident de savoir où placer son actualité. Dans ce cas, 
 
 | Catégorie                     | Description | Exemples |
 | :---------------------------- | :---------- | :------- |
-| Vie du site                   | Précédée du logo rectangulaire du site, il s'agit généralement d'une simple liste à puces dans laquelle on retrouve les derniers contenus publiés ou les récentes évolutions de Geotribu. On a pris l'habitude de préfixer chaque élément par un [emoji](/contribuer/guides/emoji/). |  |
+| Vie du site                   | Précédée du logo rectangulaire du site, il s'agit généralement d'une simple liste à puces dans laquelle on retrouve les derniers contenus publiés ou les récentes évolutions de Geotribu. On a pris l'habitude de préfixer chaque élément par un [emoji](/guides/emoji/). |  |
 | Sorties de la semaine         | Pour relayer les nouveautés dans les outils de la géomatique. Attention, il ne s'agit pas de paraphraser les notes de version ou les communiqués de presse, mais d'apporter une valeur ajoutée personnelle. | |
 | Client                        | **section dépréciée, éviter d'utiliser** | |
 | Serveur                       | **section dépréciée, éviter d'utiliser** | |
@@ -79,8 +79,8 @@ Afin de respecter la cohérence globale des revues de presse, chaque news démar
 Si aucune image n'est spécifiée, c'est l'icône générique historique qui est appliquée (celle-la même qui illustre cette section).
 
 !!! tip "Voir aussi"
-    - la [syntaxe pour appliquer le style vignette à une image](/contribuer/guides/image/#vignette)
-    - [héberger une image ou parcourir les images existantes sur le pseudo-CDN](/contribuer/guides/cdn-images-hebergement/)
+    - la [syntaxe pour appliquer le style vignette à une image](/guides/image/#vignette)
+    - [héberger une image ou parcourir les images existantes sur le pseudo-CDN](/guides/cdn-images-hebergement/)
 
 ### Tableau des icônes génériques { data-search-exclude }
 

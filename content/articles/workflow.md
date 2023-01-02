@@ -31,7 +31,7 @@ Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 Allez, cette fois, c'est parti ! L'angoisse de la feuille blanche n'a qu'à bien se tenir, vous êtes prêt/e à coucher votre prose !
 
-Comme indiqué dans [les prérequis](/contribuer/requirements/), qu'importe le flacon, tant qu'on a l'ivresse de la rédaction  en Markdown : du simple éditeur de texte (oui, même le bloc-notes de Windows !) à l'éditeur lourd (à ce propos voir [le dossier de Next INpact](https://www.nextinpact.com/article/44240/zettlr-prise-en-main-dun-editeur-texte-aux-nombreuses-qualites)), faites votre choix !  
+Comme indiqué dans [les prérequis](/requirements/), qu'importe le flacon, tant qu'on a l'ivresse de la rédaction  en Markdown : du simple éditeur de texte (oui, même le bloc-notes de Windows !) à l'éditeur lourd (à ce propos voir [le dossier de Next INpact](https://www.nextinpact.com/article/44240/zettlr-prise-en-main-dun-editeur-texte-aux-nombreuses-qualites)), faites votre choix !  
 Mais sachez que nous mettons un éditeur collaboratif ([Hedgedoc](https://hedgedoc.org/)) à disposition des contributeur/ices :
 
 [Utiliser le PAD :fontawesome-solid-feather-pointed:](http://pad.geotribu.fr/){: .md-button }
@@ -48,16 +48,16 @@ Sinon, cela tient en quelques étapes :
 
 :guide_dog: Lire et s'appuyer sur les guides de rédaction :
 
-- [bases du Markdown](/contribuer/guides/markdown_basics/) et spécificités de l'implémentation utilisée sur le site
+- [bases du Markdown](/guides/markdown_basics/) et spécificités de l'implémentation utilisée sur le site
 - insérer des medias :
-    - [images](/contribuer/guides/image/)
-    - des [vidéos](/contribuer/guides/video/)
-    - des [émojis](/contribuer/guides/emoji/)
-    - des [diagrammes (schémas)](/contribuer/guides/diagrams/)
-    - des [tweets](/contribuer/guides/twitter/)
-- gérer les [métadonnées](/contribuer/guides/metadata_yaml_frontmatter/)
-- [signer son article](/contribuer/guides/authoring/)
-- [choisir une licence](/contribuer/guides/licensing/)
+    - [images](/guides/image/)
+    - des [vidéos](/guides/video/)
+    - des [émojis](/guides/emoji/)
+    - des [diagrammes (schémas)](/guides/diagrams/)
+    - des [tweets](/guides/twitter/)
+- gérer les [métadonnées](/guides/metadata_yaml_frontmatter/)
+- [signer son article](/guides/authoring/)
+- [choisir une licence](/guides/licensing/)
 
 Problème ? Souci ? Angoisse ? Simple question ?
 

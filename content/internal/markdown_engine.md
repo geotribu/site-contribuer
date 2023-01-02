@@ -91,9 +91,9 @@ Si [Python-Markdown] est quasiment compatible avec l'implémentation [Markdown] 
 
 Certaines extensions de la [syntaxe] sont intégrées au site ou peuvent l'être sur demande et après examen technique. Elles permettent d'ajouter des fonctionnalités et d'enrichir les possibilités rédactionnelles, dont certaines sont décrites dans des guides dédiés :
 
-- ajouter des [attributs de style à des images](/contribuer/guides/image/#style-personnalise)
-- ajouter [un effet "_lightbox_" (mise en avant et galerie) à des images](/contribuer/guides/image/#lightbox)
-- intégrer [des diagrammes UML](/contribuer/guides/diagrams/)
+- ajouter des [attributs de style à des images](/guides/image/#style-personnalise)
+- ajouter [un effet "_lightbox_" (mise en avant et galerie) à des images](/guides/image/#lightbox)
+- intégrer [des diagrammes UML](/guides/diagrams/)
 
 Trouver des extensions :
 
