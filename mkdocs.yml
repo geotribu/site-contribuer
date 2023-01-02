@@ -92,6 +92,9 @@ plugins:
       external_links_attr_map:
         target: _blank
       external_assets_exclude:
+        # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
+        - cdn.jsdelivr.net/npm/mathjax@3/*
+        - giscus.app/*
         # geotribu
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*
