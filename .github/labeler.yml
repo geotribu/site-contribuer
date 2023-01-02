@@ -1,0 +1,19 @@
+articles:
+    - content/articles/**/*.md
+
+ci-cd:
+    - .github/**/*.yml
+
+dependencies:
+    - ./**/requirements.txt
+    - requirements*.txt
+
+mkdocs:
+    - content/**/*.pages
+    - mkdocs*.yml
+
+rdp:
+    - content/rdp/**/*.md
+
+thème:
+    - content/theme/**/*
