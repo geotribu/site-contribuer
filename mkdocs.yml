@@ -152,7 +152,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
+      primary: black
       accent: amber
       toggle:
         icon: material/brightness-4
