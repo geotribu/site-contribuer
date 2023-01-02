@@ -1,11 +1,13 @@
 title: "📝 Contribuer"
 
 nav:
-    - introduction.md
-    - requirements.md
+    - "Accueil":
+          - index.md
+          - requirements.md
+          - tags.md
+          - Site principal: https://oslandia.pages.oslandia.io/bulletins_hebdomadaires/
     - rdp
     - articles
     - guides
     - edit
     - internal
-    - ...
