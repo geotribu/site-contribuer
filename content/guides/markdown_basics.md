@@ -16,9 +16,6 @@ tags:
     - rédaction
     - Python
     - tutoriel
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Les bases de rédaction en Markdown

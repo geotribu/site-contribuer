@@ -10,9 +10,6 @@ image: "https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extr
 tags:
     - coulisses
     - Jinja2
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Utilisation de l'en-tête pour le web sémantique et les extraits enrichis

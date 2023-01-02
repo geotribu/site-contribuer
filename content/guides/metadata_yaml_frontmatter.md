@@ -15,9 +15,6 @@ tags:
     - rédaction
     - SEO
     - YAML
-# theme customizations
-search:
-  exclude: true
 ---
 
 # L'en-tête des contenus (*YAML frontmatter*)

@@ -12,9 +12,6 @@ tags:
     - HTML
     - Markdown
     - Python
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Le moteur de rendu Markdown utilisé et ses spécificités

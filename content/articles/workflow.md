@@ -13,9 +13,6 @@ tags:
     - Geotribu
     - guide
     - workflow
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Proposer un article

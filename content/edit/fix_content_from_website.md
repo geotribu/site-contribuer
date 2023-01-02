@@ -12,9 +12,6 @@ tags:
     - faute
     - guide
     - modifier
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Modifier un contenu depuis le site web

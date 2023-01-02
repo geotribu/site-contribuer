@@ -18,9 +18,6 @@ tags:
     - markdown
     - intégration
     - tutoriel
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Intégrer un contenu audio (podcast, etc.)

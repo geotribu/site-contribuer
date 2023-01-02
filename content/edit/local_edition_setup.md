@@ -15,9 +15,6 @@ tags:
     - Markdown
     - Python
     - Visual Studio Code
-# theme customizations
-search:
-  exclude: true
 ---
 
 <!-- markdownlint-disable MD046 -->

@@ -11,9 +11,6 @@ tags:
     - coulisses
     - Jinja2
     - réseaux sociaux
-# theme customizations
-search:
-  exclude: true
 ---
 
 # Optimisation pour le partage des contenus (_social cards_)

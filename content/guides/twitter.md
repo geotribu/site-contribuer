@@ -14,9 +14,6 @@ tags:
     - intégration
     - Markdown
     - Twitter
-# theme customizations
-search:
-  exclude: true
 ---
 
 <!-- markdownlint-disable MD046 -->
