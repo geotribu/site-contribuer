@@ -57,11 +57,8 @@ plugins:
       caption_position: bottom
   - meta
   - minify:
-      minify_css: true
       minify_html: true
-      minify_js: false
-      htmlmin_opts:
-        remove_comments: true
+
   - rss:
       abstract_chars_count: 500
       categories:
@@ -120,6 +117,7 @@ theme:
   features:
     - content.code.annotate
     - content.tabs.link
+    - content.tooltips
     - navigation.prune
     - navigation.tabs
     - navigation.top
@@ -182,8 +180,6 @@ markdown_extensions:
   # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
   - footnotes
   - md_in_html
-  # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
-  - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
   - pymdownx.details
   - pymdownx.emoji:
