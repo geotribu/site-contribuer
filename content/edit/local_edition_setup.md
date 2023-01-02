@@ -1,5 +1,5 @@
 ---
-title: "Configurer l'environnement pour l'édition en local"
+title: "Environnement pour l'édition en local"
 categories:
     - contribution
     - tutoriel
