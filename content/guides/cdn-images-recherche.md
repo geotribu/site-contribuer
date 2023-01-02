@@ -309,11 +309,5 @@ Si vous utilisez régulièrement la recherche dans l'index, je vous recommande d
 [Consulter le script complet :fontawesome-regular-file-code:](https://github.com/geotribu/infra/blob/master/search-index/search_playground.py){: .md-button }
 {: align=middle }
 
-----
-
-## Auteur {: data-search-exclude }
-
---8<-- "content/team/jmou.md"
-
 <!-- Liens de référence -->
 [lunr.py]: https://lunr.readthedocs.io/
