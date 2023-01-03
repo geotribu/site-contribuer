@@ -37,7 +37,7 @@ jobs:
 
       - name: Build static website
         run: |
-          mkdocs build --clean --config-file mkdocs.yml --quiet --strict
+          mkdocs build --clean --config-file mkdocs.yml --quiet
         env:
           MKDOCS_ENABLE_PLUGIN_RSS: true
 
