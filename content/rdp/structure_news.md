@@ -89,6 +89,7 @@ Afin de faciliter la saisie, voici le tableau des icônes génériques avec la s
 | Icône | Syntaxe |
 | :---: | :-----: |
 | ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb } | `#!markdown ![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }` |
+| ![icône globe générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb } | `#!markdown ![icône globe générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }` |
 | ![icône globe retourné](https://cdn.geotribu.fr/img/internal/icons-rdp-news/absurde.png "icône globe retourné"){: .img-rdp-news-thumb } | `#!markdown ![icône globe retourné](https://cdn.geotribu.fr/img/internal/icons-rdp-news/absurde.png "icône globe retourné"){: .img-rdp-news-thumb }` |
 | ![icône globe ancien](https://cdn.geotribu.fr/img/internal/icons-rdp-news/ancien.png "icône globe ancien"){: .img-rdp-news-thumb } | `#!markdown ![icône globe ancien](https://cdn.geotribu.fr/img/internal/icons-rdp-news/ancien.png "icône globe ancien"){: .img-rdp-news-thumb }` |
 | ![icône globe video](https://cdn.geotribu.fr/img/internal/icons-rdp-news/animation_video.png "icône globe video"){: .img-rdp-news-thumb } | `#!markdown ![icône globe video](https://cdn.geotribu.fr/img/internal/icons-rdp-news/animation_video.png "icône globe video"){: .img-rdp-news-thumb }` |
@@ -113,7 +114,7 @@ Afin de faciliter la saisie, voici le tableau des icônes génériques avec la s
 | ![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-rdp-news-thumb } | `#!markdown ![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-rdp-news-thumb }` |
 | ![icône globe triste](https://cdn.geotribu.fr/img/internal/icons-rdp-news/triste.png "icône globe triste"){: .img-rdp-news-thumb } | `#!markdown ![icône globe triste](https://cdn.geotribu.fr/img/internal/icons-rdp-news/triste.png "icône globe triste"){: .img-rdp-news-thumb }` |
 | ![icône globe usa](https://cdn.geotribu.fr/img/internal/icons-rdp-news/usa.png "icône globe usa"){: .img-rdp-news-thumb } | `#!markdown ![icône globe usa](https://cdn.geotribu.fr/img/internal/icons-rdp-news/usa.png "icône globe usa"){: .img-rdp-news-thumb }` |
-| ![icône globe générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb } | `#!markdown ![icône globe world](https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png "icône globe générique"){: .img-rdp-news-thumb }` |
+| ![icône globe football](https://cdn.geotribu.fr/img/internal/icons-rdp-news/football.webp "icône globe football"){: .img-rdp-news-thumb } | `#!markdown ![icône globe football](https://cdn.geotribu.fr/img/internal/icons-rdp-news/football.webp "icône globe football"){: .img-rdp-news-thumb }` |
 
 ----
 
