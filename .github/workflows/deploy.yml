@@ -61,6 +61,7 @@ jobs:
 
       - name: Build static website
         run: |
+          python scripts/mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --verbose
         env:
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
@@ -69,12 +70,6 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_PRIVACY: true
           MKDOCS_ENABLE_PLUGIN_RSS: true
           MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-
-      # - name: Deploy to Github Pages
-      #   run: |
-      #     git config --global user.name "Geotribu (Github Action)"
-      #     git config --global user.email "geotribu@gmail.com"
-      #     ghp-import --force --message="Site Geotribu déployé" --no-jekyll --no-history --push build/mkdocs/site
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
