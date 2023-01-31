@@ -64,6 +64,7 @@ jobs:
           python scripts/mkdocs_config_merger.py -c mkdocs.yml
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
+          MKDOCS_ENABLE_PLUGIN_CARDS: true
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
           MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
           MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
