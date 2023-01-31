@@ -12,6 +12,7 @@ image: "https://cdn.geotribu.fr/img/internal/workflow/geotribu_backup_result_git
 robots: index, follow
 tags:
     - coulisses
+    - GéoCapot
     - GitHub
     - sauvegarde
 ---

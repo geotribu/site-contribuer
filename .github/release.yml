@@ -1,0 +1,29 @@
+changelog:
+  exclude:
+    authors:
+      - dependabot
+      - pre-commit-ci
+  categories:
+    - title: Corrections et Nettoyage 🧹
+      labels:
+        - tipex
+    - title: Articles 📖
+      labels:
+        - articles
+    - title: Revues de presse 📰
+      labels:
+        - rdp
+    - title: GéoCapot 👨‍🔧
+      labels:
+        - géocapot
+    - title: Outillage 🔧
+      labels:
+        - ci-cd
+        - dependencies
+        - enhancement
+        - mkdocs
+        - theme
+        - tooling
+    - title: Autres
+      labels:
+        - "*"

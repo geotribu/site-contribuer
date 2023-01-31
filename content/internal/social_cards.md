@@ -9,6 +9,7 @@ icon : material/card-text
 image: "https://cdn.geotribu.fr/img/internal/contribution/social_cards/social_card_exemple_twitter_article.png"
 tags:
     - coulisses
+    - GéoCapot
     - Jinja2
     - réseaux sociaux
 ---
