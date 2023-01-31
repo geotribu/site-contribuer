@@ -9,6 +9,7 @@ icon : material/semantic-web
 image: "https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png"
 tags:
     - coulisses
+    - GéoCapot
     - Jinja2
 ---
 

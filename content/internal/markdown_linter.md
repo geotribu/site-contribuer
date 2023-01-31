@@ -12,6 +12,7 @@ image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/linter_code.w
 robots: index, follow
 tags:
     - coulisses
+    - GéoCapot
     - linter
     - Markdown
 ---

@@ -12,6 +12,7 @@ image: "https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_c
 robots: index, follow
 tags:
     - coulisses
+    - GéoCapot
     - Git
 ---
 

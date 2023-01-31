@@ -9,6 +9,7 @@ image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png"
 tags:
     - contribuer
     - coulisses
+    - GéoCapot
     - HTML
     - Markdown
     - Python
