@@ -88,7 +88,7 @@ Les autres contenus récents :
 
 ## Fréquences de réception
 
-Afin de proposer différentes fréquences de réception que l'abonné peut choisir, il faut créer [un groupe dans l'administration des contacts sur Mailchimp](https://us5.admin.mailchimp.com/lists/dashboard/groups?id=491210) de type radio (c'est-à-dire choix exlusif :
+Afin de proposer différentes fréquences de réception que l'abonné peut choisir, il faut créer [un groupe dans l'administration des contacts sur Mailchimp](https://us5.admin.mailchimp.com/lists/dashboard/groups?id=491210) de type radio (c'est-à-dire choix exclusif) :
 
 ![Mailchimp - Groupes de contacts Geotribu](https://cdn.geotribu.fr/img/internal/newsletter/newsletter_mailchimp_groupes_frequence.png){: .img-center loading=lazy }
 
