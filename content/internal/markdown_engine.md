@@ -7,7 +7,6 @@ description: "Comprendre le fonctionnement de Python Markdown et ses spécificit
 icon : material/language-markdown
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png"
 tags:
-    - contribuer
     - coulisses
     - GéoCapot
     - HTML

@@ -9,7 +9,6 @@ description: "Ajouter une actualité à la prochaine revue de presse de Geotribu
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 license: default
 tags:
-    - contribuer
     - guide
     - GeoRDP
     - workflow

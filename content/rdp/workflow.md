@@ -9,7 +9,6 @@ description: "Cycle de vie d'une revue de presse sur Geotribu (GeoRDP) : créati
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 license: default
 tags:
-    - contribuer
     - guide
     - GeoRDP
     - workflow

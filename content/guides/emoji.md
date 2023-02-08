@@ -11,7 +11,6 @@ description: "Guide de contribution à Geotribu : comment insérer des émojis d
 icon: material/emoticon-happy-outline
 image: "https://blog.emojipedia.org/content/images/size/w2000/2020/02/Emojipedia-Header-Image-JoyPixels-5.5.jpg"
 tags:
-    - contribuer
     - media
     - emoji
     - emoticone

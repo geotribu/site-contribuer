@@ -8,7 +8,6 @@ description: "Guide de contribution à Geotribu : comment déployer l'environnem
 icon: octicons/desktop-download-16
 image: "https://cdn.geotribu.fr/img/internal/contribution/geotribu_ide_vscode_local.png"
 tags:
-    - contribuer
     - git
     - guide
     - installation locale

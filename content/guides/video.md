@@ -9,7 +9,6 @@ description: "Guide de contribution à Geotribu : comment intégrer une vidéo d
 icon: material/video-plus
 image: "https://cdn.geotribu.fr/img/internal/contribution/videos/embed_youtube_copy_annotated.png"
 tags:
-    - contribuer
     - guide
     - intégration
     - Markdown

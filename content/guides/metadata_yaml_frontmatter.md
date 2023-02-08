@@ -10,7 +10,6 @@ description: "Rédiger en Markdown : de l'importance de l'en-tête (YAML front-m
 icon: material/page-layout-header
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/markdown_yaml_frontmatter.png"
 tags:
-    - contribuer
     - Markdown
     - rédaction
     - SEO

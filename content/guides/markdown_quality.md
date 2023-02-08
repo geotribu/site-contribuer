@@ -9,7 +9,6 @@ icon: material/language-markdown-outline
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png"
 robots: index, follow
 tags:
-    - contribuer
     - HTML
     - Markdown
     - rédaction

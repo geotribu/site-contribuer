@@ -11,7 +11,6 @@ description: "Contribuer à Geotribu : comment signer ses contributions au site.
 image: "https://cdn.geotribu.fr/img/internal/contribution/authoring/auto_from_git_log.png"
 icon: fontawesome/solid/signature
 tags:
-    - contribuer
     - tutoriel
     - signature
     - authoring

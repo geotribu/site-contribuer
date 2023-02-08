@@ -9,7 +9,6 @@ description: "Publication et diffusion d'une revue de presse de Geotribu (GeoRDP
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 license: default
 tags:
-    - contribuer
     - guide
     - GeoRDP
     - workflow

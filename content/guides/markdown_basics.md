@@ -9,7 +9,6 @@ description: "Maîtriser les bases de la rédaction en Markdown pour contribuer 
 icon : material/language-markdown
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png"
 tags:
-    - contribuer
     - HTML
     - lint
     - Markdown

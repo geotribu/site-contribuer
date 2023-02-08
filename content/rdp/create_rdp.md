@@ -10,7 +10,6 @@ description: "Guide de création d'une revue de presse (GeoRDP) sur Geotribu : m
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 license: default
 tags:
-    - contribuer
     - GeoRDP
     - GitHub
     - GitHub Actions

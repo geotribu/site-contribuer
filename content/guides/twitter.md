@@ -9,7 +9,6 @@ description: "Guide de contribution à Geotribu : comment intégrer un tweet dan
 icon: material/twitter
 image: "https://cdn.geotribu.fr/img/internal/contribution/twitter/embed_tweet_publish_website.png"
 tags:
-    - contribuer
     - guide
     - intégration
     - Markdown

@@ -10,7 +10,6 @@ image: "https://cdn.geotribu.fr/img/internal/contribution/audio/html_audio_tag.p
 icon: material/music-note-plus
 license: default
 tags:
-    - contribuer
     - audio
     - musique
     - podcast

@@ -10,7 +10,6 @@ image: "https://cdn.geotribu.fr/img/internal/contribution/licensing/license_bloc
 icon: material/creative-commons
 license: default
 tags:
-    - contribuer
     - licence
     - Markdown
     - tutoriel

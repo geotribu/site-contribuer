@@ -11,7 +11,6 @@ date: 2020-04-20 10:20
 description: "Guide de contribution à Geotribu : comment intégrer une image dans un article ou une revue de presse et gérer le stockage commun."
 icon: material/image-frame
 tags:
-    - contribuer
     - media
     - image
     - intégration
