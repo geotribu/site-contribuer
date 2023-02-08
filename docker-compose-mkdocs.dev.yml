@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   website:
-    container_name: geotribu-mkdocs-site
-    image: geotribu-static-mkdocs
+    container_name: geotribu-contribuer-site
+    image: geotribu-contribuer-mkdocs
     build:
       context: .
       dockerfile: Dockerfile
