@@ -6,7 +6,13 @@ date: 2020-03-20 10:20
 description: "Envie de contribuer à Geotribu ? On vous guide sur le pourquoi du comment."
 tags:
   - contribuer
+  - Geotribu
+  - géomatique
+  - rédiger
+  - sig
 comments: false
+hide:
+  - tags
 ---
 
 # Introduction
