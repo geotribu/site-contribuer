@@ -20,7 +20,7 @@ site_dir: "./build/mkdocs/site"
 
 # Scripts pendant le build
 hooks:
-  - hooks/mkdocs/check_hyperlinks.py
+  - hooks/mkdocs/G001_check_hyperlinks_internal.py
 
 # Plugins
 plugins:
@@ -30,15 +30,10 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, false]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, False]
       show_contribution: true
-  - git-committers:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS, false]
-      repository: geotribu/site-contribuer
-      branch: main
-      docs_path: content/
   - git-revision-date-localized:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, False]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
@@ -55,10 +50,6 @@ plugins:
         - twemoji
       auto_caption: true
       caption_position: bottom
-  - meta
-  - minify:
-      minify_html: true
-
   - rss:
       abstract_chars_count: 500
       categories:
@@ -72,9 +63,8 @@ plugins:
         default_timezone: Europe/Paris
         default_time: "19:00"
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
-      image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+      image: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
       length: 50
-      pretty_print: true
       url_parameters:
         utm_source: "rss-feed"
         utm_medium: "RSS"
@@ -83,36 +73,14 @@ plugins:
       lang: fr
   - macros:
       include_dir: content/toc_nav_ignored/snippets
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_file: tags.md
-      tags_compare: !!python/name:material.plugins.tags.plugin.casefold
-  - privacy:
-      # enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
-      enabled: true
-      external_links_attr_map:
-        target: _blank
-      external_assets_exclude:
-        # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
-        - cdn.jsdelivr.net/npm/mathjax@3/*
-        - giscus.app/*
-        # geotribu
-        - cdn.geotribu.fr/images/*
-        - cdn.geotribu.fr/img/*
-        - geotribu.net/*
-        # external
-        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
-        - github.com/**/*.gif
-        - i.imgur.com/*
-        - raw.githubusercontent.com/*
-        - twemoji.maxcdn.com/*
-        - upload.wikimedia.org/*
-        - user-images.githubusercontent.com/**/*.gif
   - social:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, false]
       cards_color:
         fill: "#3e93a7"
       cards_font: Ubuntu
+  - tags:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
+      tags_file: tags.md
 
 # Theme
 theme:
@@ -120,18 +88,11 @@ theme:
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
 
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
-
   features:
     - content.action.edit
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
-    - content.tooltips
-    - navigation.path
-    - navigation.prune
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -140,15 +101,11 @@ theme:
     - search.suggest
     - toc.follow
   font: false
+  icon:
+    repo: fontawesome/brands/github-alt
   language: fr
   logo: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Basculer en mode clair
-
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -193,6 +150,8 @@ markdown_extensions:
   # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
   - footnotes
   - md_in_html
+  # Metadata - https://squidfunk.github.io/mkdocs-material/extensions/metadata
+  - meta
   # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
   - pymdownx.details
   - pymdownx.emoji:
