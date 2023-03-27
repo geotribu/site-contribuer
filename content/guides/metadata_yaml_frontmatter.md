@@ -57,7 +57,6 @@ categories:
     - tutoriel
 ```
 
-
 ## Exemple
 
 Exemple pour la GeoRDP de Noël 2020 :
