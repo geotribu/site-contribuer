@@ -27,6 +27,7 @@ Le site Geotribu tire également profit de ce mécanisme.
 L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encadré par `---`. Chaque élément a un rôle ou une réutilisation :
 
 - `title` : utilisé dans le menu de navigation de gauche, le RSS et le SEO (référencement). Cela autorise par exemple un titre différent que celui affiché dans l'article
+- `subtitle` : texte court affiché sous le titre dans le menu de navigation de gauche. Idéal pour indiquer qu'il s'agit d'un article au sein d'une série, ajouter un jeu de mots, etc.
 - `authors` : liste des contributeurs réutilisée dans les meta-tags de la page et le SEO (via schema.org)
 - `categories` : contient la typologie du contenu permettant des comportements adaptés. Pour l'instant c'est utilisé pour définir le schéma JSON-LD  à utiliser, mais c'est prévu dans le RSS aussi
 - `date` : date de création publique de l'article, correspondant à la date de première publication. Utilisée dans le RSS, le SEO et certains moteurs d'affichage.
