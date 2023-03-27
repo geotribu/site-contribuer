@@ -30,8 +30,8 @@ L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encad
 - `authors` : liste des contributeurs réutilisée dans les meta-tags de la page et le SEO (via schema.org)
 - `categories` : contient la typologie du contenu permettant des comportements adaptés. Pour l'instant c'est utilisé pour définir le schéma JSON-LD  à utiliser, mais c'est prévu dans le RSS aussi
 - `date` : date de création publique de l'article, correspondant à la date de première publication. Utilisée dans le RSS, le SEO et certains moteurs d'affichage.
-- `description` : SEO, recherche interne du site, meta-tag, RSS
-- `image` : RSS et partage des articles dans les réseaux sociaux (c'est ce qui fait qu'on a un jouli rendu quand on partage dans Twitter ou LinkedIn par exemple). Dimensions : entre 300x600 et 400x800.
+- `description` : texte de 155 caractères maximum (enfin, plus exacteent, le reste est tronqué) qui résume le contenu et qui est utilisé par les moteurs d'indexation et de recherche (SEO, Google, Bing...), l'index de recherche interne du site, le flux RSS et la newsletter. Voir [le guide de Google sur les descriptions de contenus web](https://developers.google.com/search/docs/appearance/snippet?hl=fr#meta-descriptions).
+- `image` : lien vers l'image qui s'affiche lors du partage du contenu dans le flux RSS, la newsletter, les réseaux sociaux : [voir la page Cartes de partage](/internal/social_cards/ "Outillage interne : les Social Cards"). Dimensions : entre 300x600 et 400x800.
 - `legacy` : stocke des informations relatives aux anciens sites Geotribu, notamment pour assurer la continuité. Uniquement pour un **usage interne** et pour les contenus créés avant 2020.
 - `license` : détermine si la licence du contenu est celle par défaut (`license: default`) ou non (`license: none`). Si la clé n'est pas renseignée, c'est la licence par défaut qui s'applique. Voir le guide [Choisir sa licence](/guides/licensing/).
 - `robots` : détermine si le contenu doit être indexé par les moteurs de recherche ou non. Par défaut: `index, follow`.
