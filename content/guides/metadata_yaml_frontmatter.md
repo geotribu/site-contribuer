@@ -36,7 +36,7 @@ L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encad
 - `legacy` : stocke des informations relatives aux anciens sites Geotribu, notamment pour assurer la continuité. Uniquement pour un **usage interne** et pour les contenus créés avant 2020.
 - `license` : détermine si la licence du contenu est celle par défaut (`license: default`) ou non (`license: none`). Si la clé n'est pas renseignée, c'est la licence par défaut qui s'applique. Voir le guide [Choisir sa licence](/guides/licensing/).
 - `robots` : détermine si le contenu doit être indexé par les moteurs de recherche ou non. Par défaut: `index, follow`.
-- `tags` : liste dans l'ordre alphabétique des mots-clés qui permet le [classement des contenus par mots-clés]({{ config.extra.geotribu_main_site }}/tags/). De préférence, choisir parmi les [mots-clés existants]({{ config.extra.geotribu_main_site }}/tags/), en respectant la casse.
+- `tags` : liste dans l'ordre alphabétique des mots-clés qui permet le [classement des contenus par mots-clés]({{ config.extra.geotribu_main_site }}tags/). De préférence, choisir parmi les [mots-clés existants]({{ config.extra.geotribu_main_site }}tags/), en respectant la casse.
 
 ### Catégories
 
