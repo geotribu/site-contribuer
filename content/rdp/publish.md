@@ -1,5 +1,6 @@
 ---
-title: "Publier et diffuser"
+title: "Publier et diffuser une revue de presse"
+subtitle: "Merger > attendre > poster sur les réseaux sociaux"
 authors:
     - Geotribu
 categories:
@@ -20,9 +21,33 @@ tags:
 
 Une fois la Pull Request[^pr] validée par un membre de l'équipe, la branche de la revue de presse est fusionnée (*merged*) dans la branche principale, déclenchant la génération et le déploiement du site web.
 
-Il est alors temps de lancer la diffusion via le compte Twitter de Geotribu pour relayer la publication.
+A noter que la branche ayant servi à la revue de presse est supprimée, ainsi que le site de prévisualisation généré.
 
-<!-- Footnotes -->
-[^pr]: étape où un contributeur propose d'intégrer ses modifications dans le socle principal du projet. Voir [la documentation de GitHub](https://docs.github.com/fr/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+## Diffusion automatique
 
-<!-- Hyperlinks reference -->
+Une fois la revue de presse en ligne, elle est automatiquement :
+
+- intégrée au [flux RSS]({{ config.extra.geotribu_main_site }}feed_rss_created.xml)
+- ajoutée à [la newsletter]({{ config.extra.geotribu_main_site }}newsletter/signup/).
+- mise en avant sur la page d'accueil du site
+- référencée dans les moteurs de recherche (via les *sitemaps* notamment)
+
+## Diffusion sur les réseaux sociaux
+
+Il est alors temps de lancer la diffusion sur les réseaux sociaux pour relayer la publication :
+
+- sur LinkedIn, via le compte personnel d'un/e membre de Geotribu avec [les hashtags `#Geotribu`](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) et [`#GeoRDP`](https://www.linkedin.com/feed/hashtag/?keywords=geordp)
+- Sur Mastodon, via [le compte officiel de Geotribu](https://mapstodon.space/@geotribu/)
+- sur Twitter, via [le compte officiel de Geotribu](https://twitter.com/geotribu/)
+
+### Exemple de structure de message
+
+```txt
+🗞 La #GeoRDP est en ligne :
+
+
+👥 Contributeur/ices : @XXXX
+
+
+🌍 #Geotribu #veille #géomatique #YYYY @ZZZZ
+```
