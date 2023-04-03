@@ -26,3 +26,6 @@
 *[TL;DR]: Too long; didn't read (en français : « trop long ; pas lu ») (abrégé en TL;DR ou tl;dr) est une expression anglaise, courante également en français, employée quand on veut indiquer qu'un texte est trop long et que l'on n'a pas l'intention d'investir du temps pour l'assimiler.
 *[W3C]: Le World Wide Web Consortium, abrégé par le sigle W3C, est un organisme de standardisation à but non lucratif chargé de promouvoir la compatibilité des technologies du Web.
 *[WYSIWYG]: une interface utilisateur qui permet de composer visuellement le résultat voulu, typiquement pour un logiciel de mise en page, un traitement de texte ou d’image.
+
+<!-- Notes de bas de page -->
+[^pr]: étape où un contributeur propose d'intégrer ses modifications dans le socle principal du projet. Voir [la documentation de GitHub](https://docs.github.com/fr/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
