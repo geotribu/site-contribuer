@@ -142,18 +142,7 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
 
 ## Publication et diffusion
 
-![icône porte-voix](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône porte-voix"){: .img-rdp-news-thumb }
-
-Une fois la Pull Request[^pr] validée par un membre de l'équipe, une date de publication est décidée en tenant compte du planning de publication.
-
-Une fois la branche de l'article fusionnée (*merged*) dans la branche principale, votre contenu est publié et référencé automatiquement.
-
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/50V0KiFhwF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-En ce qui concerne la diffusion, cela reste à la discrétion de chacun/e, sachant que nous utiliserons le compte Twitter de Geotribu pour relayer la publication.
-
-<!-- Footnotes -->
-[^pr]: étape où un contributeur propose d'intégrer ses modifications dans le socle principal du projet. Voir [la documentation de GitHub](https://docs.github.com/fr/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+> Voir [la page dédiée](/articles/publish/).
 
 <!-- Hyperlinks reference -->
 [dépôt GitHub]: https://github.com/geotribu/website
