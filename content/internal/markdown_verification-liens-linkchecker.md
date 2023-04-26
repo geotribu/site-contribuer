@@ -1,5 +1,6 @@
 ---
-title: "Vérification des liens web"
+title: "Vérification des hyperliens"
+subtitle: 404/2 - 2
 authors:
     - Julien MOURA
 categories:
@@ -7,8 +8,7 @@ categories:
     - meta
 date: 2023-05-18 10:20
 description: "Sous le GéoCapot : comment on vérifie la syntaxe des liens HTTP (internes et externes) sur Geotribu, notamment avec LinkChecker."
-icon : material/check-all
-image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/linter_code.webp"
+icon : material/link-box-variant-outline
 robots: index, follow
 tags:
     - coulisses
@@ -22,9 +22,12 @@ tags:
 
 ![logo LinkChecker](https://cdn.geotribu.fr/img/internal/contribution/markdown/linkchecker_logo.png){: .img-rdp-news-thumb loading=lazy }
 
-En Markdown, il est facile de faire des erreurs au moment d'insérer un hyperlien avec des questionnements HVE (Haute Valeur Existentielle) : s'il est interne, doit-il être relatif ou absolu ? Dois-je préciser le protocole ou bien cela est-il déterminé par le navigateur ? En plus de faire un mauvais choix, on s'expose aussi aux fautes de frappe qui mènent à un lien cassé.
+En Markdown, il est facile de faire des erreurs au moment d'insérer un hyperlien avec des questionnements HVE (Haute Valeur Existentielle) : s'il est [interne](/guides/markdown_quality/#liens-internes-relatifs), doit-il être relatif ou absolu ? Dois-je préciser le protocole ou bien cela est-il déterminé par le navigateur ?  
+En plus de faire un mauvais choix, on s'expose aussi aux fautes de frappe qui mènent à un lien cassé. Et là c'est 404 drames !
 
-C'est pourquoi une vérification des liens est exécutée régulièrement et automatiquement sur les contenus Geotribu, notamment via [linkchecker](https://linkchecker.github.io/linkchecker/).
+C'est pourquoi une vérification des liens est exécutée régulièrement et automatiquement sur les contenus Geotribu, à l'aide de [linkchecker](https://linkchecker.github.io/linkchecker/), un utilitaire développé en Python et utilisable en ligne de commande (CLI).
+
+----
 
 ## Configuration
 
@@ -42,27 +45,23 @@ Explication :
 
 ----
 
-## Utilisation
+## Utilisation en local
 
-### Installation
+1. Disposer de l'environnement de travail en local : [voir cette page](/edit/local_edition_setup/)
+1. Générer le site web de Geotribu
+1. Installer le package :
 
-Pour utiliser l'outil, il faut disposer d'un interpréteur Python >= 3.9 :
+    ```sh
+    python -m pip install --upgrade "LinkChecker>=10"
+    ```
 
-```sh
-pip install
-```
+1. Lancer LinkChecker :
 
-Il est aussi possible d'utiliser markdownlint sous forme d'[extension dans Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) et probablement dans d'autres IDE.
+    ```sh
+    linkchecker build/mkdocs/site/ --config .linkcheckrrc --no-warnings
+    ```
 
-### Générer le site web
-
-### Vérifier les liens
-
-```sh
-> linkchecker build/mkdocs/site/ --config .linkcheckrrc --no-warnings
-```
-
-Si cela vous intéresse
+Si cela vous intéresse, déplier pour voir à quoi ressemble la sortie :
 
 <!-- markdownlint-disable MD046 -->
 ??? example "Sortie de l'exécution"
@@ -79,7 +78,7 @@ Si cela vous intéresse
 
     Démarrage du contrôle à 2023-04-26 18:09:03+002
     39 threads active,     0 links queued,   41 links in  80 URLs checked, temps d'exécution 1 secondes
-    WARNING bs4.dammit 2023-04-26 18:09:04,981 CheckThread-file:///home/jmo/Git/Geotribu/website/build/mkdocs/site/sitemap.xml.gz Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+    WARNING bs4.dammit 2023-04-26 18:09:04,981 CheckThread-file:///home/username/Git/Geotribu/website/build/mkdocs/site/sitemap.xml.gz Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
     97 threads active,   859 links queued,  647 links in 1603 URLs checked, temps d'exécution 6 secondes
     96 threads active,  1052 links queued, 2726 links in 3874 URLs checked, temps d'exécution 11 secondes
     98 threads active,  1071 links queued, 3896 links in 5065 URLs checked, temps d'exécution 16 secondes
@@ -113,7 +112,8 @@ Si cela vous intéresse
 
 ![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
 
-Pour soulager la charge mentale des gentils bénévoles, la vérification est exécutée automatiquement dans la CI. Étant donné que l'exécution est assez longue et nécessite de générer tout le site avant, j'ai opté pour une exécution trimestrielle plutôt que sur chaque Pull Request ou commit.
+Pour soulager la charge mentale des gentils bénévoles, la vérification est exécutée automatiquement dans la CI et une notification est envoyée uniquement si des erreurs sont trouvées.  
+Étant donné que l'exécution est assez longue et nécessite de générer tout le site avant, j'ai opté pour une exécution trimestrielle plutôt que sur chaque Pull Request ou commit.
 
 Les [résultats des exécutions sont visibles sur le dépôt du site](https://github.com/geotribu/website/actions/workflows/links_checker.yml). Voici la configuration pour les curieux/ses :
 
@@ -124,6 +124,14 @@ Les [résultats des exécutions sont visibles sur le dépôt du site](https://gi
     --8<-- "https://github.com/geotribu/website/raw/master/.github/workflows/links_checker.yml"
     ```
 
-## Remerciements
+----
+
+## Ressources
+
+- LinkChecker dispose également d'une interface graphique : <https://github.com/linkchecker/linkchecker-gui>
+
+----
+
+## Remerciements et crédits
 
 Merci à mon collègue [Thomas Muguet](https://tmuguet.me/) pour avoir mis cet outil en place pour le wiki interne à Oslandia et son aide pour accélerer la prise en main.
