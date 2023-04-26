@@ -88,8 +88,7 @@ plugins:
       tags_file: tags.md
       tags_compare: !!python/name:material.plugins.tags.plugin.casefold
   - privacy:
-      # enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
-      enabled: true
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
       links_attr_map:
         target: _blank
       assets_exclude:
@@ -101,6 +100,7 @@ plugins:
         - cdn.geotribu.fr/img/*
         - geotribu.net/*
         # external
+        - cdn.jsdelivr.net/**/*/twemoji/*
         - cdnjs.cloudflare.com/ajax/libs/twemoji/*
         - github.com/**/*.gif
         - i.imgur.com/*
