@@ -17,6 +17,7 @@
 [Visual Studio Code]: https://code.visualstudio.com/
 
 <!-- Abbreviations -->
+*[commit]: Un commit dans Git est un enregistrement des modifications apportées à un fichier ou un ensemble de fichiers dans un dépôt Git. Il s'agit d'un instantané de l'état du projet à un moment donné.
 *[CSS]: Cascading Style Sheets - Feuilles de style en cascade.
 *[fair-use]: analogie avec le fair-play pour désigner un cadre légal qui repose sur un usage raisonnable des oeuvres et ressources.
 *[HTML]: Hyper Text Markup Language : langage de balisage conçu pour représenter les pages web.
