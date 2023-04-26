@@ -6,7 +6,7 @@ authors:
 categories:
     - article
     - meta
-date: 2023-05-18 10:20
+date: 2023-04-26 19:20
 description: "Sous le GéoCapot : comment on vérifie la syntaxe des liens HTTP (internes et externes) sur Geotribu, notamment avec LinkChecker."
 icon : material/link-box-variant-outline
 robots: index, follow
