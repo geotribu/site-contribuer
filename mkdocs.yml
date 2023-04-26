@@ -100,7 +100,7 @@ plugins:
         - cdn.geotribu.fr/img/*
         - geotribu.net/*
         # external
-        - cdn.jsdelivr.net/**/*/twemoji/*
+        - cdn.jsdelivr.net/**/*/twemoji*
         - cdnjs.cloudflare.com/ajax/libs/twemoji/*
         - github.com/**/*.gif
         - i.imgur.com/*
