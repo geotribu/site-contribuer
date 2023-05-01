@@ -8,6 +8,11 @@ on:
       - ".github/workflows/pr_linter_markdown.yml"
       - "content/**/*.md"
 
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: write
+
 jobs:
   lint-markdown-review:
     name: "👓 Vérification de la syntaxe"
@@ -31,7 +36,7 @@ jobs:
       - name: "Explications sur les erreurs du linter"
         id: pr-comment-error-create
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' }}
+        if: ${{ failure() && steps.markdownlint-github-pr-review-added.conclusion == 'failure' && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
           recreate: true
@@ -39,14 +44,14 @@ jobs:
             Salut @${{ github.actor }}
             Des erreurs de syntaxe Markdown ont été détectées dans les lignes ajoutées ou modifiées. Merci de les corriger ou de les marquer comme faux-positif :
 
-              - [règles de syntaxe Markdown applicables à Geotribu](/guides/markdown_quality/)
-              - [marquer une erreur de syntaxe comme faux-positif](/internal/markdown_linter/#gerer-les-faux-positifs-du-linter)
+              - [règles de syntaxe Markdown applicables à Geotribu](https://contribuer.geotribu.fr/guides/markdown_quality/)
+              - [marquer une erreur de syntaxe comme faux-positif](https://contribuer.geotribu.fr/internal/markdown_linter/#gerer-les-faux-positifs-du-linter)
               - [possibilités de rédaction offertes par le moteur Mkdocs + thème Material](https://squidfunk.github.io/mkdocs-material/reference/)
 
       - name: "Marque le commentaire de félicitations comme résolu"
         id: pr-comment-good-solve
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-success
           hide: true
@@ -68,7 +73,7 @@ jobs:
       - name: "Marque le commentaire d'erreur comme résolu"
         id: pr-comment-error-solve
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-error
           hide: true
@@ -77,7 +82,7 @@ jobs:
       - name: "Félicitations"
         id: pr-comment-good
         uses: marocchino/sticky-pull-request-comment@v2
-        if: ${{ success() }}
+        if: ${{ success() && github.event.pull_request.head.repo.fork == false }}
         with:
           header: linter-md-success
           recreate: true
