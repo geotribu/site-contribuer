@@ -75,9 +75,10 @@ plugins:
       include_dir: content/toc_nav_ignored/snippets
   - social:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, false]
-      cards_color:
-        fill: "#3e93a7"
-      cards_font: Ubuntu
+      cards_layout_options:
+        background_color: "#3e93a7"
+        color: default
+        font_family: Ubuntu
   - tags:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
       tags_file: tags.md

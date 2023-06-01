@@ -110,9 +110,10 @@ plugins:
         - user-images.githubusercontent.com/**/*.gif
   - social:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, false]
-      cards_color:
-        fill: "#3e93a7"
-      cards_font: Ubuntu
+      cards_layout_options:
+        background_color: "#3e93a7"
+        color: default
+        font_family: Ubuntu
 
 # Theme
 theme:
