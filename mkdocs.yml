@@ -112,7 +112,6 @@ plugins:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, false]
       cards_layout_options:
         background_color: "#3e93a7"
-        color: default
         font_family: Ubuntu
 
 # Theme
