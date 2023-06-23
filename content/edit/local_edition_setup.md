@@ -141,10 +141,10 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
     git remote prune origin
 
     # supprimer les branches qui ont été fusionnées - sauf master et gh-pages
-    git branch --merged | grep -i -v -E "master|gh-pages"| xargs git branch -d
+    git branch --merged | grep -i -v -E "main|master|gh-pages"| xargs git branch -d
 
     # supprimer les branches qui n'existent plus sur GitHub
-    git fetch --prune && git branch -v | grep -i -E "\[disparue|gone\]" | grep -v -E "\*|master|main|gh-pages" | awk '{print $1}' | xargs git branch -D
+    git fetch --prune && git branch -v | grep -i -E "\[disparue|gone\]" | grep -v -E "\*|main|master|gh-pages" | awk '{print $1}' | xargs git branch -D
     ```
 
 === "Windows (Powershell)"
@@ -155,7 +155,7 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
     git remote prune origin
 
     # supprimer les branches qui ont été fusionnées - sauf master et gh-pages
-    git branch --merged | Select-String -Pattern '^(?!.*(master|gh-pages)).*$' | ForEach-Object { git branch -d $_.ToString().Trim() }
+    git branch --merged | Select-String -Pattern '^(?!.*(main|master|gh-pages)).*$' | ForEach-Object { git branch -d $_.ToString().Trim() }
 
     # ou en ouvrant une fenêtre de sélection des branches à supprimer
     git branch --format "%(refname:short)" --merged  | Out-GridView -PassThru | % { git branch -d $_ }
