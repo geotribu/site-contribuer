@@ -47,7 +47,8 @@ repos:
             ".markdownlint.json",
             "--ignore-path",
             ".markdownlintignore",
-            "--fix"
+            "--fix",
+            "content",
           ]
         language: node
         # language_version: "14.17.6"
@@ -61,7 +62,7 @@ ci:
   autoupdate_commit_msg: "[pre-commit.ci] Mise à jour des git hooks."
   autoupdate_schedule: monthly
   skip: [
-    "check-hooks-apply",
-    # "markdownlint"
-  ]
+      "check-hooks-apply",
+      # "markdownlint"
+    ]
   submodules: false
