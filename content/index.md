@@ -24,6 +24,28 @@ La contribution à Geotribu est réservée aux personnes qui répondent à ces d
 
 Bref, c'est ouvert :wink: :smile: ! Pas besoin d'être dans l'équipe _officielle_ pour proposer un contenu : article, tutoriel, news pour une revue de presse, etc.
 
+<!-- markdownlint-disable MD033 -->
+<div class="grid cards" markdown>
+
+- :material-newspaper-plus:{ .lg .middle } __Revues de presse__
+
+    ----
+
+    Permet de soutenir le développement du thème utilisé et profiter des [fonctionnalités "Insiders"](https://squidfunk.github.io/mkdocs-material/insiders/#exclusive-features) (modèle [Sponsorware](https://github.com/sponsorware/docs#sponsorware)).  
+
+    :money_with_wings: Montant : 10$/mois (~120€/an) via [GitHub Sponsor](https://github.com/orgs/geotribu/sponsoring).
+
+- :writing_hand_tone1:{ .lg .middle } __Articles__
+
+    ----
+
+    Location du nom de domaine geotribu et des suffixes associés : `.fr`, `.org` et `.net`.
+
+    :money_with_wings: Montant : ~50€/an.
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
 !!! warning "Éviter les communiqués"
     Même s'il n'y a pas de charte établie, merci de réserver les communiqués de presse ou les copiés/collés de communication commerciale à d'autres sites dont c'est la vocation. Par exemple : [Décryptagéo](https://decryptageo.fr/), [GeoRezo](https://georezo.net/forum/viewforum.php?id=14)
 
