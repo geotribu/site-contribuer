@@ -24,9 +24,11 @@ Gardez en tête que le travail de l'équipe est **bénévole**. A ce titre, plus
 
 Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
+<!-- markdownlint-disable MD034 -->
 [Proposer une news par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
 [Proposer une news via GitHub :fontawesome-solid-ticket:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml){: .md-button }
 {: align=middle }
+<!-- markdownlint-enable MD034 -->
 
 ----
 
