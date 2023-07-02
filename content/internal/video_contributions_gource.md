@@ -4,7 +4,7 @@ categories:
     - article
     - Geotribu
 date: 2023-07-03 20:20
-description: 
+description:
 icon : simple/interactiondesignfoundation
 image:
 tags:
