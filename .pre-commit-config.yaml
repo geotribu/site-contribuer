@@ -38,7 +38,7 @@ repos:
         args: ["--select=E9,F63,F7,F82"]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.33.0
+    rev: v0.34.0
     hooks:
       - id: markdownlint
         args:
@@ -47,7 +47,8 @@ repos:
             ".markdownlint.json",
             "--ignore-path",
             ".markdownlintignore",
-            "--fix"
+            "--fix",
+            "content",
           ]
         language: node
         # language_version: "14.17.6"
@@ -61,7 +62,7 @@ ci:
   autoupdate_commit_msg: "[pre-commit.ci] Mise à jour des git hooks."
   autoupdate_schedule: monthly
   skip: [
-    "check-hooks-apply",
-    # "markdownlint"
-  ]
+      "check-hooks-apply",
+      # "markdownlint"
+    ]
   submodules: false
