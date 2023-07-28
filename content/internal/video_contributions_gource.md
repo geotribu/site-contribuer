@@ -96,27 +96,39 @@ sudo apt remove libpcre2-dev libfreetype6-dev libglm-dev libboost-filesystem-dev
 
 ## Configuration
 
+Les commandes suivantes sont à exécuter dans le dossier du dépôt Git local du site Geotribu.
+
+### Récupérer le logo
+
+Télécharger le logo taillé pour la vidéo :
+
+```sh
+wget https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png -O geotribu_logo_tipi_seul_carre.png
+```
+
 ### Fichier `gource.ini`
 
 ```ini
 [display]
 fullscreen=true
 output-framerate=60
-output-ppm-stream=./geotribu_website_git_history.ppm
+output-ppm-stream=/tmp/geotribu_website_git_history.ppm
 viewport=1280x720
 
 [gource]
-auto-skip-seconds=10
-date-format=%d %B %Y
+auto-skip-seconds=1
+camera-mode=track
+date-format=%B %Y
 disable-progress=true
 frameless=true
-hide=mouse
+hide=mouse,progress
 highlight-dirs=true
 highlight-users=true
 key=true
-# logo="https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+logo=geotribu_logo_tipi_seul_carre.png
 path=.
-seconds-per-day=0.2
+seconds-per-day=1
+start-date=2023-01-01
 stop-at-end=true
 title=Contributions au contenu de Geotribu
 ```
@@ -136,7 +148,7 @@ gource --camera-mode track --logo ../site-contribuer/content/theme/assets/images
 ```
 
 ```sh
-gource --load-config gource.ini --start-date '2020-06-01' -1280x720 -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 geotribu_history.mp4
+gource --load-config gource.ini -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 geotribu_history.mp4
 ```
 
 ----
