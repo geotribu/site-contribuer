@@ -27,6 +27,7 @@ icon:
     markdown: fontawesome/brands/markdown
     masques: fontawesome/solid/masks-theater
     meridiens: fontawesome/solid/globe
+    moteur: material/engine
     oeuf: fontawesome/solid/egg
     open: fontawesome/solid/lock-open
     opensource: material/open-source-initiative
