@@ -52,7 +52,7 @@ Exemple du bloc permettant de gérer les contenus avec plusieurs auteurs :
 
 {% raw %}
 
-```jinja
+```jinja linenums="1"
 [...]
 {% elif author is iterable and (author is not string and author is not mapping) %}
   {% if author | length > 1 %}
@@ -90,7 +90,7 @@ Les données structurées sont stockées en [JSON-LD] (_JSON Linked Data_) sous 
 
 On y intègre les métadonnées principales du site, ainsi que des informations fonctionnelles, notamment le moteur de recherche, conformément au [schéma Sitelink](https://developers.google.com/search/docs/advanced/structured-data/sitelinks-searchbox) :
 
-```jsonld
+```jsonld linenums="1"
 {
   "@context": "http://www.schema.org",
   "@type": "WebSite",
@@ -116,7 +116,7 @@ On y intègre les métadonnées principales du site, ainsi que des informations 
 
 Exemple pour [cet article](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/) :
 
-```jsonld
+```jsonld linenums="1"
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -156,7 +156,7 @@ Exemple pour [cet article](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_o
 
 Exemple pour [cette GeoRDP](/rdp/2022/rdp_2022-06-03/) :
 
-```jsonld
+```jsonld linenums="1"
 {
   "@context": "https://schema.org",
   "@type": "Article",

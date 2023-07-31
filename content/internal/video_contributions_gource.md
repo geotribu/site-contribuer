@@ -102,7 +102,7 @@ A partir de maintenant, les commandes suivantes sont à exécuter dans le dossie
 
 Télécharger le logo taillé pour la vidéo :
 
-```sh
+```bash
 wget https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png -O geotribu_logo_tipi_seul_carre.png
 ```
 
@@ -110,7 +110,7 @@ wget https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.p
 
 On stocke les paramètres dans un fichier pour avoir une commande plus lisible et pouvoir jouer sur les paramètres plus facilement.
 
-```ini
+```ini linenums="1" title="Fichier de configuration gource.ini"
 [display]
 fullscreen=true
 output-framerate=60

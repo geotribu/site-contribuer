@@ -26,7 +26,7 @@ Pour comprendre le fonctionnement, rien de mieux que d'utiliser directement cett
 
 Après installation (`python -m pip install markdown`), le fonctionnement est très simple :
 
-```python
+```python linenums="1"
 # import du package
 import markdown
 
@@ -54,7 +54,7 @@ with open("super_tuto.html", "w", encoding="utf-8", errors="xmlcharrefreplace") 
 
 Le fichier HTML en sortie :
 
-```html
+```html linenums="1"
 <h1>Super tutoriel sur la dernière techno fun en géomatique</h1>
 <p>Bienvenue dans mon <strong>super</strong> tutoriel, dans lequel on va apprendre :</p>
 <ol>

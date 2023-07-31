@@ -33,7 +33,7 @@ C'est pourquoi une vérification des liens est exécutée régulièrement et aut
 
 Les possibilités de [configuration de l'outil sont impressionnantes](https://linkchecker.github.io/linkchecker/man/linkcheckerrc.html) ! Elles prennent place dans un fichier `.lincheckrrc` (format `.ini`) qui est à la racine du dépôt [Git] du site :
 
-```ini title="Fichier .linkcheckrrc"
+```ini title="Fichier .linkcheckrrc" linenums="1"
 --8<-- "https://github.com/geotribu/website/raw/master/.linkcheckrrc"
 ```
 
@@ -120,7 +120,7 @@ Les [résultats des exécutions sont visibles sur le dépôt du site](https://gi
 <!-- markdownlint-disable MD046 -->
 ??? example "Workflow GitHub Actions"
 
-    ```ini
+    ```yml linenums="1"
     --8<-- "https://github.com/geotribu/website/raw/master/.github/workflows/links_checker.yml"
     ```
 
