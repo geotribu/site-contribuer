@@ -40,7 +40,7 @@ def on_page_markdown(markdown, page, **kwargs):
     path = page.file.src_uri
     if path in exclude_list:
         return
-    # for m in re.finditer(r"\bhttps://static.geotribu.fr/[^) ]+", markdown):
+    # for m in re.finditer(r"\bhttps://geotribu.fr/[^) ]+", markdown):
     # for match in pattern.finditer(markdown):
     for match in re.findall(pattern, markdown):
         # print(path, match)

@@ -126,7 +126,7 @@ theme:
 
 # Customization
 extra:
-  geotribu_main_site: https://static.geotribu.fr/
+  geotribu_main_site: https://geotribu.fr/
   consent:
     title: Consentement 🍪
     actions:

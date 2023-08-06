@@ -167,7 +167,7 @@ Quand il s'agit de lier les contenus entre eux, par exemple pour pointer sur une
 
 Cela permet :
 
-- de garder les contenus indépendants de l'URL de publication du site qui a tour à tour été <http://geotribu.net>, <https://geotribu.net> et <https://static.geotribu.fr> et qui pourrait encore être amenée à changer.
+- de garder les contenus indépendants de l'URL de publication du site qui a tour à tour été <http://geotribu.net>, <https://geotribu.net> et <https://geotribu.fr> et qui pourrait encore être amenée à changer.
 - d'éviter les liens cassés en cas de renommage/déplacement d'un contenu
 
 > Cette règle est spécifique à Geotribu et est contrôlée via un [script exécuté à chaque publication du site](https://github.com/geotribu/website/blob/master/hooks/mkdocs/check_hyperlinks.py)
