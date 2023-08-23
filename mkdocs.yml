@@ -108,10 +108,9 @@ plugins:
         font_family: Ubuntu
   - tags:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
+      tags_compare: !!python/name:material.plugins.tags.casefold ""
       tags_file: tags.md
-      tags_compare: !!python/name:material.plugins.tags.plugin.casefold # Theme
-
-
+      tags_pages_compare: !!python/name:material.plugins.tags.page_url ""
 theme:
   name: "material"
   custom_dir: "./content/theme/"
