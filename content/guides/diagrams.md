@@ -1,5 +1,6 @@
 ---
 title: Insérer des diagrammes
+subtitle: Cédez aux sirènes du schéma explicatf
 authors:
     - Geotribu
 categories:

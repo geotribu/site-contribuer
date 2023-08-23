@@ -1,5 +1,6 @@
 ---
-title: "Choisir une licence"
+title: Choisir une licence
+subtitle: Cadrer la réutilisation
 categories:
     - article
     - contribution

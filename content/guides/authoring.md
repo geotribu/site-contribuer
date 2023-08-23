@@ -1,5 +1,6 @@
 ---
 title: Signer ses contributions
+subtitle: Assumer son biopic
 authors:
     - Geotribu
 categories:
@@ -11,11 +12,11 @@ description: "Contribuer à Geotribu : comment signer ses contributions au site.
 image: "https://cdn.geotribu.fr/img/internal/contribution/authoring/auto_from_git_log.png"
 icon: fontawesome/solid/signature
 tags:
-    - tutoriel
-    - signature
-    - authoring
     - auteur
+    - autrice
     - paternité
+    - signature
+    - tutoriel
 ---
 
 <!-- markdownlint-disable MD046 -->

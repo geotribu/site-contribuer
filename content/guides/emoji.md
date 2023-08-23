@@ -1,5 +1,6 @@
 ---
 title: Utiliser des emojis
+subtitle: Avec modération
 authors:
     - Geotribu
 categories:
