@@ -34,12 +34,6 @@ Il est également recommandé :
 - d'avoir une connexion autorisée vers le [CDN de Geotribu]
 - d'installer [Node.js (LTS)](https://nodejs.org) pour pouvoir utiliser markdownlint (voir [Rédiger en Markdown : enjeux de qualité et règles](/guides/markdown_quality/#verifier-la-syntaxe-avec-markdownlint-cli)).
 
-!!! tip
-    Pour aborder de façon sympathique le fonctionnement du site web, pourquoi ne pas commencer par suivre le tutoriel publié fin 2020 pour déployer Geotribu localement ?
-
-    [Toi aussi, déploie le site Geotribu chez toi :fontawesome-solid-house-chimney-window:](/articles/2020/2020-12-30_deployer_geotribu_a_la_maison/){: .md-button }
-    {: align=middle }
-
 ----
 
 ## Git
@@ -186,7 +180,7 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
 === "Windows (Powershell)"
     Le mieux est encore de suivre l'article dédié :
 
-    [Python : installation et configuration sur Windows :fontawesome-brands-windows:](/articles/2020/2020-06-19_setup_python/#installation-et-configuration){: .md-button }
+    [Python : installation et configuration sur Windows :fontawesome-brands-windows:]({{ config.extra.geotribu_main_site }}articles/2020/2020-06-19_setup_python/#installation-et-configuration){: .md-button }
     {: align=middle }
 
 ### Création de l'environnement de travail
@@ -205,13 +199,10 @@ Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'in
     # mettre à jour pip et les outils de packaging
     python -m pip install -U pip
     python -m pip install -U setuptools wheel
-
-    # installer les dépendances
-    python -m pip install -U -r requirements-free.txt
     ```
 
 === "Windows (Powershell)"
-    Si ça n'est pas encore fait, il faut [autoriser l'utilisation des environnements virtuels](/articles/2020/2020-06-19_setup_python/#autoriser-lutilisation-des-environnements-virtuels).  
+    Si ça n'est pas encore fait, il faut [autoriser l'utilisation des environnements virtuels]({{ config.extra.geotribu_main_site }}articles/2020/2020-06-19_setup_python/#autoriser-lutilisation-des-environnements-virtuels).  
     Puis :
 
     ```powershell
@@ -230,17 +221,43 @@ Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'in
     # mettre à jour pip
     python -m pip install -U pip
     python -m pip install -U setuptools wheel
+    ```
 
-    # installer les dépendances
+### Installer les dépendances du site
+
+Toujours dans l'environnement virtuel, il s'agit maintenant d'installer les dépendances (Mkdocs, thème, plugins...) requises pour [générer le site](../internal/generer_les_sites_web_geotribu.md) localement.
+
+La liste des packages à installer dépend de l'accès à la version payante du thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/).
+
+=== "Version gratuite du thème"
+
+    ```sh
     python -m pip install -U -r requirements-free.txt
     ```
 
-!!! abstract "A exécuter régulièrement"
-    Les dépendances du projet sont mises à jour mensuellement. Il est donc recommandé de mettre son environnement virtuel local à jour **avant** de contribuer, avec la commande :
+=== "Version payante du thème (jeton *Insider*)"
 
-    `python -m pip install -U -r requirements-free.txt`
+    Ajouter le jeton d'accès en variable d'environnement : `GH_TOKEN_MATERIAL_INSIDERS`. Par exemple avec Bash :
+
+    ```sh
+    export GH_TOKEN_MATERIAL_INSIDERS=ghp_************
+    ```
+
+    ou avec PowerShell :
+
+    ```powershell
+    $env:GH_TOKEN_MATERIAL_INSIDERS='ghp_************
+    ```
+
+    Puis lancer l'installation des dépendances :
+
+    ```sh
+    python -m pip install -U -r requirements-insiders.txt
+    ```
 
 <!-- markdownlint-enable MD046 -->
+
+Les dépendances du projet sont mises à jour mensuellement. Il est donc recommandé de mettre son environnement virtuel local à jour **avant** de contribuer, en relançant la commande ci-dessus.
 
 ----
 
@@ -256,7 +273,7 @@ L'installation est optionnelle mais recommandée car l'outil garantit :
 - une cohérence d'ensemble entre les contributions
 - qu'une fois poussée sur le dépôt central, la contribution passe [les checks exécutés dans la CI](https://results.pre-commit.ci/repo/github/248722492).
 
-[En savoir plus sur les crochets Git :material-hook:](/internal/git_hooks_precommit/){: .md-button }
+[En savoir plus sur les crochets Git :material-hook:](../internal/git_hooks_precommit.md){: .md-button }
 {: align=middle }
 
 Installer [pre-commit] :
@@ -286,90 +303,3 @@ Il est également possible de tous les exécuter manuellement :
 ```bash
 pre-commit run -a
 ```
-
-----
-
-## Mkdocs
-
-![icône générateur de site web statique](https://cdn.geotribu.fr/img/logos-icones/divers/web_static_generator.webp "icône générateur de site web statique"){: .img-rdp-news-thumb }
-
-C'est l'outil qui sert à générer le site web à partir des contenus rédigés en [markdown] et configuré dans le fichier `mkdocs.yml` et dérivés. Voici quelques bases pour l'utiliser... qui ne vous épargnent pas le droit de regarder l'aide `mkdocs --help` :wink:.
-
-### Différentes configurations
-
-Depuis la rentrée 2021, Geotribu sponsorise le thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/) afin de pérenniser  le projet et tirer parti des fonctionnalités réservées aux financeurs. La clé de licence (en fait, un *token* GitHub lié au compte de Julien) devant rester secrète, nous gérons donc plusieurs fichiers de configuration afin de pouvoir s'adapter aux différents cas.
-
-| Fichier | Fonctionnalités payantes | Complet | Commentaire |
-| :------ | :-----: | :-----: | :---------- |
-| `mkdocs.yml`         | **X** | **X** | Configuration complète utilisée pour le site en production. Utilisé par défaut. |
-| `mkdocs-free.yml`    |       | **X** | Configuration sans les fonctionnalités payantes (tags, etc.) |
-| `mkdocs-minimal.yml` |       |       | Configuration minimaliste qui n'active qu'un minimum de plugins et d'extensions pour obtenir de meilleures performances lors de l'édition en local. |
-
-### Générer le site web
-
-Version complète :
-
-```bash
-mkdocs build
-```
-
-Version complète gratuite :
-
-```bash
-mkdocs build -f mkdocs-free.yml
-```
-
-Version minimale :
-
-```bash
-mkdocs build --config-file mkdocs-minimal.yml
-```
-
-Le site généré est dans le répertoire : `{{ config.site_dir }}`.
-
-### Avoir un rendu local mis à jour selon les modifications
-
-Pour voir les changements en local sans les pousser sur le dépôt central, il est possible de servir le site et qu'il se recharge automatiquement quand on modifie les fichiers :
-
-Version complète :
-
-```bash
-# regénération complète
-mkdocs serve
-# regénération rapide
-mkdocs serve --dirtyreload
-```
-
-Version complète gratuite :
-
-```bash
-# regénération complète
-mkdocs serve -f mkdocs-free.yml --dirtyreload
-# regénération rapide
-mkdocs serve --config-file mkdocs-free.yml --dirtyreload
-```
-
-Version minimale :
-
-```bash
-# regénération complète
-mkdocs serve --config-file mkdocs-minimal.yml
-# regénération rapide
-mkdocs serve --config-file mkdocs-minimal.yml --dirtyreload
-```
-
-Par défaut, le site est accessible sur <http://localhost:8000> mais il est possible de spécifier le port à utiliser : `mkdocs serve -a localhost:8085`.
-
-----
-
-## Docker
-
-![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.png "logo Docker"){: .img-rdp-news-thumb }
-
-Il est également possible d'utiliser Docker. L'avantage est que c'est alors la seule dépendance à installer (plus besoin de Python, NodeJS ou même de Git si vous téléchargez le dépôt). L'inconvénient est que c'est assez lourd pour un site qui se veut léger :wink: !
-
-```bash
-docker-compose -f "docker-compose-mkdocs.dev.yml" up --build
-```
-
-Le site est alors accessible sur : <http://0.0.0.0:8000>
