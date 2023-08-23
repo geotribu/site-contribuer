@@ -1,9 +1,7 @@
 # Project information
 site_name: Contribuer à Geotribu
 site_description: >-
-  Site indépendant de veille sur la géomatique libre et open source.
-  Articles, tutoriels et revues de presse (#GeoRDP) sur
-  l'information géographique, les SIG, la cartographie, la représentation des données...
+  Guides de contribution au site participatif Geotribu et outillage interne.
 
 site_author: Geotribu
 site_url: https://contribuer.geotribu.fr/
@@ -58,7 +56,29 @@ plugins:
   - meta
   - minify:
       minify_html: true
-
+  - macros:
+      include_dir: content/toc_nav_ignored/snippets
+  - privacy:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
+      links_attr_map:
+        target: _blank
+      assets_exclude:
+        # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
+        - cdn.jsdelivr.net/npm/mathjax@3/*
+        - giscus.app/*
+        # geotribu
+        - cdn.geotribu.fr/images/*
+        - cdn.geotribu.fr/img/*
+        - geotribu.net/*
+        # external
+        - cdn.jsdelivr.net/**/*/twemoji*
+        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
+        - github.com/**/*.gif
+        - i.imgur.com/*
+        - raw.githubusercontent.com/*
+        - twemoji.maxcdn.com/*
+        - upload.wikimedia.org/*
+        - user-images.githubusercontent.com/**/*.gif
   - rss:
       abstract_chars_count: 500
       categories:
@@ -81,49 +101,21 @@ plugins:
         utm_campaign: "feed-syndication"
   - search:
       lang: fr
-  - macros:
-      include_dir: content/toc_nav_ignored/snippets
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_file: tags.md
-      tags_compare: !!python/name:material.plugins.tags.plugin.casefold
-  - privacy:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
-      links_attr_map:
-        target: _blank
-      assets_exclude:
-        # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
-        - cdn.jsdelivr.net/npm/mathjax@3/*
-        - giscus.app/*
-        # geotribu
-        - cdn.geotribu.fr/images/*
-        - cdn.geotribu.fr/img/*
-        - geotribu.net/*
-        # external
-        - cdn.jsdelivr.net/**/*/twemoji*
-        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
-        - github.com/**/*.gif
-        - i.imgur.com/*
-        - raw.githubusercontent.com/*
-        - twemoji.maxcdn.com/*
-        - upload.wikimedia.org/*
-        - user-images.githubusercontent.com/**/*.gif
   - social:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, false]
       cards_layout_options:
         background_color: "#3e93a7"
         font_family: Ubuntu
+  - tags:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
+      tags_file: tags.md
+      tags_compare: !!python/name:material.plugins.tags.plugin.casefold # Theme
 
-# Theme
+
 theme:
   name: "material"
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
-
   features:
     - content.action.edit
     - content.code.annotate
@@ -139,7 +131,11 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-  font: false
+  font:
+    code: Ubuntu Mono
+    text: Ubuntu
+  icon:
+    repo: fontawesome/brands/github-alt
   language: fr
   logo: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
   palette:
@@ -174,7 +170,6 @@ extra:
     title: Consentement 🍪
     actions:
       - accept
-      - manage
       - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
