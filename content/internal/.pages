@@ -4,6 +4,7 @@ nav:
     - markdown_engine.md
     - markdown_linter.md
     - markdown_verification-liens-linkchecker.md
+    - generer_les_sites_web_geotribu.md
     - auto_newsletter.md
     - git_hooks_precommit.md
     - seo_extraits_enrichis.md
