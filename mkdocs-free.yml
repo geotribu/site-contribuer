@@ -1,9 +1,7 @@
 # Project information
 site_name: Contribuer à Geotribu
 site_description: >-
-  Site indépendant de veille sur la géomatique libre et open source.
-  Articles, tutoriels et revues de presse (#GeoRDP) sur
-  l'information géographique, les SIG, la cartographie, la représentation des données...
+  Guides de contribution au site participatif Geotribu et outillage interne.
 
 site_author: Geotribu
 site_url: https://contribuer.geotribu.fr/
@@ -50,6 +48,8 @@ plugins:
         - twemoji
       auto_caption: true
       caption_position: bottom
+  - macros:
+      include_dir: content/toc_nav_ignored/snippets
   - rss:
       abstract_chars_count: 500
       categories:
@@ -71,8 +71,6 @@ plugins:
         utm_campaign: "feed-syndication"
   - search:
       lang: fr
-  - macros:
-      include_dir: content/toc_nav_ignored/snippets
   - social:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, false]
       cards_layout_options:
@@ -93,6 +91,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - navigation.prune
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -131,7 +130,6 @@ extra:
     title: Consentement 🍪
     actions:
       - accept
-      - manage
       - reject
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer

@@ -53,11 +53,11 @@ plugins:
         - twemoji
       auto_caption: true
       caption_position: bottom
+  - macros:
+      include_dir: content/toc_nav_ignored/snippets
   - meta
   - minify:
       minify_html: true
-  - macros:
-      include_dir: content/toc_nav_ignored/snippets
   - privacy:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
       links_attr_map:
