@@ -114,7 +114,7 @@ On y intègre les métadonnées principales du site, ainsi que des informations 
 
 ### Article
 
-Exemple pour [cet article](/articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/) :
+Exemple pour [cet article]({{ config.extra.geotribu_main_site }}articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/) :
 
 ```jsonld linenums="1"
 {

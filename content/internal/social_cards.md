@@ -75,7 +75,7 @@ Voici le bloc en question :
 
 ## Exemple de rendu sur Twitter
 
-Par exemple, il suffit d'insérer le lien vers [cet article](/articles/2022/2022-08-02_API_Python_FME_travailler_avec_GDAL/) lors de la rédaction d'un tweet pour que Twitter ajoute automatiquement sa _card_ avec l'image, le titre et la description du contenu, ce qui évite de devoir les mettre manuellement et homogénéise les partages :
+Par exemple, il suffit d'insérer le lien vers [cet article]({{ config.extra.geotribu_main_site }}articles/2022/2022-08-02_API_Python_FME_travailler_avec_GDAL/) lors de la rédaction d'un tweet pour que Twitter ajoute automatiquement sa _card_ avec l'image, le titre et la description du contenu, ce qui évite de devoir les mettre manuellement et homogénéise les partages :
 
 ![Social card - Exemple de partage d'un contenu Geotribu sur Twitter](https://cdn.geotribu.fr/img/internal/contribution/social_cards/social_card_exemple_twitter_article.png "Social card - Exemple de partage d'un contenu Geotribu sur Twitter"){: .img-center loading=lazy }
 
