@@ -24,7 +24,7 @@ tags:
 
 Cette page a pour but de vous guider dans les principales étapes afin de pouvoir gérer le site et ses contenus depuis une machine locale. Il est probable que chacun/e doive ajuster selon son propre environnement de travail (chemins de fichiers, répertoires...).
 
-Après avoir rempli [les prérequis](/requirements/) généraux, pour travailler sur le site en local, il faut donc :
+Après avoir rempli [les prérequis](../requirements.md) généraux, pour travailler sur le site en local, il faut donc :
 
 - [Git](#git)
 - [Python](#python)
@@ -32,7 +32,10 @@ Après avoir rempli [les prérequis](/requirements/) généraux, pour travailler
 Il est également recommandé :
 
 - d'avoir une connexion autorisée vers le [CDN de Geotribu]
-- d'installer [Node.js (LTS)](https://nodejs.org) pour pouvoir utiliser markdownlint (voir [Rédiger en Markdown : enjeux de qualité et règles](/guides/markdown_quality/#verifier-la-syntaxe-avec-markdownlint-cli)).
+- utiliser, [markdownlint](../internal/markdown_linter.md), le vérificateur automatisé de syntaxe markdown, soit :
+    - en activant les vérifications au moment de committer, [les git hooks](../internal/git_hooks_precommit.md)
+    - en installant [Node.js (LTS)](https://nodejs.org) pour pouvoir utiliser markdownlint (voir [Rédiger en Markdown : enjeux de qualité et règles](../guides/markdown_quality.md) et ).
+    - en utilisant un IDE avec l'extension markdownlint, comme VS Code par exemple
 
 ----
 

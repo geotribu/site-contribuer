@@ -22,7 +22,7 @@ tags:
 
 ![logo LinkChecker](https://cdn.geotribu.fr/img/internal/contribution/markdown/linkchecker_logo.png){: .img-rdp-news-thumb loading=lazy }
 
-En Markdown, il est facile de faire des erreurs au moment d'insérer un hyperlien avec des questionnements HVE (Haute Valeur Existentielle) : s'il est [interne](/guides/markdown_quality/#liens-internes-relatifs), doit-il être relatif ou absolu ? Dois-je préciser le protocole ou bien cela est-il déterminé par le navigateur ? L'URL est entre les parenthèses ou les crochets ?  
+En Markdown, il est facile de faire des erreurs au moment d'insérer un hyperlien avec des questionnements HVE (Haute Valeur Existentielle) : s'il est [interne](../guides/markdown_quality.md#liens-internes-relatifs), doit-il être relatif ou absolu ? Dois-je préciser le protocole ou bien cela est-il déterminé par le navigateur ? L'URL est entre les parenthèses ou les crochets ?  
 En plus de faire un mauvais choix, on s'expose aussi aux fautes de frappe qui mènent à un lien cassé. Et là c'est 404 drames !
 
 C'est pourquoi une vérification des liens est exécutée régulièrement et automatiquement sur les contenus Geotribu, à l'aide de [linkchecker](https://linkchecker.github.io/linkchecker/), un utilitaire développé en Python et utilisable en ligne de commande (CLI).
@@ -47,7 +47,7 @@ Explication :
 
 ## Utilisation en local
 
-1. Disposer de l'environnement de travail en local : [voir cette page](/edit/local_edition_setup/)
+1. Disposer de l'environnement de travail en local : [voir cette page](../edit/local_edition_setup.md)
 1. Générer le site web de Geotribu
 1. Installer le package :
 

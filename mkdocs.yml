@@ -218,3 +218,8 @@ markdown_extensions:
   # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
   - toc:
       permalink: "#"
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn

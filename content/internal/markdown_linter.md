@@ -23,7 +23,7 @@ tags:
 
 Parmi ses nombreux atouts, la syntaxe [Markdown] doit probablement sa forte adoption à sa simplicité d'utilisation et à sa flexibilité. Sur un site, tel Geotribu, ouvert aux 4 vents de la contribution c'est à la fois une force et un élément à gérer car les erreurs de syntaxe, a priori inoffensives, peuvent mener à une page mal formée ou pire à casser le site... bon ok ce dernier scénario est peu probable mais un peu drama c'est toujours bien pour mettre la pression :smile:.
 
-Pour vérifier la syntaxe et le respect des [règles de rédaction définies](/guides/markdown_quality/#regles), on utilise donc un [linter](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Linter) dédié au Markdown : [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli).
+Pour vérifier la syntaxe et le respect des [règles de rédaction définies](../guides/markdown_quality.md#regles), on utilise donc un [linter](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Linter) dédié au Markdown : [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli).
 
 ![linter de code](https://cdn.geotribu.fr/img/internal/contribution/markdown/linter_code.webp "Un linter est littéralement un rouleau à poussière"){: .img-center loading=lazy }  
 
@@ -50,7 +50,7 @@ Il est aussi possible d'utiliser markdownlint sous forme d'[extension dans Visua
 
 ### Git hook
 
-Le linter est aussi configuré comme crochet git ([voir la page dédiée](/internal/git_hooks_precommit/)) via pre-commit. Cela présente plusieurs avantages :
+Le linter est aussi configuré comme crochet git ([voir la page dédiée](git_hooks_precommit.md)) via pre-commit. Cela présente plusieurs avantages :
 
 - pas besoin d'installer NodeJS, pre-commit s'occupe de tout dans un environnement dédié
 - ça repère les erreurs voire les corrige automatiquement lors du _commit_
@@ -69,7 +69,7 @@ pre-commit run markdownlint --all
 
 ![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
 
-Etant donné que la très grande majorité des contributeur/ices n'utilisent pas [l'édition locale](/edit/local_edition_setup/) ou n'installent pas les git hooks, la vérification syntaxique est automatiquement appliquée sur chaque _commit_ publié sur [GitHub] dans une Pull Request.
+Etant donné que la très grande majorité des contributeur/ices n'utilisent pas [l'édition locale](../edit/local_edition_setup.md) ou n'installent pas les git hooks, la vérification syntaxique est automatiquement appliquée sur chaque _commit_ publié sur [GitHub] dans une Pull Request.
 
 ----
 
