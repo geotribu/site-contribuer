@@ -18,7 +18,7 @@ tags:
 
 ![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-rdp-news-thumb }
 
-Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](/guides/metadata_yaml_frontmatter/).
+Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](../guides/metadata_yaml_frontmatter.md).
 
 Pourquoi ? car ces informations, des métadonnées en somme, sont utilisées pour enrichir la structuration des contenus et notamment générer les 'cartes sociales' (_social cards_) qui appraissent lors du partage d'un contenu sur d'autres media : réseaux sociaux, outils collaboratifs (Teams, Slack, Matrix...) et même emails.
 
@@ -28,7 +28,7 @@ Pourquoi ? car ces informations, des métadonnées en somme, sont utilisées pou
 
 Les _social cards_ désignent les visuels formatés qui apparaissent lors du partage des liens sur les réseaux sociaux principalement mais aussi dans des outils de tchat (Matrix, Slack, Teams...) ou plus généralement dans les outils capables de tirer parti des métadonnées des pages (Google Docs, clients mails...) et notamment du protocole Open Graph... ou de celui poussé par chaque plateforme ([Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards), etc.).
 
-C'est lié au web sémantique et similaire aux [extraits enrichis](/internal/seo_extraits_enrichis/) dans la mesure où ça utilise les mêmes informations mais structurées d'une autre manière (ici du simple HTML).
+C'est lié au web sémantique et similaire aux [extraits enrichis](seo_extraits_enrichis.md) dans la mesure où ça utilise les mêmes informations mais structurées d'une autre manière (ici du simple HTML).
 
 C'est assez important pour un site comme Geotribu, d'abord car ça rend le partage des contenus plus esthétique mais surtout plus rapide et donc moins fastidieux pour les bénévoles que nous sommes !
 
@@ -42,7 +42,7 @@ Le thème qu'on utilise, [Material for Mkdocs], propose de générer automatique
 
 Mais le nombre de contenus gérés dans Geotribu rend le mécanisme assez lourd (une image générée par fichier Markdown) et trop générique alors que la diversité et l'objet des contenus Geotribu (carte, dataviz...) se prête bien à des visuels personnalisés.
 
-Au moment de la [transformation des fichiers markdown en fichiers HTML](/internal/markdown_engine/), le site intègre donc les balises dédiées dans l'en-tête de la page HTML (`<head>`), à partir des informations présentes dans l'en-tête, notamment l'image d'illustration.
+Au moment de la [transformation des fichiers markdown en fichiers HTML](markdown_engine.md), le site intègre donc les balises dédiées dans l'en-tête de la page HTML (`<head>`), à partir des informations présentes dans l'en-tête, notamment l'image d'illustration.
 
 Les informations sont manipulées avec la syntaxe [Jinja](https://fr.wikipedia.org/wiki/Jinja_(moteur_de_template)), utilisée par [Mkdocs], dans le [template `main.html`](https://github.com/geotribu/website/blob/master/content/theme/main.html).
 

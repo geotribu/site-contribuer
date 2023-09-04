@@ -15,7 +15,7 @@ tags:
 
 # Utilisation de l'en-tête pour le web sémantique et les extraits enrichis
 
-Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](/guides/metadata_yaml_frontmatter/).
+Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](../guides/metadata_yaml_frontmatter.md).
 
 Pourquoi ? car c'est ainsi que le site génère des données structurées standardisées qui sont notamment utilisées pour les extraits enrichis des moteurs de recherche.
 
@@ -40,7 +40,7 @@ Il existe de nombreux schémas décrivant différents types d'objets : _Article_
 
 ![logo Jinja](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/jinja.png "logo Jinja"){: .img-rdp-news-thumb }
 
-Au moment de la [transformation des fichiers markdown en fichiers HTML](/internal/markdown_engine/), le site génère un objet au format [JSON-LD] (_JSON Linked Data_), intégré à la page HTML, à partir de plusieurs éléments :
+Au moment de la [transformation des fichiers markdown en fichiers HTML](./markdown_engine.md), le site génère un objet au format [JSON-LD] (_JSON Linked Data_), intégré à la page HTML, à partir de plusieurs éléments :
 
 - l'en-tête fournit l'essentiel des informations : date, auteur(s), mots-clés, description, image, etc.
 - l'URL : permet d'affiner le type de contenu, notamment pour distinguer un article d'une revue de presse.
@@ -64,7 +64,7 @@ Exemple du bloc permettant de gérer les contenus avec plusieurs auteurs :
           {
           "@type": "Person",
           "name": "{{ a }}",
-          "url": "{{ config.site_url }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
+          "url": "{{ config.extra.geotribu_main_site }}team/{{ author_split[0][:1] | lower }}{{ author_split[1][:3] | lower }}"
           {% if a != author|last %}
           {# Si l'auteur n'est pas le dernier de la liste, on ajoute une virgule #}
             },
@@ -96,7 +96,7 @@ On y intègre les métadonnées principales du site, ainsi que des informations 
   "@type": "WebSite",
   "name": "Geotribu",
   "alternateName": "Géotribu",
-  "url": "{{ config.site_url }}",
+  "url": "{{ config.extra.geotribu_main_site }}",
   "sameAs": [
     "http://geotribu.fr",
     "http://geotribu.net",
@@ -106,7 +106,7 @@ On y intègre les métadonnées principales du site, ainsi que des informations 
   ],
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "{{ config.site_url }}?q={search_term}",
+    "target": "{{ config.extra.geotribu_main_site }}?q={search_term}",
     "query-input": "required name=search_term"
   }
 }
@@ -154,7 +154,7 @@ Exemple pour [cet article]({{ config.extra.geotribu_main_site }}articles/2021/20
 
 ### Revue de presse
 
-Exemple pour [cette GeoRDP](/rdp/2022/rdp_2022-06-03/) :
+Exemple pour [cette GeoRDP]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-06-03/) :
 
 ```jsonld linenums="1"
 {
@@ -162,7 +162,7 @@ Exemple pour [cette GeoRDP](/rdp/2022/rdp_2022-06-03/) :
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ config.site_url }}rdp/2022/rdp_2022-06-03/"
+    "@id": "{{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-06-03/"
   },
   "headline": "{{ config.site_name }} - Revue de presse du 3 juin 2022",
   "abstract": "Cette semaine on vous propose une déambulation autour de divers sujets : traduction de logiciels libres, une carte de bruit, le programme Lidar HD, la donnée OSO, la détection de bâtiments et les logiciels libres en thèse",
@@ -171,7 +171,7 @@ Exemple pour [cette GeoRDP](/rdp/2022/rdp_2022-06-03/) :
   "author": {
     "@type": "Organization",
     "name": "Geotribu",
-    "url": "{{ config.site_url }}"
+    "url": "{{ config.extra.geotribu_main_site }}"
     },
   "publisher": {
     "@type": "Organization",

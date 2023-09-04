@@ -22,7 +22,7 @@ tags:
 
 ## Parcourir le CDN via l'interface web
 
-L'accès en lecture à [notre entrepôt d'images](/guides/cdn-images-hebergement/) accumulées depuis toutes ces années est ouvert :gift_heart: et c'est même un passage recommandé pour tout contributeur/rice :
+L'accès en lecture à [notre entrepôt d'images](./cdn-images-hebergement.md) accumulées depuis toutes ces années est ouvert :gift_heart: et c'est même un passage recommandé pour tout contributeur/rice :
 
 - adresse : <https://cdn.geotribu.fr>
 - identifiant : `invité`

@@ -96,7 +96,7 @@ Les _git hooks_ sont listés dans le fichier de configuration de pre-commit situ
 
 Voici une liste non exhaustive :
 
-- vérificateur de syntaxe Markdown ([voir la page dédiée](/internal/markdown_linter/))
+- vérificateur de syntaxe Markdown ([voir la page dédiée](markdown_linter.md))
 - correction automatique de l'encodage des fichiers, notamment les fins de ligne
 - vérifie qu'il n'y a pas de conflit sur le nom des fichiers, y compris en gérant la casse des différents systèmes de fichiers
 - empêche l'ajout de fichiers volumineux pour éviter que l'historique Git ne devienne obèse et ingérable
@@ -121,7 +121,7 @@ pre-commit install
 
 ![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
 
-Etant donné que la très grande majorité des contributeur/ices n'utilisent pas [l'édition locale](/edit/local_edition_setup/) ou n'installent pas les git hooks, ces derniers sont automatiquement exécutés dans l'intégration continue, via le service [pre-commit.ci](https://pre-commit.ci/) (du même auteur que l'outil).
+Etant donné que la très grande majorité des contributeur/ices n'utilisent pas [l'édition locale](../edit/local_edition_setup.md) ou n'installent pas les git hooks, ces derniers sont automatiquement exécutés dans l'intégration continue, via le service [pre-commit.ci](https://pre-commit.ci/) (du même auteur que l'outil).
 
 Ainsi, pour chaque _commit_ publié sur le dépôt du site, le service exécute les git crochets sur l'ensemble du contenu du site et non pas seulement sur ce qui a été modifié dans le commit ou dans la Pull Request (ce qui équivaut à un `pre-commit run --all`).  
 Dans l'interface de GitHub, cela se manifeste par un _check_ sur le _commit_, visible en bas d'une Pull Request :

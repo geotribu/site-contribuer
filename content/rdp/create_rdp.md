@@ -193,7 +193,7 @@ Les revues de presse sont structurées de la même façon d'une édition à l'au
 
 Ensuite, il faut mettre à jour certains éléments :
 
-- dans [l'en-tête du fichier](/guides/metadata_yaml_frontmatter/), mettre à jour les valeurs de `title:`, `date:` et `description:` (notamment la date)
+- dans [l'en-tête du fichier](../guides/metadata_yaml_frontmatter.md), mettre à jour les valeurs de `title:`, `date:` et `description:` (notamment la date)
 - changer la date dans le titre de niveau 1
 
 Les lignes concernées sont surlignées ci-dessous (attention, cela peut varier selon le modèle utilisé) :

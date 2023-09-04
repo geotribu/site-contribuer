@@ -91,9 +91,9 @@ Si [Python-Markdown] est quasiment compatible avec l'implémentation [Markdown] 
 
 Certaines extensions de la [syntaxe] sont intégrées au site ou peuvent l'être sur demande et après examen technique. Elles permettent d'ajouter des fonctionnalités et d'enrichir les possibilités rédactionnelles, dont certaines sont décrites dans des guides dédiés :
 
-- ajouter des [attributs de style à des images](/guides/image/#style-personnalise)
-- ajouter [un effet "_lightbox_" (mise en avant et galerie) à des images](/guides/image/#lightbox)
-- intégrer [des diagrammes UML](/guides/diagrams/)
+- ajouter des [attributs de style à des images](../guides/image.md#style-personnalise)
+- ajouter [un effet "_lightbox_" (mise en avant et galerie) à des images](../guides/image.md#lightbox)
+- intégrer [des diagrammes UML](../guides/diagrams.md)
 
 Trouver des extensions :
 
@@ -101,7 +101,7 @@ Trouver des extensions :
 - [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/).
 
 !!! info
-    Consulter la liste des extensions activées dans [le fichier de configuration](https://github.com/geotribu/website/blob/master/mkdocs.yml#L111).
+    Consulter la liste des extensions activées dans [le fichier de configuration](https://github.com/geotribu/website/blob/master/mkdocs.yml).
 
 <!-- Hyperlinks references -->
 [MkDocs]: https://www.mkdocs.org/

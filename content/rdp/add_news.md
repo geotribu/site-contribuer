@@ -38,9 +38,9 @@ Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 Pour les plus aguerri/es d'entre nous, il est évidemment possible de contribuer à une revue de presse en travaillant localement. C'est d'ailleurs beaucoup plus confortable !
 
-On considère ici que la revue de presse existe déjà (sinon [voir ici pour la créer](/rdp/create_rdp/)) et que l'on dispose d'un environnement local correctement configuré et **à jour**, en particulier en ce qui concerne les dépendances Python et du dépôt Git :
+On considère ici que la revue de presse existe déjà (sinon [voir ici pour la créer](./create_rdp.md)) et que l'on dispose d'un environnement local correctement configuré et **à jour**, en particulier en ce qui concerne les dépendances Python et du dépôt Git :
 
-[Configurer son environnement local pour contribuer à Geotribu :octicons-desktop-download-16:](/edit/local_edition_setup/){: .md-button .md-button--primary }
+[Configurer son environnement local pour contribuer à Geotribu :octicons-desktop-download-16:](../edit/local_edition_setup.md){: .md-button .md-button--primary }
 {: align=middle }
 
 ### 1. Trouver la branche de la revue de presse active
@@ -76,12 +76,12 @@ Switched to a new branch 'rdp/2023-01-06'
 
 ### 3. Ajouter sa news
 
-Le bon moment de se rappeler [la structure d'une news](/rdp/structure_news/) et de consulter les guides de rédaction pour écrire du bon Markdown :
+Le bon moment de se rappeler [la structure d'une news](./structure_news.md) et de consulter les guides de rédaction pour écrire du bon Markdown :
 
-- les [bases de la syntaxe Markdown](/guides/markdown_basics/)
-- les [règles de rédaction de Geotribu](/guides/markdown_quality/)
-- [comprendre l'en-tête des fichiers Markdown](/guides/metadata_yaml_frontmatter/)
-- comment [intégrer une image](/guides/image/) sur Geotribu
+- les [bases de la syntaxe Markdown](../guides/markdown_basics.md)
+- les [règles de rédaction de Geotribu](../guides/markdown_quality.md)
+- [comprendre l'en-tête des fichiers Markdown](../guides/metadata_yaml_frontmatter.md)
+- comment [intégrer une image](../guides/image.md) sur Geotribu
 
 Il y en a d'autres (intégration Twitter, vidéo, etc.) : ne pas hésiter à les lire et relire !
 

@@ -40,7 +40,7 @@ Pour avoir une idéé concrète de ce à quoi ressemble une news en Markdown, co
 - [x] Ne pas utiliser de balises HTML brutes dans le texte, exception faite des `iframe` et des intégrations tierces (tweets...)
 - [x] Ne pas abuser des mises en évidence (**gras**, *italique*...) afin de garder l'équite de lisibilité entre les contenus
 
-[Consulter les règles de rédaction de Geotribu :material-ruler-square:](/guides/markdown_quality/){: .md-button .md-button--primary }
+[Consulter les règles de rédaction de Geotribu :material-ruler-square:](../guides/markdown_quality.md){: .md-button .md-button--primary }
 {: align=middle }
 
 ----
@@ -55,17 +55,17 @@ Il n'est parfois pas évident de savoir où placer son actualité. Dans ce cas, 
 
 | Catégorie                     | Description | Exemples |
 | :---------------------------- | :---------- | :------- |
-| Vie du site                   | Précédée du logo rectangulaire du site, il s'agit généralement d'une simple liste à puces dans laquelle on retrouve les derniers contenus publiés ou les récentes évolutions de Geotribu. On a pris l'habitude de préfixer chaque élément par un [emoji](/guides/emoji/). |  |
+| Vie du site                   | Précédée du logo rectangulaire du site, il s'agit généralement d'une simple liste à puces dans laquelle on retrouve les derniers contenus publiés ou les récentes évolutions de Geotribu. On a pris l'habitude de préfixer chaque élément par un [emoji](../guides/emoji.md). |  |
 | Sorties de la semaine         | Pour relayer les nouveautés dans les outils de la géomatique. Attention, il ne s'agit pas de paraphraser les notes de version ou les communiqués de presse, mais d'apporter une valeur ajoutée personnelle. | |
 | Client                        | **section dépréciée, éviter d'utiliser** | |
 | Serveur                       | **section dépréciée, éviter d'utiliser** | |
 | Logiciel                      | Découverte, cas d'usage d'un logiciel pas forcément nouveau mais intéressant.  | |
-| Représentation cartographique | Dataviz, cartographies, art... | "30DayMapChallenge", "[Francepixel (Bâti)](/rdp/2021/rdp_2021-06-18/#francepixel-bati)" |
+| Représentation cartographique | Dataviz, cartographies, art... | "30DayMapChallenge", "[Francepixel (Bâti)]({{ config.extra.geotribu_main_site }}rdp/2021/rdp_2021-06-18/#francepixel-bati)" |
 | OpenStreetMap                 | Toute news liée au plus grand projet de cartographie collaborative mondiale. | |
 | Google                        | Idem mais pour la plus grande agence de publicité numérique mondiale. :wink: | |
-| Open Data                     | Tout ce qui a trait aux données ouvertes. | "[Ouverture officielle des données de l'IGN](/rdp/2020/rdp_2020-12-11/#open-data)", "Le libre accès aux données implique t'il leur gratuité ?" |
-| Geo-event                     | Evénements et conférences. | SAGEO, GéoDataDays, CartoMob, "[Rencontres des utilisateurs francophones de QGIS](/rdp/2020/rdp_2020-12-11/#rencontres-des-utilisateurs-francophones-de-qgis)"... |
-| Divers                        | Tout ce qui ne rentre pas dans les autres sections. | "[Des globes made in France](/rdp/2020/rdp_2020-12-11/#des-globes-made-in-france)", "[Les villes sont-elles un corps ?](/rdp/2021/rdp_2021-03-26/#les-villes-ont-elles-un-corps)"   |
+| Open Data                     | Tout ce qui a trait aux données ouvertes. | "[Ouverture officielle des données de l'IGN]({{ config.extra.geotribu_main_site }}rdp/2020/rdp_2020-12-11/#open-data)", "Le libre accès aux données implique t'il leur gratuité ?" |
+| Geo-event                     | Evénements et conférences. | SAGEO, GéoDataDays, CartoMob, "[Rencontres des utilisateurs francophones de QGIS]({{ config.extra.geotribu_main_site }}rdp/2020/rdp_2020-12-11/#rencontres-des-utilisateurs-francophones-de-qgis)"... |
+| Divers                        | Tout ce qui ne rentre pas dans les autres sections. | "[Des globes made in France]({{ config.extra.geotribu_main_site }}rdp/2020/rdp_2020-12-11/#des-globes-made-in-france)", "[Les villes sont-elles un corps ?]({{ config.extra.geotribu_main_site }}rdp/2021/rdp_2021-03-26/#les-villes-ont-elles-un-corps)"   |
 | En bref                       | Liste à puces d'informations mineures ou récurrentes.  | Lettre d'informations de la communauté OSM ; version mineure d'un logiciel qui ne nécessite pas un commentaire. |
 
 ----
@@ -78,8 +78,8 @@ Afin de respecter la cohérence globale des revues de presse, chaque news démar
 Si aucune image n'est spécifiée, c'est l'icône générique historique qui est appliquée (celle-la même qui illustre cette section).
 
 !!! tip "Voir aussi"
-    - la [syntaxe pour appliquer le style vignette à une image](/guides/image/#vignette)
-    - [héberger une image ou parcourir les images existantes sur le pseudo-CDN](/guides/cdn-images-hebergement/)
+    - la [syntaxe pour appliquer le style vignette à une image](../guides/image.md#vignette)
+    - [héberger une image ou parcourir les images existantes sur le pseudo-CDN](../guides/cdn-images-hebergement.md)
 
 ### Tableau des icônes génériques { data-search-exclude }
 
@@ -119,4 +119,4 @@ Afin de faciliter la saisie, voici le tableau des icônes génériques avec la s
 
 ## Crédits
 
-Les icônes génériques ont été créées pour Geotribu par [Mathieu Rajerison](/team/mraj/).
+Les icônes génériques ont été créées pour Geotribu par [Mathieu Rajerison]({{ config.extra.geotribu_main_site }}team/mraj/).
