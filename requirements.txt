@@ -27,4 +27,4 @@ Pillow>=9.4,<10.1
 
 
 
-lxml-4.9.3 # TEMPORAIRE, voir https://github.com/ojacques/mkdocs-git-committers-plugin-2/issues/32
+lxml>=4.9.3 # TEMPORAIRE, voir https://github.com/ojacques/mkdocs-git-committers-plugin-2/issues/32
