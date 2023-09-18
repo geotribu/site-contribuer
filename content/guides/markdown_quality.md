@@ -170,23 +170,39 @@ Cela permet :
 - de garder les contenus indépendants de l'URL de publication du site qui a tour à tour été <http://geotribu.net>, <https://geotribu.net> et <https://geotribu.fr> et qui pourrait encore être amenée à changer.
 - d'éviter les liens cassés en cas de renommage/déplacement d'un contenu
 
-> Cette règle est spécifique à Geotribu et est contrôlée via un [script exécuté à chaque publication du site](https://github.com/geotribu/website/blob/master/hooks/mkdocs/check_hyperlinks.py)
+Cette règle est liée à Mkdocs qui intègre, depuis sa version 1.5, un [mécanisme de validation](https://www.mkdocs.org/user-guide/configuration/#validation) au moment de la génération dont la configuration sur le site Geotribu est [ici](https://github.com/geotribu/website/blob/master/config/validation.yml). Ce changement a été opéré sur le site en [septembre 2023](https://github.com/geotribu/website/pull/966).
+
+De cette façon, on profite de plusieurs avantages :
+
+- on utilise la syntaxe de Mkdocs et on profite de la validation intégrée
+- on peut naviguer entre les contenus depuis un IDE ou GitHub
+- on profite des fonctionnalités d'autocomplétion des IDE comme VS Code :
+
+<video width="100%" controls>
+    <!-- markdownlint-disable MD033 -->
+    <source src="https://cdn.geotribu.fr/img/internal/contribution/liens/edition_hyperliens_vscode_autocompletion.webm" type="video/webm"
+    title="hnlkjhlkj"
+    >
+    Votre navigateur ne supporte pas la balise video HTML 5.
+    Utiliser le <a href="https://cdn.geotribu.fr/img/internal/contribution/liens/edition_hyperliens_vscode_autocompletion.webm">lien direct</a> à la place.
+    <!-- markdownlint-enable MD033 -->
+</video>
 
 <!-- markdownlint-disable MD034 MD038 -->
 === "Markdown"
     ```markdown
     - :name_badge: pas bien : <{{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope>
     - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope)
-    - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site](/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
+    - :negative_squared_cross_mark: ancienne méthode désormais invalide : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site](/rdp/2022/rdp_2022-12-16/#le-mobiliscope)
     - :white_check_mark: :white_check_mark: très bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle](../../rdp/2022/rdp_2022-12-16.md#le-mobiliscope)
     ```
 
 === "Rendu"
     - :name_badge: pas bien : <{{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope>
     - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope)
-    - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope)
-    - :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16.md#le-mobiliscope)
-<!-- markdownlint-enableMD034 -->
+    - :negative_squared_cross_mark: ancienne méthode désormais invalide : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope)
+    - :white_check_mark: :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16.md#le-mobiliscope)
+<!-- markdownlint-enable MD034 -->
 
 ----
 
