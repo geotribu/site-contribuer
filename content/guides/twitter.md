@@ -125,4 +125,4 @@ Pour plus d'infos, [consulter la Pull Request](https://github.com/geotribu/websi
 
 Voici quelques exemples de syntaxe markdown qui ont été publiés sur Geotribu :
 
-- [intégration du tweet de Sylvain Latarget annonçant l'ouverture des données de l'IGN](https://github.com/geotribu/website/blob/master/content/rdp/2020/rdp_2020-12-11.md?plain=1#L197)
+- [intégration du tweet de Sylvain Latarget annonçant l'ouverture des données de l'IGN](https://github.com/geotribu/website/blob/b9fe4321f233dc60a86d0ecfa45b1f33d21971c6/content/rdp/2020/rdp_2020-12-11.md?plain=1#L211)

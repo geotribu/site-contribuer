@@ -7,6 +7,7 @@ nav:
     - image.md
     - cdn-images-hebergement.md
     - cdn-images-recherche.md
+    - mastodon.md
     - twitter.md
     - video.md
     - audio.md
