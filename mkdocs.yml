@@ -28,15 +28,15 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, false]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, true]
       show_contribution: true
   - git-committers:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS, false]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS, true]
       repository: geotribu/site-contribuer
       branch: main
       docs_path: content/
   - git-revision-date-localized:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, false]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, true]
       enable_creation_date: true
       fallback_to_build_date: true
       locale: fr
@@ -59,7 +59,7 @@ plugins:
   - minify:
       minify_html: true
   - privacy:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, false]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       links_attr_map:
         target: _blank
       assets_exclude:
@@ -102,7 +102,7 @@ plugins:
   - search:
       lang: fr
   - social:
-      cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, false]
+      cards: !ENV [MKDOCS_ENABLE_PLUGIN_CARDS, true]
       cards_layout_options:
         background_color: "#3e93a7"
         font_family: Ubuntu
@@ -177,6 +177,11 @@ extra:
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"
+
+extra_javascript:
+  - path: https://mapstodon.space/embed.js
+    defer: true
+    async: true
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:
