@@ -182,6 +182,9 @@ extra_javascript:
   - path: https://mapstodon.space/embed.js
     defer: true
     async: true
+  - path: https://platform.twitter.com/widgets.js
+    defer: true
+    async: true
 
 # Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
 markdown_extensions:

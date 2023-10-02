@@ -89,14 +89,26 @@ Coller le HTML dans le markdown et il s'affichera ainsi :
 
 Bizarrement, l'option n'est pas proposée dans le formulaire de Twitter alors qu'il existe bien une classe CSS. Il faut donc ajouter manuellement `tw-align-center` aux côtés de `twitter-tweet` :
 
-```css hl_lines="1" linenums="1"
-<blockquote class="twitter-tweet tw-align-center" data-lang="fr" data-dnt="true">
-<p lang="fr" dir="ltr">Tjs une excellente base pour découvrir et expérimenter. Ce projet est juste fabuleux alors
-    j&#39;imagine même pas les gens derrière ! <a href="https://t.co/27GwU4l54J">https://t.co/27GwU4l54J</a></p>
-&mdash; Julien Moura (@geojulien) <a
-    href="https://twitter.com/geojulien/status/1169878346693369856?ref_src=twsrc%5Etfw">6 septembre 2019</a>
-</blockquote>
-```
+<!-- markdownlint-disable MD046 -->
+=== "Markdown"
+
+    ```markdown hl_lines="1" linenums="1"
+    <blockquote class="twitter-tweet tw-align-center" data-lang="fr" data-dnt="true">
+    <p lang="fr" dir="ltr">Tjs une excellente base pour découvrir et expérimenter. Ce projet est juste fabuleux alors
+        j&#39;imagine même pas les gens derrière ! <a href="https://t.co/27GwU4l54J">https://t.co/27GwU4l54J</a></p>
+    &mdash; Julien Moura (@geojulien) <a
+        href="https://twitter.com/geojulien/status/1169878346693369856?ref_src=twsrc%5Etfw">6 septembre 2019</a>
+    </blockquote>
+    ```
+
+=== "Rendu"
+
+    <blockquote class="twitter-tweet tw-align-center" data-lang="fr" data-dnt="true">
+    <p lang="fr" dir="ltr">Tjs une excellente base pour découvrir et expérimenter. Ce projet est juste fabuleux alors
+        j&#39;imagine même pas les gens derrière ! <a href="https://t.co/27GwU4l54J">https://t.co/27GwU4l54J</a></p>
+    &mdash; Julien Moura (@geojulien) <a
+        href="https://twitter.com/geojulien/status/1169878346693369856?ref_src=twsrc%5Etfw">6 septembre 2019</a>
+    </blockquote>
 
 ### Pistage, blocage et fallback
 
