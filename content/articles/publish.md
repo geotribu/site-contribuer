@@ -17,7 +17,7 @@ tags:
 
 # Publication et diffusion d'un article
 
-![icône porte-voix](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône porte-voix"){: .img-rdp-news-thumb }
+![icône porte-voix](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône porte-voix"){: .img-thumbnail-left }
 
 Une fois la Pull Request[^pr] validée par un/e membre de l'équipe, la branche de l'article est fusionnée (*merged*) dans la branche principale à la date de publication décidée pendant la phase de relecture.  
 Cela déclenche la génération et le déploiement du site web avec le nouveau contenu.

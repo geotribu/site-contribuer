@@ -18,7 +18,7 @@ tags:
 
 # Choisir une licence pour son article
 
-![icône poignée de main](https://cdn.geotribu.fr/img/internal/icons-rdp-news/lobby.png "icône poignée de main"){: .img-rdp-news-thumb }
+![icône poignée de main](https://cdn.geotribu.fr/img/internal/icons-rdp-news/lobby.png "icône poignée de main"){: .img-thumbnail-left }
 
 En publiant un contenu sur un site public tel que Geotribu, il faut être conscient qu'il va potentiellement être copié, collé, modifié, entièrement ou partiellement, etc. La plupart du temps sans que l'auteur/e n'en soit notifié/e.  
 Même si cela n'empêchera pas les usages abusifs, il est recommandé de spécifier la licence du contenu, notamment pour dissiper le flou qui peut entourer la réutilisation du contenu.

@@ -17,7 +17,7 @@ tags:
 
 # Créer une data-visualisation des contributions à Geotribu avec Gource
 
-![logo Gource](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gource.webp){: .img-rdp-news-thumb }
+![logo Gource](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/gource.webp){: .img-thumbnail-left }
 
 Le(s) site(s) Geotribu étant basés sur Git, on profite ainsi de l'outillage de l'écosystème ; GitHub bien sûr mais aussi d'autres outils moins connus.
 
@@ -139,7 +139,7 @@ title=Contributions au contenu de Geotribu
 
 ## Show time !
 
-![icône globe video](https://cdn.geotribu.fr/img/internal/icons-rdp-news/animation_video.png "icône globe video"){: .img-rdp-news-thumb }
+![icône globe video](https://cdn.geotribu.fr/img/internal/icons-rdp-news/animation_video.png "icône globe video"){: .img-thumbnail-left }
 
 Allez, on a tout ce qu'il faut, c'est parti pour produire la vidéo ! Concrètement, on lance la commande qui va lancer l'animation en plein écran, filmer l'écran et encoder/compresser le tout dans un fichier mp4.
 

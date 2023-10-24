@@ -60,21 +60,21 @@ L'idée étant que l'attribut corresponde à un style CSS défini dans le fichie
 
 ### Vignette
 
-C'est le style appliqué pour les icônes des news des revues de presse : `{: .img-rdp-news-thumb }`.
+C'est le style appliqué pour les icônes des news des revues de presse : `{: .img-thumbnail-left }`.
 
 === "Markdown"
 
     ```markdown
-    ![Geotribu logo](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_254x254.png "Logo de Geotribu"){: .img-rdp-news-thumb }
+    ![Geotribu logo](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_254x254.png "Logo de Geotribu"){: .img-thumbnail-left }
 
-    La balise `{: .img-rdp-news-thumb }` permet d'appliquer automatiquement le style vignette à l'image : pas de bordure, taille limitée à 75px, alignement à gauche et texte autour.
+    La balise `{: .img-thumbnail-left }` permet d'appliquer automatiquement le style vignette à l'image : pas de bordure, taille limitée à 75px, alignement à gauche et texte autour.
     ```
 
 === "Rendu"
 
-    ![Geotribu logo](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_254x254.png "Logo de Geotribu"){: .img-rdp-news-thumb }
+    ![Geotribu logo](https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_254x254.png "Logo de Geotribu"){: .img-thumbnail-left }
 
-    La balise `{: .img-rdp-news-thumb }` permet d'appliquer automatiquement le style vignette à l'image : pas de bordure, taille limitée à 75px, alignement à gauche et texte autour.
+    La balise `{: .img-thumbnail-left }` permet d'appliquer automatiquement le style vignette à l'image : pas de bordure, taille limitée à 75px, alignement à gauche et texte autour.
 
 ### Centrer
 
@@ -118,7 +118,7 @@ Grâce au plugin [Mkdocs GLightbox](https://blueswen.github.io/mkdocs-glightbox/
 
 Par défaut, toutes les images sont concernées sauf :
 
-- les vignettes, donc les images avec la balise `{: .img-rdp-news-thumb }`
+- les vignettes, donc les images avec la balise `{: .img-thumbnail-left }`
 - les emojis
 
 Il est possible de désactiver le mode galerie sur une image en particulier en lui attribuant la balise `{: .off-glb }`.  

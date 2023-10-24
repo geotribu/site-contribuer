@@ -16,7 +16,7 @@ tags:
 
 # Optimisation pour le partage des contenus (_social cards_)
 
-![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-rdp-news-thumb }
+![icône globe social](https://cdn.geotribu.fr/img/internal/icons-rdp-news/social.png "icône globe social"){: .img-thumbnail-left }
 
 Lors de la rédaction d'un contenu sur Geotribu, que ce soit une revue de presse, un article, un guide de contribution ou autre, on insiste beaucoup sur l'en-tête du fichier, comme [l'illustre ce guide](../guides/metadata_yaml_frontmatter.md).
 
@@ -24,7 +24,7 @@ Pourquoi ? car ces informations, des métadonnées en somme, sont utilisées pou
 
 ## Les cartes sociales (_social cards_)
 
-![logo Open Graph Protocol](https://cdn.geotribu.fr/img/logos-icones/divers/open_graph_protocol.png "logo Open Graph Protocol"){: .img-rdp-news-thumb }
+![logo Open Graph Protocol](https://cdn.geotribu.fr/img/logos-icones/divers/open_graph_protocol.png "logo Open Graph Protocol"){: .img-thumbnail-left }
 
 Les _social cards_ désignent les visuels formatés qui apparaissent lors du partage des liens sur les réseaux sociaux principalement mais aussi dans des outils de tchat (Matrix, Slack, Teams...) ou plus généralement dans les outils capables de tirer parti des métadonnées des pages (Google Docs, clients mails...) et notamment du protocole Open Graph... ou de celui poussé par chaque plateforme ([Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards), etc.).
 
@@ -36,7 +36,7 @@ C'est assez important pour un site comme Geotribu, d'abord car ça rend le parta
 
 ## Processus
 
-![logo Jinja](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/jinja.png "logo Jinja"){: .img-rdp-news-thumb }
+![logo Jinja](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/jinja.png "logo Jinja"){: .img-thumbnail-left }
 
 Le thème qu'on utilise, [Material for Mkdocs], propose de générer automatiquement des cartes sociales génériques (voir [la documentation](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/)) en croisant les éléments graphiques du site (nom, police, couleur dominante) et ceux de chaque page (titre).
 

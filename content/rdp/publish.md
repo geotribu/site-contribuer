@@ -17,7 +17,7 @@ tags:
 
 # Publication et diffusion d'une revue de presse
 
-![icône porte-voix](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône porte-voix"){: .img-rdp-news-thumb }
+![icône porte-voix](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône porte-voix"){: .img-thumbnail-left }
 
 Une fois la Pull Request[^pr] validée par un membre de l'équipe, la branche de la revue de presse est fusionnée (*merged*) dans la branche principale, déclenchant la génération et le déploiement du site web.
 

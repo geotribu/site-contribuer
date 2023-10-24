@@ -19,7 +19,7 @@ tags:
 
 # Vérification automatisée de la syntaxe Markdown (linter)
 
-![Gant blanc pour contrôler la poussière](https://cdn.geotribu.fr/img/internal/contribution/markdown/gant_blanc_poussiere.webp "Gant blanc pour contrôler la poussière"){: .img-rdp-news-thumb }
+![Gant blanc pour contrôler la poussière](https://cdn.geotribu.fr/img/internal/contribution/markdown/gant_blanc_poussiere.webp "Gant blanc pour contrôler la poussière"){: .img-thumbnail-left }
 
 Parmi ses nombreux atouts, la syntaxe [Markdown] doit probablement sa forte adoption à sa simplicité d'utilisation et à sa flexibilité. Sur un site, tel Geotribu, ouvert aux 4 vents de la contribution c'est à la fois une force et un élément à gérer car les erreurs de syntaxe, a priori inoffensives, peuvent mener à une page mal formée ou pire à casser le site... bon ok ce dernier scénario est peu probable mais un peu drama c'est toujours bien pour mettre la pression :smile:.
 
@@ -67,7 +67,7 @@ pre-commit run markdownlint --all
 
 ### Exécution automatisée sur la CI
 
-![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
+![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-thumbnail-left }
 
 Etant donné que la très grande majorité des contributeur/ices n'utilisent pas [l'édition locale](../edit/local_edition_setup.md) ou n'installent pas les git hooks, la vérification syntaxique est automatiquement appliquée sur chaque _commit_ publié sur [GitHub] dans une Pull Request.
 

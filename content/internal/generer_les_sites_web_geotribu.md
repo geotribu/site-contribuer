@@ -15,7 +15,7 @@ tags:
 
 # Générer le(s) site(s) web avec Mkdocs
 
-![icône générateur de site web statique](https://cdn.geotribu.fr/img/logos-icones/divers/web_static_generator.webp "icône générateur de site web statique"){: .img-rdp-news-thumb }
+![icône générateur de site web statique](https://cdn.geotribu.fr/img/logos-icones/divers/web_static_generator.webp "icône générateur de site web statique"){: .img-thumbnail-left }
 
 Cette page décrit comment générer le site web principal de Geotribu (<{{ config.extra.geotribu_main_site }}>) à partir des sources. A noter que les sites secondaires (comme celui-ci) suivent en général peu ou prou la même logique.
 
@@ -128,7 +128,7 @@ Par défaut, le site est accessible sur <http://localhost:8000> mais il est poss
 
 ## Avec Docker
 
-![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.png){: .img-rdp-news-thumb }
+![logo Docker](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/docker.png){: .img-thumbnail-left }
 
 Il est également possible d'utiliser Docker. L'avantage est que c'est alors la seule dépendance à installer (plus besoin de Python, NodeJS ou même de Git si vous téléchargez le dépôt). L'inconvénient est que c'est assez lourd pour un site qui se veut léger :wink: !
 

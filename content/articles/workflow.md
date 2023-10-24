@@ -17,7 +17,7 @@ tags:
 
 # Proposer un article
 
-![icône article](https://cdn.geotribu.fr/img/logos-icones/divers/article.webp "icône article"){: .img-rdp-news-thumb }
+![icône article](https://cdn.geotribu.fr/img/logos-icones/divers/article.webp "icône article"){: .img-thumbnail-left }
 
 La rédaction d'articles est ouverte à toute personne souhaitant partager une expérience, l'histoire de la conception d'une carte, une méthodologie, un outil, un tutoriel, un billet d'humeur ou autre tant qu'il ne s'agit pas d'une publicité ou d'un communiqué ou contenu assimilable.
 
@@ -27,7 +27,7 @@ Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 ## Rédiger
 
-![icône globe tricot](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe tricot"){: .img-rdp-news-thumb }
+![icône globe tricot](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe tricot"){: .img-thumbnail-left }
 
 Allez, cette fois, c'est parti ! L'angoisse de la feuille blanche n'a qu'à bien se tenir, vous êtes prêt/e à coucher votre prose !
 
@@ -68,7 +68,7 @@ Problème ? Souci ? Angoisse ? Simple question ?
 
 ## Soumettre
 
-![logo GitHub](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/github_octocat.png "logo GitHub"){: .img-rdp-news-thumb }
+![logo GitHub](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/github_octocat.png "logo GitHub"){: .img-thumbnail-left }
 
 Une fois le contenu prêt, il ne reste plus qu'à pousser le contenu sur le [dépôt GitHub]. La procédure est différente selon si vous des droits en écriture ou non sur le [dépôt GitHub]. Ces droits sont généralement réservés aux contributeur/ices régulier/ères et aux membres de l'équipe.
 

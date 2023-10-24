@@ -20,7 +20,7 @@ tags:
 
 # Création d'une revue de presse
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
 Concrètement, une revue de presse est un fichier markdown, nommé d'une certaine façon, stocké dans le dossier `content/rdp/` et organisé en sections dans lesquelles les contributeur/ices viennent ensuite insérer leurs "news". L processus de contribution est bâti autour de la logique de Git.
 
@@ -37,7 +37,7 @@ Il est possible de créer en utilisant Git en ligne de commande ou via l'interfa
 
 ## Automatiquement via GitHub Workflow
 
-![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
+![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-thumbnail-left }
 
 L'outillage et la logique de publication de Geotribu sont largement basés sur Git et la plateforme GitHub. Nous utilisons notamment les principes de l'intégration et du déploiement continus ([CI/CD pour les intimes](https://fr.wikipedia.org/wiki/CI/CD)).
 
@@ -111,7 +111,7 @@ Cette partie explique chaque étape du processus de création d'une revue de pre
 
 ### 1. Créer la branche de la revue de presse
 
-![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
+![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-thumbnail-left }
 
 La première étape consiste à créer une branche [Git] pour la revue de presse. Elle n'est réalisable que par une personne disposant d'un compte GitHub ayant les droits en écriture sur le dépôt du site : [{{ config.repo_name }}]({{ config.repo_url }}).
 
@@ -173,7 +173,7 @@ Si vous disposez du dépôt localement et que vous préférez utiliser la ligne 
 
 ### 2. Créer le fichier de la revue de presse
 
-![icône globe tricot](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe tricot"){: .img-rdp-news-thumb }
+![icône globe tricot](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe tricot"){: .img-thumbnail-left }
 
 Afin d'accueillir les news, il s'agit de créer un fichier en respectant l'organisation et le nommage des fichiers : `content/rdp/YYYY/rdp_YYYY-MM-DD.md` où :
 
@@ -219,7 +219,7 @@ tags:
 
 ## Intro
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
 [Commenter cette revue de presse :fontawesome-solid-comments:](#__comments){: .md-button }
 {: align=middle }

@@ -18,7 +18,7 @@ tags:
 
 # Git Hooks : garde-fous de l'hétérogénéité de Geotribu
 
-![icône Git Hook](https://cdn.geotribu.fr/img/internal/contribution/git_hooks/git_hooks.webp "icône Git Hook"){: .img-rdp-news-thumb }
+![icône Git Hook](https://cdn.geotribu.fr/img/internal/contribution/git_hooks/git_hooks.webp "icône Git Hook"){: .img-thumbnail-left }
 
 Afin de garantir un minimum de qualité et surtout de cohérence entre les différentes contributions (appelées _commits_ dans un contexte Git), une série de _git hooks_ est configurée sur le dépôt du site Geotribu.
 
@@ -43,7 +43,7 @@ Ressources externes sur le sujet :
 
 ## Fonctionnement
 
-![icône globe matiere](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe matiere"){: .img-rdp-news-thumb }
+![icône globe matiere](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe matiere"){: .img-thumbnail-left }
 
 Sur Geotribu, les crochets sont configurés pour intervenir au moment du _commit_, c'est-à-dire entre le moment ou la commande `git commit` est lancée et l'inscription du _commit_ (= modification) dans l'historique. On parle donc de _pre-commit_. Cela permet d'effectuer les éventuelles corrections **avant** que les erreurs ne soient enregistrées et d'éviter ainsi un commit correctif.
 
@@ -86,7 +86,7 @@ flowchart TD
 
 ## Utilisation
 
-![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-rdp-news-thumb }
+![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-thumbnail-left }
 
 Pour faciliter la maintenance, nous utilisons l'outil [pre-commit](https://pre-commit.com/) qui est une sorte de gestionnaire de _git hooks_. Il est développé en Python mais peut exécuter des _hooks_ dans de nombreux autres langages (NodeJS, shell, etc.).
 
@@ -119,7 +119,7 @@ pre-commit install
 
 ### Exécution automatisée sur la CI
 
-![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
+![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-thumbnail-left }
 
 Etant donné que la très grande majorité des contributeur/ices n'utilisent pas [l'édition locale](../edit/local_edition_setup.md) ou n'installent pas les git hooks, ces derniers sont automatiquement exécutés dans l'intégration continue, via le service [pre-commit.ci](https://pre-commit.ci/) (du même auteur que l'outil).
 
