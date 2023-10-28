@@ -16,7 +16,7 @@ tags:
 
 # Rédiger en Markdown : règles et enjeux de qualité
 
-![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-rdp-news-thumb }
+![logo markdown](https://cdn.geotribu.fr/img/logos-icones/markdown.png "logo Markdown"){: .img-thumbnail-left }
 
 Pour rappel, la syntaxe [Markdown] a vocation à être transformée _in fine_ en HTML. Etant donné que c'est une syntaxe extensible aux multiples implémentations différentes, son rendu dépend donc de l'outil utilisé pour visualiser le résultat :
 

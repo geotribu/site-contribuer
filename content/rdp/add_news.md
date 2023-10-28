@@ -16,7 +16,7 @@ tags:
 
 # Proposer une news pour une revue de presse
 
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-rdp-news-thumb }
+![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
 
 La rédaction des revues de presse (GeoRDP) est collaborative et ouverte à toute personne souhaitant partager une actualité ou contribuer à la veille commune. L'équipe est là pour coordonner les différentes contributions et s'assurer de la cohérence et de la qualité de la publication.
 
@@ -34,7 +34,7 @@ Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 ## Ajouter une news en utilisant son environnement local
 
-![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
+![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-thumbnail-left }
 
 Pour les plus aguerri/es d'entre nous, il est évidemment possible de contribuer à une revue de presse en travaillant localement. C'est d'ailleurs beaucoup plus confortable !
 

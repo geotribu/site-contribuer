@@ -19,7 +19,7 @@ tags:
 
 # Lettre d'informations automatisée
 
-![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-rdp-news-thumb loading=lazy }
+![icône newsletter](https://cdn.geotribu.fr/img/logos-icones/divers/newsletter.webp "icône newsletter"){: .img-thumbnail-left loading=lazy }
 
 En complément des autres modes de diffusion (réseaux sociaux notamment), la lettre d'informations par mail, ou plus simplement _newsletter_, reste un moyen très apprécié pour faire de la veille et pour suivre l'actualité d'un site. De plus, la revue de presse de Geotribu peut être considérée comme une forme de newsletter et correspond donc très bien à ce format de diffusion.
 

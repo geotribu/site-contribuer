@@ -23,7 +23,7 @@ Pourquoi ? car c'est ainsi que le site génère des données structurées standa
 
 ## Web sémantique et données structurées
 
-![logo JSON-LD](https://cdn.geotribu.fr/img/logos-icones/programmation/json-ld.webp "logo JSON-LD"){: .img-rdp-news-thumb }
+![logo JSON-LD](https://cdn.geotribu.fr/img/logos-icones/programmation/json-ld.webp "logo JSON-LD"){: .img-thumbnail-left }
 
 La structuration des données géographiques, ça vous semble important ? Eh bien, c'est la même chose quand il s'agit des pages webs. C'est d'ailleurs le principe fondateur de ce qu'on appelle plus communément le **web sémantique** : intégrer des données structurées dans le contenu des pages de façon à faciliter le travail d'indexation et de mise en relation des contenus.  
 Evidemment les structures répondent à des standards dont l'élaboration est liée aux acteurs de l'industrie mais aussi aux initiatives communautaires. Les schémas de données, qui gèrent le relationnel, sont documentés et regoups sur le site : [schema.org](https://schema.org/). C'est ce site et cette dynamique qui ont inspiré [schema.data.gouv.fr](https://schema.data.gouv.fr/).
@@ -38,7 +38,7 @@ Il existe de nombreux schémas décrivant différents types d'objets : _Article_
 
 ## Processus
 
-![logo Jinja](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/jinja.png "logo Jinja"){: .img-rdp-news-thumb }
+![logo Jinja](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/jinja.png "logo Jinja"){: .img-thumbnail-left }
 
 Au moment de la [transformation des fichiers markdown en fichiers HTML](./markdown_engine.md), le site génère un objet au format [JSON-LD] (_JSON Linked Data_), intégré à la page HTML, à partir de plusieurs éléments :
 

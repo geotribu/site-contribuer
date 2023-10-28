@@ -20,7 +20,7 @@ tags:
 
 # Installation et configuration de l'environnement de travail pour l'édition locale
 
-![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-rdp-news-thumb }
+![logo console terminal](https://cdn.geotribu.fr/img/logos-icones/divers/ligne_commande.png "logo console terminal"){: .img-thumbnail-left }
 
 Cette page a pour but de vous guider dans les principales étapes afin de pouvoir gérer le site et ses contenus depuis une machine locale. Il est probable que chacun/e doive ajuster selon son propre environnement de travail (chemins de fichiers, répertoires...).
 
@@ -41,7 +41,7 @@ Il est également recommandé :
 
 ## Git
 
-![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-rdp-news-thumb }
+![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-thumbnail-left }
 
 La gestion et la mise en ligne du contenu se font via [Git], une suite d'outils en ligne de commande ([CLI](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande)). Si vous n'êtes pas à l'aise avec la ligne de commande, il est possible d'utiliser [GitHub Desktop] en suivant [la documentation officielle](https://docs.github.com/en/desktop).
 
@@ -162,7 +162,7 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
 
 ## Python
 
-![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
 Pour éditer localement et visualiser le résultat final avant de publier sur le dépôt, il faut installer [Python] 3.10 ou supérieure et les dépendances du projet.
 
@@ -266,7 +266,7 @@ Les dépendances du projet sont mises à jour mensuellement. Il est donc recomma
 
 ## Pre-commit
 
-![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-rdp-news-thumb }
+![logo pre-commit](https://cdn.geotribu.fr/img/logos-icones/programmation/precommit.png "logo pre-commit"){: .img-thumbnail-left }
 
 Le projet vient avec une [configuration](https://github.com/geotribu/website/blob/master/.pre-commit-config.yaml) pour [pre-commit], qui permet d'appliquer des scripts (des [*git hooks*](https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Crochets-Git)) de vérification et de nettoyage des fichiers avant qu'ils ne soit enregistrés dans le dépôt (d'où le nom).
 

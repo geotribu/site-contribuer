@@ -20,7 +20,7 @@ tags:
 
 # Vérification automatisée de la syntaxe des liens web
 
-![logo LinkChecker](https://cdn.geotribu.fr/img/internal/contribution/markdown/linkchecker_logo.png){: .img-rdp-news-thumb loading=lazy }
+![logo LinkChecker](https://cdn.geotribu.fr/img/internal/contribution/markdown/linkchecker_logo.png){: .img-thumbnail-left loading=lazy }
 
 En Markdown, il est facile de faire des erreurs au moment d'insérer un hyperlien avec des questionnements HVE (Haute Valeur Existentielle) : s'il est [interne](../guides/markdown_quality.md#liens-internes-relatifs), doit-il être relatif ou absolu ? Dois-je préciser le protocole ou bien cela est-il déterminé par le navigateur ? L'URL est entre les parenthèses ou les crochets ?  
 En plus de faire un mauvais choix, on s'expose aussi aux fautes de frappe qui mènent à un lien cassé. Et là c'est 404 drames !
@@ -110,7 +110,7 @@ Si cela vous intéresse, déplier pour voir à quoi ressemble la sortie :
 
 ## Exécution automatisée sur la CI
 
-![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-rdp-news-thumb }
+![icône GitHub Actions](https://cdn.geotribu.fr/img/logos-icones/divers/github_actions.png "GitHub Actions"){: .img-thumbnail-left }
 
 Pour soulager la charge mentale des gentils bénévoles, la vérification est exécutée automatiquement dans la CI et une notification est envoyée uniquement si des erreurs sont trouvées.  
 Étant donné que l'exécution est assez longue et nécessite de générer tout le site avant, j'ai opté pour une exécution trimestrielle plutôt que sur chaque Pull Request ou commit.

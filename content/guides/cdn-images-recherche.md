@@ -49,7 +49,7 @@ Il est également possible d'effectuer une recherche dans l'arborescence en cliq
 
 ## Faire une recherche avec le CLI Geotribu
 
-![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-rdp-news-thumb }
+![logo Python](https://cdn.geotribu.fr/img/logos-icones/programmation/python.png "logo Python"){: .img-thumbnail-left }
 
 Si l'interface graphique vous semble trop longue ou la recherche assez fine ou que vous n'avez pas les identifiants sous la main, il est possible d'interroger [l'index des images stockées](https://cdn.geotribu.fr/img/search-index.json) généré avec [lunr.py] toutes les heures et qui est accessible librement.
 

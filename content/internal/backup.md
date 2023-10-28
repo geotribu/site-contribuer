@@ -19,7 +19,7 @@ tags:
 
 # Sauvegarde du site Geotribu
 
-![icône résilience](https://cdn.geotribu.fr/img/logos-icones/divers/resilience.png "icône résilience"){: .img-rdp-news-thumb }
+![icône résilience](https://cdn.geotribu.fr/img/logos-icones/divers/resilience.png "icône résilience"){: .img-thumbnail-left }
 
 Afin de ne pas reproduire le drame du crash de la base de données (voir [l'article sur la petite histoire de Geotribu]({{ config.extra.geotribu_main_site }}articles/2020/2020-08-31_geotribu_histoire/)), le site recréé en 2020 est pensé pour maximiser la résilience :
 
@@ -32,7 +32,7 @@ Les seuls éléments non couverts directement par ces différents points sont do
 
 ## GitHub CLI et GitHub Release
 
-![logo GitHub](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/github.png "logo GitHub"){: .img-rdp-news-thumb }
+![logo GitHub](https://cdn.geotribu.fr/img/logos-icones/entreprises_association/github.png "logo GitHub"){: .img-thumbnail-left }
 
 Pour couvrir cet aspect, nous avons mis en place un mécanisme de sauvegarde qui tire également parti de la plateforme GitHub : [Github Release](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github) et [GitHub CLI](https://cli.github.com/).
 
@@ -55,7 +55,7 @@ Comme toujours, le code et fichiers de configuration sont librement accessibles 
 
 ## Pour la sobriété numérique
 
-![logo environnement](https://cdn.geotribu.fr/img/logos-icones/divers/environnement.png "logo environnement"){: .img-rdp-news-thumb }
+![logo environnement](https://cdn.geotribu.fr/img/logos-icones/divers/environnement.png "logo environnement"){: .img-thumbnail-left }
 
 Afin de ne pas encombrer inutilement des serveurs, et donc de les faire tourner pour peu de choses et consommer de l'énergie, il est préférable de garder le moins possible de fichiers joints aux sauvegardes. Seuls les fichiers des sauvegardes la plus récente et la plus ancienne peuvent être utiles un jour. Il est en revanche important de garder les sauvegardes et de ne supprimer que le fichier tar.gz joint.
 
