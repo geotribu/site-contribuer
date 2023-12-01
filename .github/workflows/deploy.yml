@@ -71,6 +71,7 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
           MKDOCS_ENABLE_PLUGIN_PRIVACY: true
           MKDOCS_ENABLE_PLUGIN_RSS: true
+          MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
           MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
 
       - name: Setup Pages
