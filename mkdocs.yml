@@ -35,6 +35,7 @@ plugins:
       repository: geotribu/site-contribuer
       branch: main
       docs_path: content/
+      token: !ENV ["GH_TOKEN_MATERIAL_INSIDERS"]
   - git-revision-date-localized:
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, true]
       enable_creation_date: true
