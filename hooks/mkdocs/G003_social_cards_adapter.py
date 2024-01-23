@@ -126,7 +126,7 @@ def on_page_markdown(
                     ),
                     "background_image": social_plugin.config.cards_layout_options.get(
                         "background_image",
-                        "content/theme/assets/images/geotribu/background_geotribu.png",
+                        "content/theme/assets/images/geotribu/banniere_geotribu.png",
                     ),
                     "color": social_plugin.config.cards_layout_options.get("color"),
                     "font_family": social_plugin.config.cards_layout_options.get(
