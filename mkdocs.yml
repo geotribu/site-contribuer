@@ -126,6 +126,7 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
+    - content.footnote.tooltips
     - content.tabs.link
     - content.tooltips
     - navigation.path
