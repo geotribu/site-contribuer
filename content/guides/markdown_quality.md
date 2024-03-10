@@ -4,7 +4,7 @@ categories:
     - article
     - contribution
 comments: true
-date: 2020-09-14 14:20
+date: 2020-09-14
 description: "Rédiger en Markdown : règles partagées, erreurs fréquentes et mécanismes de validation."
 icon: material/language-markdown-outline
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_quick_exemple_rendu.png"

@@ -4,7 +4,7 @@ categories:
     - contribution
     - tutoriel
 comments: true
-date: 2020-04-04 17:20
+date: 2020-04-04
 description: "Guide de contribution à Geotribu : comment modifier un contenu depuis le site de GitHub."
 icon: material/github
 tags:

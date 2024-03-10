@@ -6,7 +6,7 @@ categories:
     - article
     - meta
 comments: true
-date: 2022-07-18 10:20
+date: 2022-07-18
 description: "Sous le GéoCapot : pour gérer l'hétérogénéité des contributions et garantir une qualité minimale, des git hooks sont à l'oeuvre sur Geotribu. Explication de leur fonctionnement."
 icon: material/hook
 image: "https://cdn.geotribu.fr/img/internal/contribution/git_hooks/pre-commit_ci_result_master.png"

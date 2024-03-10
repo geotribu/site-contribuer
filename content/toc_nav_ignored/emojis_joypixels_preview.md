@@ -2,7 +2,7 @@
 title: Table de correspondance des emojis
 categories:
   - annexe
-date: 2021-02-20 10:20
+date: 2021-02-20
 description: "Annexe au guide de contribution : table de correspondance des codes d'insertion des emojis JoyPixels utilisés dans Geotribu."
 tags:
   - contribuer

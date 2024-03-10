@@ -5,7 +5,7 @@ authors:
 categories:
     - contribution
 comments: true
-date: "2021-09-30 10:20"
+date: 2021-09-30
 description: "Ajouter une actualité à la prochaine revue de presse de Geotribu (GeoRDP)."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 license: default

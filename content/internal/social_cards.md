@@ -4,7 +4,7 @@ categories:
     - article
     - Geotribu
 comments: true
-date: 2022-09-15 14:20
+date: 2022-09-15
 description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des 'cartes sociales', ces visuels accompagnés d'un résumé qui s'affichent sur les réseaux sociaux."
 icon : material/card-text
 image: "https://cdn.geotribu.fr/img/internal/contribution/social_cards/social_card_exemple_twitter_article.png"

@@ -4,7 +4,7 @@ categories:
     - article
     - Geotribu
 comments: true
-date: 2022-06-15 14:20
+date: 2022-06-15
 description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des données structurées et extraits enrichis."
 icon : material/semantic-web
 image: "https://cdn.geotribu.fr/img/internal/contribution/rich_snippets/seo_extrait_enrichi_article_multi-auteurs.png"
@@ -167,7 +167,7 @@ Exemple pour [cette GeoRDP]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_20
   },
   "headline": "{{ config.site_name }} - Revue de presse du 3 juin 2022",
   "abstract": "Cette semaine on vous propose une déambulation autour de divers sujets : traduction de logiciels libres, une carte de bruit, le programme Lidar HD, la donnée OSO, la détection de bâtiments et les logiciels libres en thèse",
-  "datePublished": "2022-06-03 14:20",
+  "datePublished": "2022-06-03",
   "image": "https://cdn.geotribu.fr/img/articles-blog-rdp/capture-ecran/carte_bruit_Paris.jpg",
   "author": {
     "@type": "Organization",

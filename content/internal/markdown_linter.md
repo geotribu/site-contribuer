@@ -6,7 +6,7 @@ categories:
     - article
     - meta
 comments: true
-date: 2022-07-18 10:20
+date: 2022-07-18
 description: "Sous le GéoCapot : comment est utilisé markdownlint, l'outil de vérification de la syntaxe Markdown (linter) sur Geotribu."
 icon : material/check-all
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/linter_code.webp"

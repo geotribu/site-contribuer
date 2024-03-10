@@ -3,7 +3,7 @@ title: "Comprendre le rendu Markdown"
 categories:
     - contribution
 comments: true
-date: 2020-09-14 14:20
+date: 2020-09-14
 description: "Comprendre le fonctionnement de Python Markdown et ses spécificités pour contribuer en markdown à Geotribu."
 icon : material/language-markdown
 image: "https://cdn.geotribu.fr/img/internal/contribution/markdown_exemple.png"

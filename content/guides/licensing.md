@@ -6,7 +6,7 @@ categories:
     - contribution
     - tutoriel
 comments: true
-date: "2021-07-12 11:20"
+date: 2021-07-12
 description: "Comment choisir et appliquer une licence à son article Geotribu."
 image: "https://cdn.geotribu.fr/img/internal/contribution/licensing/license_block.png"
 icon: material/creative-commons

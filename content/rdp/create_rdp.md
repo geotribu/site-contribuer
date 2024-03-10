@@ -6,7 +6,7 @@ authors:
 categories:
     - contribution
 comments: true
-date: "2021-12-29 10:20"
+date: 2021-12-29
 description: "Guide de création d'une revue de presse (GeoRDP) sur Geotribu : méthodologie, script bash, GitHub Workflow, etc."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
 license: default
@@ -206,7 +206,7 @@ authors:
     - Geotribu
 categories:
     - revue de presse
-date: 2021-08-21 14:20
+date: 2021-08-21
 description: ""
 image: "URL de l'image d'illustration de la RDP"
 license: default

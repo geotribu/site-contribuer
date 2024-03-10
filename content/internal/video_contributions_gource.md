@@ -4,7 +4,7 @@ categories:
     - article
     - Geotribu
 comments: true
-date: 2023-07-29 20:20
+date: 2023-07-29
 description: Tutoriel de prise en main de Gource, le logiciel qui permet de générer une datavisualisation animée en vidéo à partir de l'historique des contributions Git.
 icon : simple/interactiondesignfoundation
 tags:
