@@ -4,6 +4,7 @@ categories:
     - article
     - contribution
     - tutoriel
+comments: true
 date: 2023-10-03 10:20
 description: "Guide de contribution à Geotribu : comment intégrer un post Mastodon dans un contenu en Markdown."
 icon: material/mastodon

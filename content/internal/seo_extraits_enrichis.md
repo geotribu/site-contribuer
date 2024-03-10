@@ -3,6 +3,7 @@ title: "Web sémantique et extraits enrichis"
 categories:
     - article
     - Geotribu
+comments: true
 date: 2022-06-15 14:20
 description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des données structurées et extraits enrichis."
 icon : material/semantic-web

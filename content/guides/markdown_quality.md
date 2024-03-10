@@ -3,6 +3,7 @@ title: "Rédiger en Markdown : guide des régles de rédaction applicables à Ge
 categories:
     - article
     - contribution
+comments: true
 date: 2020-09-14 14:20
 description: "Rédiger en Markdown : règles partagées, erreurs fréquentes et mécanismes de validation."
 icon: material/language-markdown-outline

@@ -5,6 +5,7 @@ authors:
     - Geotribu
 categories:
     - contribution
+comments: true
 date: "2023-04-10 10:20"
 description: "Publication et diffusion d'un article de Geotribu."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"

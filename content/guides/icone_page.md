@@ -7,6 +7,7 @@ categories:
     - article
     - contribution
     - tutoriel
+comments: true
 date: 2024-01-17
 description: "Guide de contribution à Geotribu : comment définir l'icône d'un article pour le menu de navigation et la 'social card'."
 icon: fontawesome/solid/icons

@@ -6,6 +6,7 @@ authors:
 categories:
     - article
     - meta
+comments: true
 date: 2022-11-26 14:20
 description: "Guide pour rechercher dans l'entrepôt d'images de Geotribu (https://cdn.geotribu.fr/), via l'interface graphique de TinyFileManager ou bien via le CLI Geotribu"
 icon: material/image-search

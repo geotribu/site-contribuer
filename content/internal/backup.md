@@ -5,6 +5,7 @@ authors:
 categories:
     - article
     - meta
+comments: true
 date: 2021-06-01 10:20
 description: "Sous le GéoCapot : comment fonctionne la sauvegarde automatique du site Geotribu."
 icon: material/backup-restore

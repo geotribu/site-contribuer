@@ -4,6 +4,7 @@ categories:
     - article
     - contribution
     - tutoriel
+comments: true
 date: 2020-04-27 10:20
 description: "Guide de contribution à Geotribu : comment intégrer une vidéo dans un contenu en Markdown."
 icon: material/video-plus

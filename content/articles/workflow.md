@@ -4,6 +4,7 @@ authors:
     - Geotribu
 categories:
     - contribution
+comments: true
 date: "2021-05-24 10:20"
 description: "Comment proposer un article sur Geotribu : recommandations, outils et workflow."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"

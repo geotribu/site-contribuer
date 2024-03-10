@@ -4,6 +4,7 @@ subtitle: Déploie tes HTM-ailes Geotribu !
 categories:
     - publication
     - tutoriel
+comments: true
 date: 2023-08-25 10:20
 description: "Sous le GéoCapot : générer le(s) site(s) web de Geotribu à partir des sources avec Mkdocs et le thème Material."
 icon: material/web-sync

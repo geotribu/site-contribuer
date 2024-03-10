@@ -3,6 +3,7 @@ title: "Environnement pour l'édition en local"
 categories:
     - contribution
     - tutoriel
+comments: true
 date: 2020-07-23 10:20
 description: "Guide de contribution à Geotribu : comment déployer l'environnement local idéal pour contribuer tranquillement."
 icon: octicons/desktop-download-16

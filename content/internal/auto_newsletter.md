@@ -6,6 +6,7 @@ authors:
 categories:
     - article
     - meta
+comments: true
 date: 2023-02-01 10:20
 description: "Sous le GéoCapot : comment fonctionne la newsletter automatique du site Geotribu."
 icon: material/email-newsletter

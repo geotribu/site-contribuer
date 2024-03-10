@@ -3,6 +3,7 @@ title: "Cartes de partage"
 categories:
     - article
     - Geotribu
+comments: true
 date: 2022-09-15 14:20
 description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des 'cartes sociales', ces visuels accompagnés d'un résumé qui s'affichent sur les réseaux sociaux."
 icon : material/card-text

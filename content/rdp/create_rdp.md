@@ -5,6 +5,7 @@ authors:
     - Julien MOURA
 categories:
     - contribution
+comments: true
 date: "2021-12-29 10:20"
 description: "Guide de création d'une revue de presse (GeoRDP) sur Geotribu : méthodologie, script bash, GitHub Workflow, etc."
 image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
