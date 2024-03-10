@@ -71,7 +71,7 @@ def on_page_markdown(
         return
 
     # check si c'est la version Insiders (payante) ou la version Communauté (gratuite) du thème
-    is_insiders = config.theme.get("insiders_flavor")
+    is_insiders = config.extra.get("theme_insiders_flavor")
 
     # vérifie que le plugin social est bien installé et configuré
     if not config.plugins.get("material/social"):
@@ -123,10 +123,6 @@ def on_page_markdown(
                 "cards_layout_options": {
                     "background_color": social_plugin.config.cards_layout_options.get(
                         "background_color"
-                    ),
-                    "background_image": social_plugin.config.cards_layout_options.get(
-                        "background_image",
-                        "content/theme/assets/images/geotribu/background_geotribu.png",
                     ),
                     "color": social_plugin.config.cards_layout_options.get("color"),
                     "font_family": social_plugin.config.cards_layout_options.get(
