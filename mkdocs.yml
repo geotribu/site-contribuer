@@ -98,10 +98,11 @@ plugins:
         datetime_format: "%Y-%m-%d"
         default_timezone: Europe/Paris
         default_time: "19:00"
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, true]
-      image: "https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_64x64.png"
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
+      image: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
       length: 50
-      pretty_print: true
+      match_path: "(articles|edit|guides|internal|rdp)/.*"
+      pretty_print: false
       use_material_social_cards: true
       url_parameters:
         utm_source: "rss-feed"
