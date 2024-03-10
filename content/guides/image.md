@@ -22,19 +22,56 @@ tags:
 
 # Intégrer une image
 
-Prenons deux exemples :
+Cette page détaille les différentes possibilités d'intégration d'une image sur site de Geotribu. Globalement, c'est la syntaxe de base du Markdown étendue par différentes possibilités, notamment celle d'affecter des attributs HTML à la volée ([merci attr_list](https://python-markdown.github.io/extensions/attr_list/)), ce qui est bien pratique pour gérer le redimensionnement, le positionnement, etc.
+
+!!! abstract "Pas le temps de tout lire ? L'essentiel à retenir !"
+    Voici les "balises" les plus communes à ajouter après la parenthèse fermante de l'image (`![légende](url_image){: balises }`).
+
+    Pour les icônes/logos, alignées à gauche avec texte à droite, ajouter  :
+
+    ```markdown
+    {: .img-thumbnail-left }
+    ```
+
+    Ce qui donne donc :
+
+    ```markdown
+    ![Texte de remplacement utilisé aussi comme légende](https://url_de_l_image.extension){: .img-thumbnail-left }
+    ```
+
+    Pour les images d'illustrations, centrées et au chargement optimisé, ajouter :
+
+    ```markdown
+    {: .img-center loading=lazy }
+    ```
+
+    Ce qui donne donc :
+
+    ```markdown
+    ![Texte de remplacement utilisé aussi comme légende](https://url_de_l_image.extension){: .img-center loading=lazy }
+    ```
+
+Pour la suite, prenons deux exemples :
 
 - une image _externe_, c'est-à-dire hébergée ailleurs que sur le [CDN de Geotribu] : <https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg> du **globe terrestre** de Coronelli, issue de cette page Wikipedia <https://fr.wikipedia.org/wiki/Globes_de_Coronelli>
 - une image _interne_, hébergée sur le [CDN de Geotribu] : <https://cdn.geotribu.fr/img/internal/contribution/embed_image/coronelli_globe_celeste.jpg> du **globe céleste** de Coronelli, issue de la même page Wikipedia mais téléversée sur le [CDN de Geotribu]
+
+----
 
 ## Syntaxe générale
 
 En `markdown`, intégrer une image se fait via la syntaxe suivante :
 
+`![Texte de remplacement au cas où l'image ne soit pas accessible](https://url_de_l_image.extension "Légende de l'image"){: balises d'attributs HTML }`
+
+À noter que par défaut, le texte de remplacement est utilisé comme légende qui est donc optionnelle. Ce qui donne donc :
+
+`![Texte de remplacement au cas où l'image ne soit pas accessible](https://url_de_l_image.extension){: balises d'attributs HTML }`
+
 === "Markdown"
 
     ```markdown
-    ![Texte de remplacement au cas où l'image ne soit pas accessible](https://url_de_l_image.extension "Légende de l'image")
+    ![Texte de remplacement au cas où l'image ne soit pas accessible](https://url_de_l_image.extension "Légende de l'image"){: balises d'attributs HTML }
 
     <!-- avec notre image externe, ça donne donc -->
     ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia)")
