@@ -7,7 +7,7 @@ comments: true
 date: 2020-07-23
 description: "Guide de contribution à Geotribu : comment déployer l'environnement local idéal pour contribuer tranquillement."
 icon: octicons/desktop-download-16
-image: "https://cdn.geotribu.fr/img/internal/contribution/geotribu_ide_vscode_local.png"
+image: https://cdn.geotribu.fr/img/internal/contribution/geotribu_ide_vscode_local.png
 tags:
     - Git
     - guide
@@ -152,11 +152,8 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
     # mettre le dépôt local en conformité avec le dépôt central (notamment en supprimant les branches locales déjà supprimées sur GitHub)
     git remote prune origin
 
-    # supprimer les branches qui ont été fusionnées - sauf master et gh-pages
-    git branch --merged | Select-String -Pattern '^(?!.*(main|master|gh-pages)).*$' | ForEach-Object { git branch -d $_.ToString().Trim() }
-
-    # ou en ouvrant une fenêtre de sélection des branches à supprimer
-    git branch --format "%(refname:short)" --merged  | Out-GridView -PassThru | % { git branch -d $_ }
+    # supprimer les branches qui ont été fusionnées
+    git branch -vv | where {$_ -match '\[origin/.*: gone\]'} | foreach { git branch -d $_.split(" ", [StringSplitOptions]'RemoveEmptyEntries')[0]}
     ```
 
 ----
