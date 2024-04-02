@@ -1,22 +1,60 @@
 articles:
-    - content/articles/**/*.md
-
-ci-cd:
-    - .github/**/*.yml
+    - changed-files:
+          - any-glob-to-any-file:
+                - content/articles/**/*.md
 
 dependencies:
-    - ./**/requirements.txt
-    - requirements*.txt
+    - changed-files:
+          - any-glob-to-any-file:
+                - requirements/*.txt
+                - requirements.txt
 
 géocapot:
-    - content/internal/**/*
+    - changed-files:
+          - any-glob-to-any-file:
+                - content/internal/**/*
 
 mkdocs:
-    - content/**/*.pages
-    - mkdocs*.yml
+    - changed-files:
+          - any-glob-to-any-file:
+                - config/**
+                - content/**/*.pages
+                - hooks/**
+                - mkdocs*.yml
+
+outillage:
+    - changed-files:
+          - any-glob-to-any-file:
+                - .devcontainer/**
+                - .github/**
+                - .pre-commit-config.yaml
+                - .vscode/**/*
+                - .docker
+                - .lincheckrrc
+                - .mailmap
+                - .markdownlint*
+                - docker*
+                - Dockerfile
+                - scripts/**
+    - head-branch:
+          - ^ci
+          - ci
+          - ^tooling
+          - tooling
 
 rdp:
-    - content/rdp/**/*.md
+    - changed-files:
+          - any-glob-to-any-file:
+                - content/rdp/**/*.md
+    - head-branch:
+          - ^rdp
+          - rdp
 
 thème:
-    - content/theme/**/*
+    - changed-files:
+          - any-glob-to-any-file:
+                - content/theme/**/*
+                - requirements-insiders.txt
+    - head-branch:
+          - theme
+          - ^theme
