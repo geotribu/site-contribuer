@@ -105,7 +105,7 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
         Penser à s'inspirer des [articles déjà publiés](https://github.com/geotribu/website/tree/master/content/articles/2021) :wink: !  
         La date de publication pourra être amenée à changer selon les autres contenus planifiés.
 
-4. Si besoin (et envie), créer un fichier avec une brève description de l'auteur/rice dans `content/team/prenom-nom.md`, puis intégrer ce bloc [en suivant le guide adéquat](https://contribuer.geotribu.fr/guides/authoring/#bloc-auteur)
+4. Si besoin (et envie), créer un fichier avec une brève description de l'auteur/rice dans `content/team/prenom-nom.md`, puis intégrer ce bloc [en suivant le guide adéquat](../guides/authoring/#bloc-auteur)
 
 5. Créer la Pull Request[^pr] directement depuis votre dépôt dérivé via le bouton `Contribute` :
 
