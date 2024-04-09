@@ -41,9 +41,7 @@ Mais sachez que nous mettons un éditeur collaboratif ([Hedgedoc](https://hedged
 Sinon, cela tient en quelques étapes :
 
 1. Créer un fichier Markdown (extension `.md` ou `markdown`)
-2. Copier/coller le modèle d'article dans votre fichier :
-    - soit [depuis Github](https://github.com/geotribu/website/blob/master/content/articles/templates/template_article.md?plain=1)
-    - soit [depuis le PAD](https://geotripad.herokuapp.com/g70BvjD0TAuGHHb6jTzgPQ?edit)
+2. Copier/coller le modèle d'article dans votre fichier [depuis Github](https://github.com/geotribu/website/blob/master/content/articles/templates/template_article.md?plain=1)
 3. Remplir les parties !
 4. Faire relire
 
@@ -105,11 +103,13 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
         Penser à s'inspirer des [articles déjà publiés](https://github.com/geotribu/website/tree/master/content/articles/2021) :wink: !  
         La date de publication pourra être amenée à changer selon les autres contenus planifiés.
 
-4. Créer la Pull Request[^pr] directement depuis votre dépôt dérivé via le bouton `Contribute` :
+4. S'il n'existe pas encore, créer un fichier avec une brève description de l'auteur/rice dans `content/team/prenom-nom.md`, puis intégrer ce bloc [en suivant le guide adéquat](../guides/authoring.md#bloc-auteur)
+
+5. Créer la Pull Request[^pr] directement depuis votre dépôt dérivé via le bouton `Contribute` :
 
     ![GitHub submit pull request from fork](https://cdn.geotribu.fr/img/internal/contribution/github_submit_from_fork.png "GitHub - Créer une Pull Request depuis un fork"){: loading=lazy }
 
-5. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article :
+6. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article :
 
     ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
 
@@ -131,13 +131,15 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
 
     ![Github - Pull Request button](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_button.png "GitHub - Créer une Pull Request"){: .img-right loading=lazy }
 
-3. [Créer la Pull Request](https://github.com/geotribu/website/compare)[^pr] en choisissant la branche de l'article comme source (`head`) et la branche principale (`master` ou `main`) comme destination (`ref`).
+3. S'il n'existe pas encore, créer un fichier avec une brève description de l'auteur/rice dans `content/team/prenom-nom.md`, puis intégrer ce bloc [en suivant le guide adéquat](../guides/authoring.md/#bloc-auteur)
 
-4. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article
+4. [Créer la Pull Request](https://github.com/geotribu/website/compare)[^pr] en choisissant la branche de l'article comme source (`head`) et la branche principale (`master` ou `main`) comme destination (`ref`).
+
+5. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article
 
     ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
 
-5. Demander la relecture sur Slack, dans [le canal `Articles`](https://geotribu.slack.com/archives/C0165UARRBQ)
+6. Demander la relecture sur Slack, dans [le canal `Articles`](https://geotribu.slack.com/archives/C0165UARRBQ)
 
 ----
 
