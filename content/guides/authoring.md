@@ -10,7 +10,7 @@ categories:
 comments: true
 date: 2020-08-04
 description: "Contribuer à Geotribu : comment signer ses contributions au site."
-image: "https://cdn.geotribu.fr/img/internal/contribution/authoring/auto_from_git_log.png"
+image: https://cdn.geotribu.fr/img/internal/contribution/authoring/auto_from_git_log.png
 icon: fontawesome/solid/signature
 tags:
     - auteur
@@ -30,8 +30,7 @@ Le site se repose sur l'extension [mkdocs-git-authors-plugin](https://github.com
 
 ![Git authors plugin](https://cdn.geotribu.fr/img/internal/contribution/authoring/auto_from_git_log.png "Exemple de la liste des personnes ayant contribué à une page")
 
-!!! warning
-
+!!! warning "Précision importante"
     Ce système a été mis en place à partir de la refonte du site en mars 2020. Tous les contenus antérieurs ayant été récupérés et poussés sur GitHub par moi-même (Julien), c'est mon compte qui est indiqué, mais ça n'est évidemment pas moi qui aie rédigé tous les contenus !
 
     Ainsi, pour tout contenu créé avant avril 2020, cette information ne reflète donc pas la contribution réelle à l'ensemble des contenus. Se référer au bloc auteur/e indiqué en bas du contenu.
@@ -39,6 +38,9 @@ Le site se repose sur l'extension [mkdocs-git-authors-plugin](https://github.com
 ### Pourcentage de contribution
 
 Le pourcentage de contribution est proportionnel au nombre de lignes créées ou modifiées.
+
+!!! note
+    Le pourcentage de contribution par page n'est plus affiché depuis fin 2023, remplacé par les avatars Github des comptes ayant contribué.
 
 ### Informations remontées et personnalisation
 
@@ -50,7 +52,7 @@ Si vous en utilisez plusieurs ou si vous souhaitez personnaliser le nom d'affich
 
 Si la personne ayant contribué ne dispose pas d'un compte GitHub ou ne souhaite pas mettre les mains dans la mécanique de contribution, il est tout de même possible de lui attribuer au moment de faire le _commit_ :
 
-```bash
+```sh
 git commit --author="Boris Mericksay <bmericskay@users.noreply.github.com>"
 ```
 
@@ -58,7 +60,12 @@ git commit --author="Boris Mericksay <bmericskay@users.noreply.github.com>"
 
 ## Bloc auteur
 
-Les contributeurs/rices réguliers peuvent se créer une page contenant une brève présentation dans [`content/team/`](https://github.com/geotribu/website/new/master/content/team) en respectant le nommage des fichiers déjà créés.
+Les contributeurs/rices sont invité/es à se créer une page contenant une brève présentation dans [`content/team/`](https://github.com/geotribu/website/new/master/content/team) en respectant le nommage des fichiers déjà créés, à savoir le prénom et le nom de famille sans caractères spéciaux et en utilisant le trait d'union (`-`) comme caractère de sépararation : `prenom-nom.md`.
+
+Quelques exemples :
+
+- `jean-marc-viglino.md`
+- `samuel-deschamps-berger.md`
 
 ### Syntaxe d'intégration
 
@@ -70,8 +77,8 @@ Exemple :
 
 === "Markdown"
 
-    <pre><code>--8&lt;-- "content/team/jmou.md"</code></pre>
+    <pre><code>--8&lt;-- "content/team/julien-moura.md"</code></pre>
 
 === "Rendu"
 
-    --8<-- "content/team/jmou.md"
+    --8<-- "content/team/julien-moura.md"
