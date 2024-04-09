@@ -41,9 +41,7 @@ Mais sachez que nous mettons un éditeur collaboratif ([Hedgedoc](https://hedged
 Sinon, cela tient en quelques étapes :
 
 1. Créer un fichier Markdown (extension `.md` ou `markdown`)
-2. Copier/coller le modèle d'article dans votre fichier :
-    - soit [depuis Github](https://github.com/geotribu/website/blob/master/content/articles/templates/template_article.md?plain=1)
-    - soit [depuis le PAD](https://geotripad.herokuapp.com/g70BvjD0TAuGHHb6jTzgPQ?edit)
+2. Copier/coller le modèle d'article dans votre fichier [depuis Github](https://github.com/geotribu/website/blob/master/content/articles/templates/template_article.md?plain=1)
 3. Remplir les parties !
 4. Faire relire
 
@@ -105,7 +103,7 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
         Penser à s'inspirer des [articles déjà publiés](https://github.com/geotribu/website/tree/master/content/articles/2021) :wink: !  
         La date de publication pourra être amenée à changer selon les autres contenus planifiés.
 
-4. S'il n'existe pas encore, créer un fichier avec une brève description de l'auteur/rice dans `content/team/prenom-nom.md`, puis intégrer ce bloc [en suivant le guide adéquat](../guides/authoring/#bloc-auteur)
+4. S'il n'existe pas encore, créer un fichier avec une brève description de l'auteur/rice dans `content/team/prenom-nom.md`, puis intégrer ce bloc [en suivant le guide adéquat](../guides/authoring.md#bloc-auteur)
 
 5. Créer la Pull Request[^pr] directement depuis votre dépôt dérivé via le bouton `Contribute` :
 
