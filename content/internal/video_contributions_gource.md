@@ -1,5 +1,6 @@
 ---
 title: "Gource : l'historique des contributions en vidéo"
+subtitle: ENtrez dans la GéoHistoire
 categories:
     - article
     - Geotribu
