@@ -33,7 +33,7 @@ C'est un outil qui est connu et largement utilisé dans différents projets (voi
 
 - [ ] avoir un ordinateur qui dispose d'une bonne carte graphique
 - [ ] avoir cloné la dernière version du dépôt du site web
-- [ ] vérifier que tous les contributeurs ont bien un seul nom (via le fichier `.mailmap`)
+- [ ] vérifier que tous les contributeurs ont bien un seul nom (en exécutant `git shortlog -nse` et en complétant le fichier `.mailmap` en conséquence)
 - [ ] avoir du temps devant soi (ou un double écran)
 
 ----
