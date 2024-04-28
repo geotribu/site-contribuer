@@ -150,7 +150,7 @@ git clone https://github.com/geotribu/tooling-gource.git
 Copier les fichiers liés à Gource dans le dépôt Git du site principal (adapter les chemins à votre environnemtn local) :
 
 ```sh
-cp tooling-gource/background_sombre_dalle ~/Git/Geotribu/website/
+cp tooling-gource/background_sombre_dalle.webp ~/Git/Geotribu/website/
 cp tooling-gource/gource.ini ~/Git/Geotribu/website/
 cp -R tooling-gource/avatars ~/Git/Geotribu/website/
 ```
