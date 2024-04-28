@@ -1,5 +1,5 @@
 {# Structured data using schema.org #}
-{% if type == "article" %}
+{% if page_type == "article" %}
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -73,7 +73,7 @@
       }
     }
     </script>
-{% elif type == "website" %}
+{% elif page_type == "website" %}
 <script type='application/ld+json'>
       {
         "@context": "http://www.schema.org",
@@ -82,7 +82,6 @@
         "alternateName": "Géotribu",
         "url": "{{ config.site_url }}",
         "sameAs": [
-          "https://contribuer.geotribu.fr",
           "https://github.com/geotribu/",
           "https://facebook.com/geotribu",
           "https://mapstodon.space/users/geotribu",

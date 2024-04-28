@@ -15,6 +15,7 @@
 {% if page and page.meta and page.meta.date %}
 {% set date = page.meta.date %}
 {% endif %}
+
 {# Meta description #}
 {% set description = config.site_description %}
 {% if page and page.meta and page.meta.description %}
@@ -22,6 +23,7 @@
 {% elif page and page.description and not page.is_homepage %}
 {% set description = page.description | striptags %}
 {% endif %}
+
 {# Meta image #}
 {% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
 {% if page and page.meta and page.meta.image %}
@@ -58,10 +60,10 @@
 <meta http-equiv="expires" content="43200" />
 
 {# Meta type #}
-{% if page.is_homepage %}
-{% set type = "website" %}
+{% if page.is_homepage or page.abs_url == "/" %}
+{% set page_type = "website" %}
 {% else %}
-{% set type = "article" %}
+{% set page_type = "article" %}
 {% endif %}
 
 <meta name="social:card" content="{{ social_card }}">
