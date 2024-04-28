@@ -118,6 +118,7 @@ plugins:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, false]
       cards_exclude:
         - index.md
+        - team/*.md
         - toc_nav_ignored/*.md
       cards_layout_options:
         background_color: "#3e93a7"
