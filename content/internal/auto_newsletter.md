@@ -1,5 +1,5 @@
 ---
-title: "Newsletter automatique"
+title: Newsletter automatique
 subtitle: No spam, no cry
 authors:
     - Julien MOURA
@@ -10,7 +10,6 @@ comments: true
 date: 2023-02-01
 description: "Sous le GéoCapot : comment fonctionne la newsletter automatique du site Geotribu."
 icon: material/email-newsletter
-image: https://cdn.geotribu.fr/img/internal/newsletter/newsletter_mailchimp_template.png
 robots: index, follow
 tags:
     - coulisses

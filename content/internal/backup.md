@@ -1,5 +1,5 @@
 ---
-title: "Sauvegarde des contenus et des images"
+title: Sauvegarde des contenus et des images
 authors:
     - Julien MOURA
 categories:
@@ -9,7 +9,6 @@ comments: true
 date: 2021-06-01
 description: "Sous le GéoCapot : comment fonctionne la sauvegarde automatique du site Geotribu."
 icon: material/backup-restore
-image: "https://cdn.geotribu.fr/img/internal/workflow/geotribu_backup_result_github_release.png"
 robots: index, follow
 tags:
     - coulisses
@@ -48,6 +47,10 @@ Ainsi, tous les mois, le [script](https://github.com/geotribu/infra/blob/master/
 
 [Télécharger la dernière sauvegarde :fontawesome-solid-download:](https://github.com/geotribu/website/releases/latest/){: .md-button }
 {: align=middle }
+
+Voici à quoi ressemble une GitHub Release :
+
+![Capture d'écran d'une GitHub Release du site Geotribu](https://cdn.geotribu.fr/img/internal/workflow/geotribu_backup_result_github_release.png){ .im-center loading=lazy }
 
 Comme toujours, le code et fichiers de configuration sont librement accessibles :
 
