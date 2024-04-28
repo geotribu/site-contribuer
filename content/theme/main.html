@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{# SEO Robots #}
+{% if page and page.meta and page.meta.robots %}
+<meta property="robots" content="{{ page.meta.robots }}" />
+{% elif page and "toc_nav_ignored/snippets" in page.canonical_url %}
+<meta property="robots" content="noindex,nofollow" />
+{% else %}
+<meta property="robots" content="index, follow" />
+{% endif %}
+
+
+{# Meta date #}
+{% if page and page.meta and page.meta.date %}
+{% set date = page.meta.date %}
+{% endif %}
+{# Meta description #}
+{% set description = config.site_description %}
+{% if page and page.meta and page.meta.description %}
+{% set description = page.meta.description | striptags %}
+{% elif page and page.description and not page.is_homepage %}
+{% set description = page.description | striptags %}
+{% endif %}
+{# Meta image #}
+{% set image = 'https://cdn.geotribu.fr/img/internal/charte/geotribu_banner.jpg' %}
+{% if page and page.meta and page.meta.image %}
+{% set image = page.meta.image %}
+{% endif %}
+
+{# Meta author #}
+{% set author = config.site_author %}
+{% if page and page.meta and page.meta.authors and not page.is_homepage %}
+{% set author = page.meta.authors %}
+{% elif page and page.meta and page.meta.author and not page.is_homepage %}
+{% set author = page.meta.author %}
+{% endif %}
+
+{% if author is iterable and (author is not string and author is not mapping) %}
+{% for a in author %}
+{% if author != config.site_author %}
+<meta name="author" content="{{ a }}">
+{% endif %}
+{% endfor %}
+{% elif author is string and author != config.site_author %}
+<meta name="author" content="{{ author }}">
+{% endif %}
+
+{# Social card enabled #}
+{% set social_card = false %}
+{% if page and page.meta and page.meta.social and page.meta.social.cards %}
+{% set social_card = true %}
+{% endif %}
+
+{# Cache-control #}
+<meta http-equiv="cache-control" content="max-age=14400" />
+<meta http-equiv="cache-control" content="public">
+<meta http-equiv="expires" content="43200" />
+
+{# Meta type #}
+{% if page.is_homepage %}
+{% set type = "website" %}
+{% else %}
+{% set type = "article" %}
+{% endif %}
+
+<meta name="social:card" content="{{ social_card }}">
+{# JSON Feed #}
+{% include "partials/json_feed.html.jinja2" %}
+{# Semantic web - schemas.org #}
+{% include "partials/schemas.html.jinja2" %}
+{# Social cards - OpenGraph #}
+{% include "partials/cards_opengraph.html.jinja2" %}
+{# Social cards - Twitter #}
+{% include "partials/cards_twitter.html.jinja2" %}
+
+{% endblock %}
+
+
+{% block content %}
+{{ super() }}
+
+{% include "partials/license.html.jinja2" %}
+{% endblock %}

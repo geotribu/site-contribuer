@@ -19,6 +19,7 @@ site_dir: "./build/mkdocs/site"
 # Scripts pendant le build
 hooks:
   - hooks/mkdocs/G003_social_cards_adapter.py
+  - hooks/mkdocs/G005_jinja_filters.py
 
 # Plugins
 plugins:
@@ -62,6 +63,7 @@ plugins:
       caption_position: bottom
   - macros:
       include_dir: content/toc_nav_ignored/snippets
+      module_name: hooks/macros/custom_jinja
   - meta
   - minify:
       minify_html: true
@@ -130,6 +132,7 @@ plugins:
 
 theme:
   name: "material"
+  insiders_flavor: true
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
   features:
