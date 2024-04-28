@@ -23,25 +23,63 @@ tags:
 
 Le(s) site(s) Geotribu étant basés sur Git, on profite ainsi de l'outillage de l'écosystème ; GitHub bien sûr mais aussi d'autres outils moins connus.
 
-Cette page décrit comment on peut utiliser Gource pour générer des vidéos rétrospectives sur les contributions au site (voir [un exemple sur la rétrospective 2022]({{ config.extra.geotribu_main_site }}articles/2023/2023-01-30_voeux-geotribu-2023/#retrospective-2022)).
+Cette page décrit comment on peut utiliser Gource pour générer des vidéos rétrospectives sur les contributions au site (voir [un exemple sur la rétrospective 2022]({{ config.extra.geotribu_main_site }}articles/2023/2023-01-30_voeux-geotribu-2023/#retrospective-2022)). Ou celle portant sur l'année 2023 :
 
-<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/mbDAz9aAVW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/cHQzkNkLeW8?si=Xwck99pK8GVk2Vy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 C'est un outil qui est connu et largement utilisé dans différents projets (voir [ici l'exemple de MapServer]({{ config.extra.geotribu_main_site }}rdp/2020/rdp_2020-05-15/?h=gource#mapserver-760)). Dans la communauté géomatique, on a régulièrement la vidéo retraçant les contributions à OpenStreetMap sur une fenêtre spatio-temporelle. A titre d'expérience personnelle, je l'avais utilisé pour retracer le tavail de développement sur le plugin QGIS d'Isogeo : <https://www.youtube.com/watch?v=URoH0osLY_4>.
 
 ## Prérequis
 
 - [ ] avoir un ordinateur qui dispose d'une bonne carte graphique
-- [ ] avoir cloné la dernière version du dépôt du site web
+- [ ] avoir cloné [la dernière version du dépôt du site web](../edit/local_edition_setup.md)
 - [ ] vérifier que tous les contributeurs ont bien un seul nom (en exécutant `git shortlog -nse` et en complétant le fichier `.mailmap` en conséquence)
 - [ ] avoir du temps devant soi (ou un double écran)
+
+----
+
+## Préparation : un petit coup d'oeil à l'historique Git
+
+Gource se basant sur l'historique Git, c'est l'occasion de regarder que l'historique est cohérent et le cas échéant de l'ajuster en éditant le fichier `.mailmap`. Pour regarder l'historique sur une année, on peut utiliser la commande `shortlog` :
+
+```sh
+git shortlog -nse --since="01 Jan 2023" --before="31 Dec 2023"
+```
+
+Ce qui donne par exemple :
+
+```sh
+764  Julien Moura <dev@ingeoveritas.com>
+233  Florian Boret <florian.boret@data-wax.com>
+122  Geotribot <geotribu+bot@gmail.com>
+50  Guilhem Allaman <dev@guilhemallaman.net>
+45  Nicolas David <nicolas.david@ign.fr>
+36  Florent Fougères <florent.fougeres@gmail.com>
+28  Delphine Montagne <delphine.montagne@univ-pau.fr>
+27  Quy Thy Truong <quythy.truong@oslandia.com>
+20  Aurélien Chaumet <aurelienchaumet17@gmail.com>
+14  Mathilde Ferrey <45847618+mferrey@users.noreply.github.com>
+6  Gabriel Poujol <gpoujol@openig.org>
+5  Arnaud Vandecasteele <arnaud.sig@gmail.com>
+5  Maël Reboux <m.reboux@rennesmetropole.fr>
+3  Jérémy Garniaux <jeremy@mapper.fr>
+2  Jérémie Hanke <70693383+sigps@users.noreply.github.com>
+2  Loïc Bartoletti <loic.bartoletti@oslandia.com>
+2  Michaël Galien <michael.galien@gard.fr>
+2  Yann Chambon <126060687+yannchambon@users.noreply.github.com>
+1  Benoît Blanc <benoitblanc@live.com>
+1  Christian Quest <github@cquest.org>
+1  Jérémie Prud'homme <p.jeremie@gmail.com>
+1  Olivia Guyot <olivia.guyot@camptocamp.com>
+1  Pierre-François Blin <pierrefrancois.blin@gmail.com>
+```
 
 ----
 
 ## Installation
 
 !!! note
-    L'installation sur Windows est plutôt facile de mémoire (enfin celle de ffmpeg semble un peu exotique), donc je n'en parle pas ici.
+    L'installation sur Windows est plutôt facile de mémoire (enfin [celle de ffmpeg](https://fr.wikihow.com/installer-FFmpeg-sur-Windows) semble un peu exotique), donc je n'en parle pas ici.
 
 > Sur une distribution basée sur Debian (Ubuntu 22.04 à date) :
 
@@ -100,41 +138,29 @@ sudo apt remove libpcre2-dev libfreetype6-dev libglm-dev libboost-filesystem-dev
 
 A partir de maintenant, les commandes suivantes sont à exécuter dans le dossier du dépôt Git local du site Geotribu.
 
-### Récupérer le logo
+### Récupérer les ressources
 
-Télécharger le logo taillé pour la vidéo :
+Cloner le projet avec les fichiers de configuration dédiés à Gource :
 
-```bash
-wget https://cdn.geotribu.fr/img/internal/charte/geotribu_logo_tipi_seul_carre.png -O geotribu_logo_tipi_seul_carre.png
+```sh
+git clone https://github.com/geotribu/tooling-gource.git
+# ou git clone git@github.com:geotribu/tooling-gource.git
+```
+
+Copier les fichiers liés à Gource dans le dépôt Git du site principal (adapter les chemins à votre environnemtn local) :
+
+```sh
+cp tooling-gource/background_sombre_dalle ~/Git/Geotribu/website/
+cp tooling-gource/gource.ini ~/Git/Geotribu/website/
+cp -R tooling-gource/avatars ~/Git/Geotribu/website/
 ```
 
 ### Fichier `gource.ini`
 
-On stocke les paramètres dans un fichier pour avoir une commande plus lisible et pouvoir jouer sur les paramètres plus facilement.
+On repart du fichier `gource.ini` pour avoir une commande plus lisible et pouvoir jouer sur les paramètres plus facilement, notamment la fourchette de dates pour filtrer l'historique.
 
 ```ini linenums="1" title="Fichier de configuration gource.ini"
-[display]
-fullscreen=true
-output-framerate=60
-output-ppm-stream=/tmp/geotribu_website_git_history.ppm
-viewport=1280x720
-
-[gource]
-auto-skip-seconds=1
-camera-mode=track
-date-format=%B %Y
-disable-progress=true
-frameless=true
-hide=mouse,progress
-highlight-dirs=true
-highlight-users=true
-key=true
-logo=geotribu_logo_tipi_seul_carre.png
-path=.
-seconds-per-day=1
-start-date=2023-01-01
-stop-at-end=true
-title=Contributions au contenu de Geotribu
+--8<-- "https://raw.githubusercontent.com/geotribu/tooling-gource/main/gource.ini"
 ```
 
 ----
@@ -143,10 +169,17 @@ title=Contributions au contenu de Geotribu
 
 ![icône globe video](https://cdn.geotribu.fr/img/internal/icons-rdp-news/animation_video.png "icône globe video"){: .img-thumbnail-left }
 
-Allez, on a tout ce qu'il faut, c'est parti pour produire la vidéo ! Concrètement, on lance la commande qui va lancer l'animation en plein écran, filmer l'écran et encoder/compresser le tout dans un fichier mp4.
+Allez, on a tout ce qu'il faut, c'est parti pour produire la vidéo !
+On se place dans le dossier du dépôt Git local du site (adapter le chemin à votre propre environnement) où on a copié les fichiers liés à Gource :
 
 ```sh
-gource --load-config gource.ini -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset fast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 geotribu_history.mp4
+cd ~/Git/Geotribu/website
+```
+
+Concrètement, on lance la commande qui va lancer l'animation en plein écran, filmer l'écran et encoder/compresser le tout dans un fichier mp4 :
+
+```sh
+gource --load-config gource.ini -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset fast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 ~/Videos/geotribu_history.mp4
 ```
 
 Décortiquons :
@@ -172,5 +205,6 @@ Décortiquons :
 
 ## Ressources
 
-- le [dépôt GitHub de Gource](https://github.com/acaudwell/Gource)
+- le [projet GitHub de Gource](https://github.com/acaudwell/Gource)
+- le [projet Github  avec les fichiers de configuration](https://github.com/geotribu/tooling-gource) pour Geotribu
 - la [page Gource sur la doc francophone d'Ubuntu](https://doc.ubuntu-fr.org/gource)
