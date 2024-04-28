@@ -1,5 +1,6 @@
 ---
-title: "Linter Markdown"
+title: Linter Markdown
+subtitle: Poussière de la Toile
 authors:
     - Julien MOURA
 categories:
@@ -9,7 +10,7 @@ comments: true
 date: 2022-07-18
 description: "Sous le GéoCapot : comment est utilisé markdownlint, l'outil de vérification de la syntaxe Markdown (linter) sur Geotribu."
 icon : material/check-all
-image: "https://cdn.geotribu.fr/img/internal/contribution/markdown/linter_code.webp"
+image: https://cdn.geotribu.fr/img/internal/contribution/markdown/linter_code.webp
 robots: index, follow
 tags:
     - coulisses

@@ -1,5 +1,6 @@
 ---
-title: "Cartes de partage"
+title: Cartes de partage
+subtitle: Mappemonde de visite sur les réseaux sociaux
 categories:
     - article
     - Geotribu
