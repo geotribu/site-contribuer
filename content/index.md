@@ -17,10 +17,6 @@ hide:
   - toc
 ---
 
-# Introduction
-
-{{ context(page) | pretty }}
-
 La contribution à Geotribu est réservée aux personnes qui répondent à ces deux préalables :
 
 - être motivé·é
