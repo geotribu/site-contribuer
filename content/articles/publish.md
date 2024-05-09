@@ -1,5 +1,5 @@
 ---
-title: "Publier et diffuser un article"
+title: Publier et diffuser un article
 subtitle: "Merger > attendre > poster sur les réseaux sociaux"
 authors:
     - Geotribu
@@ -7,8 +7,9 @@ categories:
     - contribution
 comments: true
 date: 2023-04-10
-description: "Publication et diffusion d'un article de Geotribu."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
+description: Publication et diffusion d'un article de Geotribu.
+icon: material/bullhorn-variant-outline
+image:
 license: default
 tags:
     - article
