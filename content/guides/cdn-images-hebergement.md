@@ -57,7 +57,7 @@ Sur le site historique de Geotribu, la difficile gestion des images a laissé un
 Merci de suivre au mieux ces recommandations qui permettent de garantir une utilisation sereine des mêmes ressources par plusieurs personnes :pray: :
 
 - chercher d'abord si l'image n'existe pas déjà (voir structure du CDN)
-- redimensionner les images avant de les téléverser (= _uploader_) : 800px maximum en largeur ou en hauteur sont largement suffisants pour illustrer un article ou une news sur Geotribu.
+- redimensionner les images avant de les téléverser (= _uploader_) : 800px maximum en largeur ou en hauteur sont largement suffisants pour illustrer un article ou une news sur Geotribu. Et un poids maximal de 1 MO est suffisant.
 - utiliser des formats avec de bons niveaux de compression :
     - [SVG](https://fr.wikipedia.org/wiki/Scalable_Vector_Graphics)
     - [WebP](https://fr.wikipedia.org/wiki/WebP)
