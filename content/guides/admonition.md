@@ -21,11 +21,11 @@ tags:
 
 # Intégrer un encart
 
-Cette page détaille comment intégrer et customiser un encart (["admonition"](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) dans la langue de Beyoncé) : syntaxes, icônes ... etchétera etchétera
+Cette page détaille comment intégrer et customiser un encart (["admonition"](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) dans la langue de Beyoncé) : syntaxes, icônes, titres ...etchétera etchétera
 
-Par "encart" on fait référence une balise qui ressemble à ça, par exemple :
+Par "encart" on fait référence à une balise qui ressemble par exemple à cela :
 
-!!! warning "attention un éléphant rose dans le ciel :elephant::purple_heart: !!"
+!!! warning "attention il y a un éléphant rose dans le ciel :elephant::purple_heart: !!"
     Nan nan, c'est pas vrai
 
 Utiles pour ajouter des infos supplémentaires, des avertissement ou pour plein d'autres raisons permettant d'alléger et marquer des pauses dans la rédaction, ces encarts peuvent être de plusieurs nature et se déclarent comme ceci :
@@ -57,7 +57,7 @@ Après les trois points d'exclamation vient le type de l'encart, dont [les valeu
 Il est possible de mettre son propre texte entre guillemets pour donner un titre à l'encart. Un double guillemet vide donnera un encart sans titre :
 
 !!! question ""
-    Ceci est un encart de type question et sans titre (donc sans question)... Bein je sais pas moi... 12 ?
+    Ceci est un encart de type question et sans titre (donc sans question)... Bah je sais pas moi... 12 ?
 
 Pour un encart dépliable, c'est trois points d'interrogation qu'on utilisera, avec un `+` pour dire si l'encart est déplié par défaut :
 
