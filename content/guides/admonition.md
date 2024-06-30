@@ -54,6 +54,8 @@ Après les trois points d'exclamation vient le type de l'encart, dont [les valeu
 - question
 ...etc
 
+## Personnaliser le titre de l'encart
+
 Il est possible de mettre son propre texte entre guillemets pour donner un titre à l'encart. Un double guillemet vide donnera un encart sans titre :
 
 !!! question ""
