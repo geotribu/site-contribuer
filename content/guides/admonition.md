@@ -61,6 +61,8 @@ Il est possible de mettre son propre texte entre guillemets pour donner un titre
 !!! question ""
     Ceci est un encart de type question et sans titre (donc sans question)... Bah je sais pas moi... 12 ?
 
+## Rendre l'encart dépliable
+
 Pour un encart dépliable, c'est trois points d'interrogation qu'on utilisera, avec un `+` pour dire si l'encart est déplié par défaut :
 
 <!-- markdownlint-disable MD046 -->
