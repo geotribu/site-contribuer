@@ -44,15 +44,7 @@ Utiles pour ajouter des infos supplémentaires, des avertissement ou pour plein 
         texte de l'encart
 <!-- markdownlint-enable MD046 -->
 
-Après les trois points d'exclamation vient le type de l'encart, dont [les valeurs possibles sont listés ici](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) et parmi lesquelles :
-
-- warning
-- note
-- abstract
-- tip
-- quote
-- question
-...etc
+Après les trois points d'exclamation vient le type de l'encart. Les valeurs possibles [sont listées ici](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types).
 
 ## Personnaliser le titre de l'encart
 
