@@ -70,3 +70,26 @@ Pour un encart dépliable, c'est trois points d'interrogation qu'on utilisera, a
     ??? question "Quelle est la différence entre un lapin :rabbit: et un pneu ?"
         Ils sont tous les deux en caoutchouc, sauf le lapin !
 <!-- markdownlint-enable MD046 -->
+
+## Alignement de l'encart
+
+Pour aligner un encart à droite, on utilise les mots-clés `inline end`, comme ceci :
+
+<!-- markdownlint-disable MD046 -->
+=== "Markdown"
+
+    ```markdown
+    !!! info inline end "Lorem ipsum"
+        Lorem ipsum dolor sit amet, et patati et patata
+    ```
+
+=== "Rendu"
+
+    !!! info inline end "Lorem ipsum"
+        Lorem ipsum dolor sit amet, et patati et patata
+<!-- markdownlint-enable MD046 -->
+
+Pour aligner l'encart à gauche, ce sera seulement le mot-clé `inline`.
+
+!!! info "placement de l'encart"
+    Un encart aligné à droite ou à gauche doit être placé avant le bloc avec lequel il s'aligne.
