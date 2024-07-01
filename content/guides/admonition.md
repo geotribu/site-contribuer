@@ -23,6 +23,9 @@ tags:
 
 Cette page détaille comment intégrer et customiser un encart (["admonition"](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) dans la langue de Beyoncé) : syntaxes, icônes, titres ...etchétera etchétera
 
+!!! info
+    À noter que [GitHub](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) et [HedgeDoc](https://docs.hedgedoc.dev/references/hfm/#structural-elements) nomment cela des "alertes", nous parlerons ici d'"encarts".
+
 Par "encart" on fait référence à une balise qui ressemble par exemple à cela :
 
 !!! warning "attention il y a un éléphant rose dans le ciel :elephant::purple_heart: !!"
