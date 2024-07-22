@@ -73,4 +73,4 @@ Globalement, c'est le même principe que sur Google. La page d'accueil donne une
 
 On peut aussi "inspecter" une URL en particulier avec la mise en avant d'éléments un peu différents :
 
-![Bing Webmasters Tools - PInspection d'une URL](https://cdn.geotribu.fr/img/internal/contribution/seo_monitoring/bing_webmasters_tools_page-erreur-titre-trop-long.webp){: .img-center loading=lazy }
+![Bing Webmasters Tools - Inspection d'une URL](https://cdn.geotribu.fr/img/internal/contribution/seo_monitoring/bing_webmasters_tools_page-erreur-titre-trop-long.webp){: .img-center loading=lazy }
