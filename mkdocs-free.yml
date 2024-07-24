@@ -141,6 +141,8 @@ extra:
     actions:
       - accept
       - reject
+    cookies:
+      analytics: matomo
     description: >
       Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
       des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
