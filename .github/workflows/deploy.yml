@@ -73,7 +73,8 @@ jobs:
           MKDOCS_ENABLE_PLUGIN_SOCIAL: true
           MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
-          MKDOCS_GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+          MKDOCS_MATOMO_URL_BASE: https://matomo.data-wax.com
+          MKDOCS_MATOMO_SITE_ID: 5
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
