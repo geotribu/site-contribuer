@@ -135,10 +135,6 @@ theme:
 
 # Customization
 extra:
-  analytics:
-    provider: matomo
-    matomo_url: !ENV [MKDOCS_MATOMO_URL_BASE, "https://matomo.data-wax.com"]
-    matomo_site_id: !ENV [MKDOCS_MATOMO_SITE_ID, 5]
   geotribu_main_site: https://geotribu.fr/
   consent:
     title: Consentement 🍪

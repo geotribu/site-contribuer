@@ -1,3 +1,4 @@
 analytics:
-  provider: google
-  property: !ENV MKDOCS_GOOGLE_ANALYTICS_KEY
+  provider: matomo
+  matomo_url: !ENV [MKDOCS_MATOMO_URL_BASE, "https://matomo.data-wax.com"]
+  matomo_site_id: !ENV [MKDOCS_MATOMO_SITE_ID, 5]
