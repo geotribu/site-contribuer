@@ -45,7 +45,7 @@ C'est **ce dernier qui fait foi**.
 
 #### Aller plus loin
 
-- [utiliser des blocs stylés](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
+- [utiliser des blocs stylés](./admonition.md)
 - [insérer du code](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/)
 
 ### Editeurs
