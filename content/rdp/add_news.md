@@ -26,15 +26,16 @@ Gardez en tête que le travail de l'équipe est **bénévole**. A ce titre, plus
 
 Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
-<!-- markdownlint-disable MD034 -->
-[Proposer une news par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
-[Proposer une news via GitHub :fontawesome-solid-ticket:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml){: .md-button }
+Il est possible de proposer une news :
+
+[via GitHub :fontawesome-solid-ticket:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml){: .md-button }
+[avec le plugin QGIS :simple-qgis:](https://qtribu.geotribu.fr){: .md-button }
+[par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
 {: align=middle }
-<!-- markdownlint-enable MD034 -->
 
 ----
 
-## Ajouter une news en utilisant son environnement local
+## Proposer une news en utilisant son environnement local
 
 ![logo Git](https://cdn.geotribu.fr/img/logos-icones/divers/git.png "logo Git"){: .img-thumbnail-left }
 
