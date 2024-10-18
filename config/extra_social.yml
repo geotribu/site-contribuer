@@ -8,11 +8,8 @@ social:
   - icon: "fontawesome/brands/mastodon"
     link: https://mapstodon.space/@geotribu
     name: "Geotribu sur Mapstodon"
-  - icon: "fontawesome/brands/twitter"
-    link: "https://twitter.com/geotribu"
-    name: "Geotribu sur Twitter"
   - icon: "fontawesome/brands/linkedin"
-    link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
+    link: https://www.linkedin.com/company/geotribu/
     name: "Les contenus de Geotribu sur LinkedIn"
   - icon: "fontawesome/brands/youtube"
     link: https://www.youtube.com/@geotribu
@@ -26,9 +23,6 @@ social:
   - icon: fontawesome/solid/paper-plane
     link: mailto:<geotribu@gmail.com>
     name: "Nous contacter"
-  - icon: "fontawesome/solid/feather-pointed"
-    link: http://pad.geotribu.fr/
-    name: "Editeur en ligne"
   - icon: "fontawesome/solid/piggy-bank"
     link: https://fr.tipeee.com/geotribu
     name: "Le pot commun sur Tipee"
