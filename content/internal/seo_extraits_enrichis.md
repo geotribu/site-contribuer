@@ -123,7 +123,7 @@ Exemple pour [cet article]({{ config.extra.geotribu_main_site }}articles/2021/20
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ config.site_url }}articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/"
+    "@id": "{{ config.extra.geotribu_main_site }}articles/2021/2021-02-15_ignfr2map_carte_liens_IGN_open-data_7_etapes/"
   },
   "headline": "Geotribu - ign2map : Du site à la carte en 7 étapes",
   "abstract": "ign2map : le petit projet de Geotribu pour rendre l’expérience de téléchargement des données ouvertes de l'IGN plus interactive.",
@@ -132,12 +132,12 @@ Exemple pour [cet article]({{ config.extra.geotribu_main_site }}articles/2021/20
     {
       "@type": "Person",
       "name": "Florian Boret",
-      "url": "{{ config.site_url }}team/fbor"
+      "url": "{{ config.extra.geotribu_main_site }}team/florian-boret"
     },
     {
       "@type": "Person",
       "name": "Julien Moura",
-      "url": "{{ config.site_url }}team/jmou"
+      "url": "{{ config.extra.geotribu_main_site }}team/julien-moura"
     }
   ],
   "publisher": {
