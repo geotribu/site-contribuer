@@ -56,10 +56,10 @@ Voici le processus de commit normal :
 
 ```mermaid
 flowchart TD
-    A[Modification du fichier mon_article.md] --> B
+    A["Modification du fichier mon_article.md"] --> B
     B(git add) --> |Référence les changements| C
     C(git commit) --> |Enregistre les changements indexés| D
-    D[Modification enregistrée\ndans l'historique Git]
+    D[Modification enregistrée<br>dans l'historique Git]
 ```
 
 ### Avec les crochets git (_hooks_) activés
@@ -71,9 +71,9 @@ flowchart TD
     A[Modification du fichier mon_article.md] --> B
     B(git add) --> |Référence les changements| C
     C(git commit) --> |Lance les crochets| D
-    D(Scripts de vérification) --> |Tout est OK| E[Modification enregistrée\ndans l'historique Git]
-    D --> |Problème détecté\nSANS modification| B
-    D --> |Problème détecté\nAVEC modifications automatiques| A
+    D(Scripts de vérification) --> |Tout est OK| E[Modification enregistrée<br>dans l'historique Git]
+    D --> |Problème détecté<br>SANS modification| B
+    D --> |Problème détecté<br>AVEC modifications automatiques| A
 
     linkStyle 3 color:green;
     linkStyle 4 stroke:#FF0000,stroke-width:4px,color:red;
