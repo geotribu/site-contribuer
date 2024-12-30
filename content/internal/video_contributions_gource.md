@@ -43,7 +43,7 @@ C'est un outil qui est connu et largement utilisé dans différents projets (voi
 Gource se basant sur l'historique Git, c'est l'occasion de regarder que l'historique est cohérent et le cas échéant de l'ajuster en éditant le fichier `.mailmap`. Pour regarder l'historique sur une année, on peut utiliser la commande `shortlog` :
 
 ```sh
-git shortlog -nse --since="01 Jan 2023" --before="31 Dec 2023"
+git shortlog -nse --since="01 Jan 2024" --before="31 Dec 2024"
 ```
 
 Ce qui donne par exemple :
@@ -179,7 +179,7 @@ cd ~/Git/Geotribu/website
 Concrètement, on lance la commande qui va lancer l'animation en plein écran, filmer l'écran et encoder/compresser le tout dans un fichier mp4 :
 
 ```sh
-gource --load-config gource.ini -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset fast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 ~/Videos/geotribu_history.mp4
+gource --load-config gource.ini -o - | ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i - -vcodec libx265 -preset fast -pix_fmt yuv420p -crf 26 -threads 0 -bf 0 ./geotribu_history.mp4
 ```
 
 Décortiquons :
@@ -189,14 +189,14 @@ Décortiquons :
 1. `|`: C'est le symbole de tube (_pipe_) qui prend la sortie de la première commande (`gource`) et la transmet à la deuxième commande (`ffmpeg`).
 1. `ffmpeg`: c'est la bibliothèque de traitement multimédia qu'on utilise pour encoder la vidéo dans un fichier
 1. `-y`: écraser automatiquement les fichiers de sortie existants sans poser de questions.
-1. `-r 60`: débit d'images de sortie (60 images par seconde dans ce cas).
+1. `-r 30`: débit d'images de sortie (30 images par seconde dans ce cas).
 1. `-f image2pipe`: on indique le format d'entrée, qui est une série d'images en flux (_image2pipe_).
 1. `-vcodec ppm`: codec vidéo utilisé pour le flux d'entrée, qui est PPM (_Portable Pixel Map_)
 1. `-i -`: on indique à `ffmpeg` de prendre l'entrée depuis la sortie standard (_stdout_) de la commande précédente (`gource`).
-1. `-vcodec libx264`: codec vidéo de sortie, qui est libx264, un codec vidéo largement utilisé pour la compression vidéo.
+1. `-vcodec libx265`: codec vidéo de sortie, qui est libx265, un codec vidéo largement utilisé pour la compression vidéo.
 1. `-preset fast`: préréglage de vitesse de la compression vidéo, en choisissant "ultrafast" pour maximiser la vitesse au détriment de la taille du fichier.
 1. `-pix_fmt yuv420p`: format de pixel de sortie pour la vidéo.
-1. `-crf 1`: facteur de qualité Constant Rate Factor (CRF) pour la vidéo. Une valeur faible (comme 1) entraînera une meilleure qualité mais un fichier plus volumineux.
+1. `-crf 26`: facteur de qualité Constant Rate Factor (CRF) pour la vidéo. Plus la valeur est faible (comme 1), meilleure est la qualité mais plus volumineux sera le fichier de sortie. Concernant le codec x265, il est conseillé un facteur entre 25 et 30 (ffmpeg utilise 28 par défaut).
 1. `-threads 0`: on indique à `ffmpeg` d'utiliser autant de threads que possible pour l'encodage.
 1. `-bf 0`: on désactive l'utilisation de cadres B (B-frames) pour la compression vidéo.
 1. `geotribu_history.mp4`: fichier de sortie qui contiendra la vidéo finale.
