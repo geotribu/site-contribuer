@@ -1,9 +1,10 @@
 ---
-title: Ajouter une nouvelle année
+title: Routine de nouvelle année
+subtitle: "Prérequis : gueule de bois et cotillons"
 categories:
     - Geotribu
-date: 2024-01-15
-description:
+date: 2024-12-31
+description: Documentation de la routine de nouvelle année pour les contenus Geotribu.
 icon : material/firework
 image:
 tags:
@@ -11,19 +12,24 @@ tags:
     - GéoCapot
 ---
 
-#
+# Entamer une nouvelle année de contenus sur Geotribu
 
-le site étant statique et les contenus organisés par années
+Le site étant statique et les contenus organisés par années, le premier article ou la première revue de presse de l'année nécessite quelques opérations. Rien de bien compliqué mais vu qu'on ne le fait qu'une fois par an, ça vaut le coup de documenter la procédure.
 
 ## Procédure
 
-1. Créer un sous-dossier avec l'année dans le dossier `content/articles`
-1. Y copier un fichier `.pages` depuis l'année précédente et ajouter l'année  Exemple pour 2024 :
-1. Y copier un fichier `.meta.yml` depuis l'année précédente et incrémenter le boost de `1`. En fait, la valeur du boost doit correspondre aux 2 derniers chiffres de l'année. Exemple pour 2024 :
+1. Créer un sous-dossier avec l'année dans [le dossier `content/articles`](https://github.com/geotribu/website/tree/master/content/articles)
+1. Y copier un fichier `.pages` depuis l'année précédente et ajouter la nouvelle année. Exemple pour 2025 :
 
-    ```yml title="content/articles/2024/.meta.yml"
+    ```yml title="content/articles/2025/.pages"
+    order: desc
+    ```
+
+1. Y copier un fichier `.meta.yml` depuis l'année précédente et incrémenter le boost de `1`. En fait, la valeur du boost doit correspondre aux 2 derniers chiffres de l'année. Exemple pour 2025 :
+
+    ```yml title="content/articles/2025/.meta.yml"
     search:
-        boost: 24
+        boost: 25
     ```
 
 1. Ajouter l'année en haut de la liste `nav`. du fichier `.pages` à la racine du dossier `content/articles` :
@@ -32,6 +38,7 @@ le site étant statique et les contenus organisés par années
     title: "&#128214; Articles"
 
     nav:
+        - "2025"
         - "2024"
         - "2023"
         - "2022"
@@ -45,8 +52,7 @@ le site étant statique et les contenus organisés par années
         - "2010"
         - "2009"
         - "2008"
-
     ```
 
 1. Reproduire pour le dossier `rdp`
-1. créer une Pull Request
+1. Créer une Pull Request dédiée à ces changements
