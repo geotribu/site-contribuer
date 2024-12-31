@@ -21,20 +21,20 @@ Le site étant statique et les contenus organisés par années, le premier artic
 1. Créer un sous-dossier avec l'année dans [le dossier `content/articles`](https://github.com/geotribu/website/tree/master/content/articles)
 1. Y copier un fichier `.pages` depuis l'année précédente et ajouter la nouvelle année. Exemple pour 2025 :
 
-    ```yml title="content/articles/2025/.pages"
+    ```yaml title="content/articles/2025/.pages"
     order: desc
     ```
 
 1. Y copier un fichier `.meta.yml` depuis l'année précédente et incrémenter le boost de `1`. En fait, la valeur du boost doit correspondre aux 2 derniers chiffres de l'année. Exemple pour 2025 :
 
-    ```yml title="content/articles/2025/.meta.yml"
+    ```yaml title="content/articles/2025/.meta.yml"
     search:
         boost: 25
     ```
 
 1. Ajouter l'année en haut de la liste `nav`. du fichier `.pages` à la racine du dossier `content/articles` :
 
-    ```yml title="content/articles/.pages"
+    ```yaml title="content/articles/.pages"
     title: "&#128214; Articles"
 
     nav:
@@ -54,5 +54,5 @@ Le site étant statique et les contenus organisés par années, le premier artic
         - "2008"
     ```
 
-1. Reproduire pour le dossier `rdp`
+1. Reproduire pour [le dossier `rdp`](https://github.com/geotribu/website/tree/master/content/rdp)
 1. Créer une Pull Request dédiée à ces changements
