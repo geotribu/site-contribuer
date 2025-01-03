@@ -41,26 +41,10 @@ Une fois l'article publié, il est automatiquement :
 
 Une fois l'article publié, il est temps de lancer la diffusion sur les réseaux sociaux. Pour information, Geotribu dispose de comptes officiels sur ces réseaux sociaux :
 
-- ~~[Facebook](https://www.facebook.com/geotribu) - inactif~~
+- [BlueSky](https://bsky.app/profile/geotribu.bsky.social)
+- ~~[Facebook](https://www.facebook.com/geotribu)~~ - inactif
+- [LinkedIn](https://www.linkedin.com/company/geotribu/) avec [le hashtag #Geotribu](https://www.linkedin.com/feed/hashtag/?keywords=geotribu)
 - [Mastodon](https://mapstodon.space/@geotribu)
-- [Twitter](https://twitter.com/geotribu)
+- ~~[X/Twitter](https://twitter.com/geotribu)~~ - inactif
 
 La publication sur les réseaux sociaux est **manuelle** et à la discrétion de l'auteur/ice qui choisit pendant la phase de relecture les modalités de partage comme présentées ci-après.
-
-### LinkedIn
-
-- [ ] un/e membre de Geotribu publie, tu repartages avec ton compte
-- [ ] tu publies, on repartage
-- [ ] chacun/e publie de son côté
-
-### Mastodon
-
-- [ ] Geotribu publie, tu repartages avec ton compte
-- [ ] tu publies, on repartage
-- [ ] chacun/e publie de son côté
-
-### Twitter
-
-- [ ] Geotribu publie, tu repartages avec ton compte
-- [ ] tu publies, on repartage
-- [ ] chacun/e publie de son côté
