@@ -38,7 +38,6 @@ flowchart LR
     D --> E[Pré-relecture]
     E --> F[Relecture]
     F --> G[Publication et diffusion]
-    G --> H[Diffusion]
 
     click E href "../prereview" "Préparation de la relecture collaborative"
     click G href "../publish" "Préparation de la relecture collaborative"
