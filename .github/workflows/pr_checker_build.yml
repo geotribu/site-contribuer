@@ -4,13 +4,16 @@ name: "Pull Request Checker 🛃"
 
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 # Environment variables
 env:
   BUILD_DIR: build/mkdocs/site
-  NETLIFY_SITE_NAME: geotribu-contribuer-preview
-  NETLIFY_SITE_PREFIX: preview-pullrequest-${{ github.event.pull_request.number }}
+  NETLIFY_SITE_NAME: geotribu-preprod
+  NETLIFY_SITE_PREFIX: geotribu-contribuer-${{ github.event.pull_request.number }}
+  PR_NUMBER: ${{ github.event.pull_request.number }}
+
 
 # If the workflow for a PR is triggered multiple times, previous existing runs will be canceled.
 # eg: Applying multiple suggestions from a review directly via the Github UI.
