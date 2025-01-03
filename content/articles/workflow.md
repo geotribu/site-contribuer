@@ -27,6 +27,23 @@ Gardez en tête que le travail de l'équipe est **bénévole**. A ce titre, plus
 
 Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
+```mermaid
+---
+title: Workflow de publication d'article Geotribu
+---
+
+flowchart LR
+    A[Proposition] --> B[Rédaction]
+    B --> D[Soumission]
+    D --> E[Pré-relecture]
+    E --> F[Relecture]
+    F --> G[Publication et diffusion]
+    G --> H[Diffusion]
+
+    click E href "../prereview" "Préparation de la relecture collaborative"
+    click G href "../publish" "Préparation de la relecture collaborative"
+```
+
 ## Rédiger
 
 ![icône globe tricot](https://cdn.geotribu.fr/img/internal/icons-rdp-news/matiere.png "icône globe tricot"){: .img-thumbnail-left }
