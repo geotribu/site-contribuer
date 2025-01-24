@@ -40,7 +40,8 @@ flowchart LR
     F --> G[Publication et diffusion]
 
     click E href "../prereview" "Préparation de la relecture collaborative"
-    click G href "../publish" "Préparation de la relecture collaborative"
+    click F href "../review" "Relecture collaborative"
+    click G href "../publish" "Publication et diffusion"
 ```
 
 ## Rédiger

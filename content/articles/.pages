@@ -3,5 +3,6 @@ title: "&#128214; Articles"
 nav:
     - workflow.md
     - prereview.md
+    - review.md
     - publish.md
     - ...
