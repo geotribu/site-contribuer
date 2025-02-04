@@ -41,6 +41,9 @@ Comme souvent, ce guide est principalement un mémo, pas une ablation du bon sen
 
 ![GitHub - Assigner l'équipe Relecture aux reviewers d'une Pull Request](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_assign_reviewers.webp){: loading=lazy .img-center }
 
+[Prochaine étape : la relecture collaborative :fontawesome-solid-forward:](./review.md "Relecture collaborative"){: .md-button }
+{: align=middle }
+
 ----
 
 ## Modèles
