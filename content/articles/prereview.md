@@ -141,3 +141,20 @@ Merci d'utiliser autant que possible le mode **Suggestion** de la review : https
 
 C'est vraiment **IMPORTANT** pour le confort de l'auteur/ice :pray:
 ```
+
+----
+
+### Structure du message Slack pour notifier l'équipe
+
+L'objectif est d'ouvrir un fil de discussion interne par article soumis à relecture en résumant les informations essentielles. Le message est à publier dans le canal `#articles` et à adapter au sujet de l'article. Structure type :
+
+```markdown title="Structure du message à l'équipe"
+:gdal:  Nouvel article de Nicolas Rochard sur la génération de COG avec GDAL :filet_de_but:
+
+- la PR : https://github.com/geotribu/website/pull/XXXX
+- la preview : https://preview-pullrequest-XXXX--geotribu-preprod.netlify.app/
+
+:date: 11 février
+
+@canal à vos tipex et plus belles suggestions de correction !
+```
