@@ -202,7 +202,7 @@ De cette façon, on profite de plusieurs avantages :
     - :name_badge: pas bien : <{{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope>
     - :name_badge: pas bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est absolu (argh !)]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope)
     - :negative_squared_cross_mark: ancienne méthode désormais invalide : comme nous le disions dans [cette super news d'une précédente RDP dont le lien part de la racine du site]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16/#le-mobiliscope)
-    - :white_check_mark: :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16.md#le-mobiliscope)
+    - :white_check_mark: :white_check_mark: bien : comme nous le disions dans [cette super news d'une précédente RDP dont le lien est relatif à la page actuelle]({{ config.extra.geotribu_main_site }}rdp/2022/rdp_2022-12-16#le-mobiliscope)
 <!-- markdownlint-enable MD034 -->
 
 ----
