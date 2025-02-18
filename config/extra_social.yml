@@ -14,9 +14,9 @@ social:
   - icon: "fontawesome/brands/youtube"
     link: https://www.youtube.com/@geotribu
     name: "Chaîne Youtube de Geotribu"
-  - icon: "fontawesome/brands/facebook"
-    link: "https://fr-fr.facebook.com/geotribu/"
-    name: "Page Facebook de Geotribu"
+  # - icon: "fontawesome/brands/facebook"
+  #   link: "https://fr-fr.facebook.com/geotribu/"
+  #   name: "Page Facebook de Geotribu"
   - icon: "fontawesome/brands/mailchimp"
     link: http://eepurl.com/hL0zVr
     name: "Abonnez-vous à la newsletter"
