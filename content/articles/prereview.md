@@ -104,7 +104,6 @@ Nous avons des comptes officiels sur ces réseaux sociaux :
 - [LinkedIn](https://www.linkedin.com/company/geotribu/) avec [le hashtag #Geotribu](https://www.linkedin.com/feed/hashtag/?keywords=geotribu)
 - [Mastodon](https://mapstodon.space/@geotribu)
 - ~~[X/Twitter](https://twitter.com/geotribu)~~ - inactif
-- [Bluesky](https://bsky.app/profile/geotribu.bsky.social)
 
 Merci d'indiquer en commentaire tes comptes à utiliser pour être cité/e dans les messages et de cocher ci-après la "stratégie" de diffusion qui te convient pour chaque réseau.
 

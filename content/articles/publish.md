@@ -46,6 +46,5 @@ Une fois l'article publié, il est temps de lancer la diffusion sur les réseaux
 - [LinkedIn](https://www.linkedin.com/company/geotribu/) avec [le hashtag #Geotribu](https://www.linkedin.com/feed/hashtag/?keywords=geotribu)
 - [Mastodon](https://mapstodon.space/@geotribu)
 - ~~[X/Twitter](https://twitter.com/geotribu)~~ - inactif
-- [Bluesky](https://bsky.app/profile/geotribu.bsky.social)
 
 La publication sur les réseaux sociaux est **manuelle** et à la discrétion de l'auteur/ice qui choisit pendant la phase de relecture les modalités de partage comme présentées ci-après.
