@@ -37,7 +37,7 @@ Une fois la revue de presse en ligne, elle est automatiquement :
 
 Il est alors temps de lancer la diffusion sur les réseaux sociaux pour relayer la publication :
 
-- sur LinkedIn, via le compte personnel d'un/e membre de Geotribu avec [les hashtags `#Geotribu`](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) et [`#GeoRDP`](https://www.linkedin.com/feed/hashtag/?keywords=geordp)
+- sur LinkedIn, via [la page officielle de Geotribu](https://www.linkedin.com/company/geotribu/), avec [les hashtags `#Geotribu`](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) et [`#GeoRDP`](https://www.linkedin.com/feed/hashtag/?keywords=geordp)
 - Sur Mastodon, via [le compte officiel de Geotribu](https://mapstodon.space/@geotribu/)
 - sur Twitter, via [le compte officiel de Geotribu](https://twitter.com/geotribu/)
 
