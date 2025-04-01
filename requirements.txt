@@ -9,8 +9,8 @@ geotribu>=0.32,<1
 mkdocs-awesome-pages-plugin>=2.6,<2.11
 mkdocs-exclude>=1.0,<1.1
 mkdocs-git-authors-plugin<0.10
-mkdocs-git-committers-plugin-2>=2.2.3,<2.6
-mkdocs-git-revision-date-localized-plugin>=1,<1.4
+mkdocs-git-committers-plugin-2>=2.5.0,<2.6
+mkdocs-git-revision-date-localized-plugin>=1.4.7,<1.5
 mkdocs-glightbox>=0.4.0,<0.5
 mkdocs-macros-plugin>=1,<1.4
 mkdocs-minify-plugin<0.9
