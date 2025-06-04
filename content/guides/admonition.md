@@ -112,26 +112,26 @@ Il faut alors encadrer l'encart (j'étais obligé de faire cette formulation, c'
     ```markdown
     <!-- markdownlint-disable MD046 -->
     !!! example "Je, je suis multiligne"
-        Je suis une catin
-        Je, je suis si fragile
-        Qu'on me tienne la main
+        Je suis un faux positif  
+        Je, je suis si fragile  
+        Qu'on me désactive
 
-        Fendre la lune, baisers d'épine et de plume
-        Bercée par un petit vent, je déambule
-        La vie est triste comme un verre de grenadine
+        Fendre la lune, baisers d'épine et de plume  
+        Bercée par un petit vent, je déambule  
+        La vie est triste comme un verre de grenadine  
         Aimer c'est pleurer quand on s'incline
     <!-- markdownlint-enable MD046 -->
     ```
 
 === "Rendu"
-<!-- markdownlint-disable MD046 -->
+    <!-- markdownlint-disable MD046 -->
     !!! example "Je, je suis multiligne"
-        Je suis une catin
-        Je, je suis si fragile
-        Qu'on me tienne la main
+        Je suis un faux positif  
+        Je, je suis si fragile  
+        Qu'on me désactive
 
-        Fendre la lune, baisers d'épine et de plume
-        Bercée par un petit vent, je déambule
-        La vie est triste comme un verre de grenadine
+        Fendre la lune, baisers d'épine et de plume  
+        Bercée par un petit vent, je déambule  
+        La vie est triste comme un verre de grenadine  
         Aimer c'est pleurer quand on s'incline
-<!-- markdownlint-enable MD046 -->
+    <!-- markdownlint-enable MD046 -->
