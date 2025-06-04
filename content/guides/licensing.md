@@ -70,7 +70,8 @@ La syntaxe est celle de la [fonction d'intégration de Jinja](https://jinja.pall
 
 | Nom et lien rendu | Commentaire | En-tête | Syntaxe |
 | :---------------- | :---------- | :-----: | :-----: |
-| [Creative Commons 4.0 BY-SA](../toc_nav_ignored/snippets/licenses/cc4_by-sa.md) | Licence autorisant toutes les réutilisations, y compris pour une finalité commerciale. | `license: cc4_by-sa` | {% raw %}`{% include "licenses/cc4_by-sa.md" %}`{% endraw %} |
+| [Creative Commons 4.0 BY](../toc_nav_ignored/snippets/licenses/cc4_by.md) | Licence autorisant toutes les réutilisations, y compris pour une finalité commerciale. | `license: cc4_by` | {% raw %}`{% include "licenses/cc4_by.md" %}`{% endraw %} |
+| [Creative Commons 4.0 BY-SA](../toc_nav_ignored/snippets/licenses/cc4_by-sa.md) | Licence autorisant toutes les réutilisations, y compris pour une finalité commerciale mais contraignant le repartage. | `license: cc4_by-sa` | {% raw %}`{% include "licenses/cc4_by-sa.md" %}`{% endraw %} |
 | [Creative Commons 4.0 BY-NC-SA](../toc_nav_ignored/snippets/licenses/cc4_by-nc-sa.md) | **Licence par défaut**. Empêche la réutilisation pour une finalité commerciale. | `license: default` ou `license: cc4_by-nc-sa` | {% raw %}`{% include "licenses/cc4_by-nc-sa.md" %}`{% endraw %} |
 | [Beerware](../toc_nav_ignored/snippets/licenses/beerware.md) | Licence humoristique autorisant toute réutilisation sans conditions mais qui invite à payer un coup à l'auteur/e original/e. | `license: beerware` | {% raw %}`{% include "licenses/beerware.md" %}`{% endraw %} |
 
