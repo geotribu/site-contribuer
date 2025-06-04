@@ -83,9 +83,6 @@ plugins:
       cards_layout_options:
         background_color: "#3e93a7"
         font_family: Ubuntu
-  - tags:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_TAGS, true]
-      tags_file: tags.md
 
 # Theme
 theme:
