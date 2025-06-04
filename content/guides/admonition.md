@@ -96,3 +96,42 @@ Pour aligner l'encart à gauche, ce sera seulement le mot-clé `inline`.
 
 !!! info "placement de l'encart"
     Un encart aligné à droite ou à gauche doit être placé avant le bloc avec lequel il s'aligne.
+
+## Gérer les encarts multilignes et indentés comme un pro
+
+La syntaxe des encarts peut entrer en conflit avec le [vérificateur du Markdown qui génère alors des faux positifs](../internal/markdown_linter.md#gérer-les-faux-positifs-du-linter "Gérer les faux positifs du linter Markdown"), notamment dans 2 cas de figure assez communs :
+
+- les encarts contenant un texte à plusieurs lignes ;
+- les encarts indentés par exemple dans [les onglets](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/).
+
+Il faut alors encadrer l'encart (j'étais obligé de faire cette formulation, c'est contractuel) avec les balises désactivant la règle 46 du linter. Voilà ce que cela donne :
+
+<!-- markdownlint-disable MD046 -->
+=== "Markdown"
+
+    ```markdown
+    <!-- markdownlint-disable MD046 -->
+    !!! example "Je, je suis multiligne"
+        Je suis une catin
+        Je, je suis si fragile
+        Qu'on me tienne la main
+
+        Fendre la lune, baisers d'épine et de plume
+        Bercée par un petit vent, je déambule
+        La vie est triste comme un verre de grenadine
+        Aimer c'est pleurer quand on s'incline
+    <!-- markdownlint-enable MD046 -->
+    ```
+
+=== "Rendu"
+<!-- markdownlint-disable MD046 -->
+    !!! example "Je, je suis multiligne"
+        Je suis une catin
+        Je, je suis si fragile
+        Qu'on me tienne la main
+
+        Fendre la lune, baisers d'épine et de plume
+        Bercée par un petit vent, je déambule
+        La vie est triste comme un verre de grenadine
+        Aimer c'est pleurer quand on s'incline
+<!-- markdownlint-enable MD046 -->
