@@ -99,7 +99,7 @@ Pour aligner l'encart à gauche, ce sera seulement le mot-clé `inline`.
 
 ## Gérer les encarts multilignes et indentés comme un pro
 
-La syntaxe des encarts peut entrer en conflit avec le [vérificateur du Markdown qui génère alors des faux positifs](../internal/markdown_linter.md#gérer-les-faux-positifs-du-linter "Gérer les faux positifs du linter Markdown"), notamment dans 2 cas de figure assez communs :
+La syntaxe des encarts peut entrer en conflit avec le [vérificateur du Markdown qui génère alors des faux positifs](../internal/markdown_linter.md#gerer-les-faux-positifs-du-linter "Gérer les faux positifs du linter Markdown"), notamment dans 2 cas de figure assez communs :
 
 - les encarts contenant un texte à plusieurs lignes ;
 - les encarts indentés par exemple dans [les onglets](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/).
