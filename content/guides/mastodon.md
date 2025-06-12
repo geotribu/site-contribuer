@@ -49,4 +49,14 @@ Prenons ce post Mastodon pour exemple : <https://mapstodon.space/@jeremy/1093787
         {: align=middle }
     <!-- markdownlint-enable MD046 -->
 
+1. Il y aura peut-être besoin de désactiver la règle numero 33 (dites "trente-trois") du _linter_ markdown, si jamais le commit ne passe pas. Comme ceci :
+
+```markdown
+<!-- markdownlint-disable MD033 -->
+
+<iframe src="https://..."></iframe>{: align=middle }
+
+<!-- markdownlint-enable MD033 -->
+```
+
 :bellhop_bell: Voilà, c'est prêt ! :tada:
