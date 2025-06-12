@@ -54,7 +54,8 @@ Prenons ce post Mastodon pour exemple : <https://mapstodon.space/@jeremy/1093787
 ```markdown
 <!-- markdownlint-disable MD033 -->
 
-<iframe src="https://..."></iframe>{: align=middle }
+<iframe src="https://..."></iframe>
+{: align=middle }
 
 <!-- markdownlint-enable MD033 -->
 ```
