@@ -1,5 +1,6 @@
 ---
 title: Sauvegarde des contenus et des images
+subtitle: Le contrat de résilience
 authors:
     - Julien MOURA
 categories:
