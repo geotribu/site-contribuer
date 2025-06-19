@@ -35,7 +35,7 @@ Côté hébergement, la plupart des sites sont hébergés sur [GitHub Pages](htt
 
 - les [images](../guides/cdn-images-hebergement.md) sur le serveur prêté gracieusement par GeoRezo et géré principalement par Julien
 - les sites de prévisualisation des PR sur [Netlify](https://www.netlify.com/)
-- les serveurs gischat pour QChat sur un serveur géré par Guilhem
+- les serveurs gischat pour QChat sur un serveur géré principalement par Guilhem
 
 ## Autoriser GitHub Pages à utiliser le nom de domaine geotribu.fr
 
