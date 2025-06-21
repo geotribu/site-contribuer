@@ -23,11 +23,11 @@ tags:
 
 ![icône globe flux](https://cdn.geotribu.fr/img/internal/icons-rdp-news/flux.png "icône globe flux"){: .img-thumbnail-left }
 
-Geotribu possède 3 noms de domaines :
+Geotribu c'est 1 nom de domaine et 3 suffixes, payés de longue date par Fabien :
 
 - `geotribu.fr` pour le site principal et les sites secondaires en français
 - `geotribu.net` pour le blog anglophone et les slides
-- `geotribu.org` inutilisé actuellement
+- `geotribu.org` pour les éventuels outils liés à la dynamique de groupe ou communautaire. Inutilisé actuellement.
 
 Ils sont tous enregistrés chez [Gandi](https://www.gandi.net/), un bureau d'enregistrement français.
 
@@ -93,7 +93,7 @@ slides 1000 IN CNAME geotribu.github.io.
 
 ## Autoriser MailChimp et isso (commentaires) à envoyer des mails pour geotribu.fr
 
-La newsletter et les notifications de commentaires sont envoyées par MailChimp et Isso avec l'adresse `facteur@geotribu.fr`. Pour ne pas être considéré comme spam, il faut être en conformité avec SPF, DMARC et DKIM. Pour rappel :
+La [newsletter](./auto_newsletter.md) et les notifications des commentaires sont envoyées par MailChimp et Isso avec l'adresse `facteur@geotribu.fr`. Pour ne pas être considéré comme spam, il faut être en conformité avec SPF, DMARC et DKIM. Pour rappel :
 
 - SPF : autorise une IP à envoyer des mails pour un domaine
 - DKIM : signature cryptographique des mails pour prouver qu’ils viennent bien de Geotribu
@@ -102,8 +102,16 @@ La newsletter et les notifications de commentaires sont envoyées par MailChimp 
 Voici la configuration DNS établie au printemps 2025 pour le domaine `geotribu.fr` :
 
 ```zone
+@ 10800 IN MX 10 spool.mail.gandi.net.
+@ 10800 IN MX 50 fb.mail.gandi.net.
 @ 10800 IN TXT "v=spf1 include:_mailcust.gandi.net ip4:195.200.217.9 ip6:2a06:ac01:cafe:3217::9 ~all"
 _dmarc 300 IN TXT "v=DMARC1; p=quarantine; rua=mailto:facteur+dmarc@geotribu.fr"
+gm1._domainkey 1200 IN CNAME gm1.gandimail.net.
+gm2._domainkey 1200 IN CNAME gm2.gandimail.net.
+gm3._domainkey 1200 IN CNAME gm3.gandimail.net.
+k2._domainkey 300 IN CNAME dkim2.mcsv.net.
+k3._domainkey 300 IN CNAME dkim3.mcsv.net.
+mandrill._domainkey 10800 IN TXT "v=DKIM1; k=rsa; p=MIG[...];"
 ```
 
 ## Ressources
