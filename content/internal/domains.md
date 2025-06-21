@@ -39,13 +39,13 @@ Côté hébergement, la plupart des sites sont hébergés sur [GitHub Pages](htt
 
 ## Autoriser GitHub Pages à utiliser le nom de domaine geotribu.fr
 
-Il s'agit de suivre les instructions de [la documentation pour configurer un domaine personnalisé](https://docs.github.com/fr/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages#verifying-a-domain-for-your-organization-site). Concrètement, cela consiste à ajouter un enregistrement DNS de type TXT pour le domaine `geotribu.fr` :
+Il s'agit de suivre les instructions de [la documentation pour configurer un domaine personnalisé](https://docs.github.com/fr/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages#verifying-a-domain-for-your-organization-site). Concrètement, cela consiste à ajouter un enregistrement DNS de type `TXT` pour le domaine `geotribu.fr` avec une clé de vérification fournie par GitHub. Par exemple :
 
 ```zone
 _github-pages-challenge-geotribu 10800 IN TXT "7am9zq..."
 ```
 
-Pour le site principal, cela passe par un enregistrement DNS de type CNAME pour le domaine `www.geotribu.fr` vers `geotribu.github.io.` (notez le point final à la fin de l'enregistrement).
+Pour le site principal, cela passe par un enregistrement DNS de type `CNAME` pour le domaine `www.geotribu.fr` vers `geotribu.github.io.` (notez le point final à la fin de l'enregistrement).
 
 ```zone
 www 600 IN CNAME geotribu.github.io.
@@ -54,6 +54,9 @@ www 600 IN CNAME geotribu.github.io.
 Il faut aussi ajouter les enregistrements pour les sous-domaines :
 
 ```zone
+cli 10800 IN CNAME geotribu.github.io.
+contribuer 10800 IN CNAME geotribu.github.io.
+pyqgis-icons-cheatsheet 10800 IN CNAME geotribu.github.io.
 qtribu 10800 IN CNAME geotribu.github.io.
 ```
 
@@ -81,16 +84,27 @@ geotribu.github.io. 585 IN A 185.199.109.153
 
 ## Autoriser GitHub Pages à utiliser le nom de domaine geotribu.net
 
-De même pour le [blog anglophone](https://blog.geotribu.net/) ou les [slides](https://slides.geotribu.net/) qui sont hébergés sur GitHub Pages, il faut un enregistrement DNS de type CNAME pour chaque sous-domaine de `geotribu.net` vers `geotribu.github.io.` :
+De même pour le [blog anglophone](https://blog.geotribu.net/) ou les [slides](https://slides.geotribu.net/) qui sont hébergés sur GitHub Pages, il faut un enregistrement de type `TXT` pour le domaine `geotribu.net` avec une clé de vérification fournie par GitHub et un enregistrement DNS de type `CNAME` pour chaque sous-domaine de `geotribu.net` vers `geotribu.github.io.` :
 
 ```zone
 blog 1000 IN CNAME geotribu.github.io.
 slides 1000 IN CNAME geotribu.github.io.
 ```
 
-## Autoriser MailChimp à envoyer des mails pour geotribu.fr
+## Autoriser MailChimp et isso (commentaires) à envoyer des mails pour geotribu.fr
 
-## Gérer l'envoi des notifications mails des commentaires
+La newsletter et les notifications de commentaires sont envoyées par MailChimp et Isso avec l'adresse `facteur@geotribu.fr`. Pour ne pas être considéré comme spam, il faut être en conformité avec SPF, DMARC et DKIM. Pour rappel :
+
+- SPF : autorise une IP à envoyer des mails pour un domaine
+- DKIM : signature cryptographique des mails pour prouver qu’ils viennent bien de Geotribu
+- DMARC : politique globale pour définir quoi faire si SPF/DKIM échoue
+
+Voici la configuration DNS établie au printemps 2025 pour le domaine `geotribu.fr` :
+
+```zone
+@ 10800 IN TXT "v=spf1 include:_mailcust.gandi.net ip4:195.200.217.9 ip6:2a06:ac01:cafe:3217::9 ~all"
+_dmarc 300 IN TXT "v=DMARC1; p=quarantine; rua=mailto:facteur+dmarc@geotribu.fr"
+```
 
 ## Ressources
 
