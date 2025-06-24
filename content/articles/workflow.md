@@ -127,6 +127,9 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
 
     ![GitHub submit pull request from fork](https://cdn.geotribu.fr/img/internal/contribution/github_submit_from_fork.png "GitHub - Créer une Pull Request depuis un fork"){: loading=lazy }
 
+    !!! tip "Dans l'jargon, on mentionne souvent le terme *Pull Requests* par *PR*, c'est plus direct."
+        La PR, la PR, mais qu'est-ce qu'elle a fait de moi la PR ? La PR, la PR, c'est comme si c'était mon frère.
+
 6. Adapter la description de la Pull Request en indiquant rapidement le sujet et la motivation de l'article :
 
     ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
