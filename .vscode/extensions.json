@@ -1,9 +1,13 @@
 {
   "recommendations": [
+    "bierner.emojisense",
     "bierner.markdown-checkbox",
+    "bierner.markdown-emoji",
+    "bierner.markdown-footnotes",
     "bierner.markdown-mermaid",
     "davidanson.vscode-markdownlint",
     "eamodio.gitlens",
+    "github.vscode-github-actions",
     "github.vscode-pull-request-github",
     "ms-python.python",
     "ms-ceintl.vscode-language-pack-fr",

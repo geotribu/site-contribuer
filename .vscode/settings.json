@@ -19,6 +19,8 @@
     "markdown.validate.fragmentLinks.enabled": "warning",
     "[markdown]": {
         "files.trimTrailingWhitespace": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
     },
     // Python
     "python.defaultInterpreterPath": ".venv/bin/python",
@@ -26,7 +28,7 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit"
         },
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFormatter": "ms-python.python",
         "editor.formatOnSave": true,
         "editor.guides.bracketPairs": "active",
         "editor.rulers": [
@@ -36,10 +38,6 @@
     },
     // Extensions
     "cSpell.language": "fr",
-    "flake8.args": [
-        "--config=setup.cfg",
-        "--verbose"
-    ],
     "isort.args": [
         "--profile",
         "black"
