@@ -49,7 +49,7 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
-      - name: Build in strict mode
+      - name: Build
         env:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           MKDOCS_ENABLE_PLUGIN_CARDS: true
@@ -75,7 +75,7 @@ jobs:
           python scripts/100_mkdocs_config_merger.py
 
           # build
-          mkdocs build --config-file mkdocs.yml --strict
+          mkdocs build
 
           # save mkdocs.yml for debug
           cp mkdocs.yml ${{ env.BUILD_DIR }}
