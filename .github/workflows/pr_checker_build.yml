@@ -75,7 +75,7 @@ jobs:
           python scripts/100_mkdocs_config_merger.py
 
           # build
-          mkdocs build
+          zensical build
 
           # save mkdocs.yml for debug
           cp mkdocs.yml ${{ env.BUILD_DIR }}
