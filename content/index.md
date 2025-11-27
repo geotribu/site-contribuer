@@ -76,9 +76,9 @@ Bref, c'est ouvert :wink: :smile: ! Pas besoin d'être dans l'équipe _officiell
 
 <!-- markdownlint-enable MD033 -->
 
-!!! warning "Éviter les communiqués"
-    Même s'il n'y a pas de charte établie, merci de réserver les communiqués de presse ou les copiés/collés de communication commerciale à d'autres sites dont c'est la vocation. Par exemple : [Décryptagéo](https://decryptageo.fr/), [GeoRezo](https://georezo.net/forum/viewforum.php?id=14).
-
+<!-- markdownlint-disable MD046 -->
 !!! question "Allô ? Oui, Geotribu à votre écoute"
     Un blocage ? Un souci ? Une angoisse existentielle apparue pendant le procédé de contribution ?
-    N'hésitez pas à nous contacter sur [Slack](https://geotribu.slack.com/), les réseaux sociaux ([Mastodon](https://mapstodon.space/@geotribu), [Bluesky](https://bsky.app/profile/geotribu.bsky.social)) ou [par email :email:](mailto:geotribu@gmail.com), voir même [pigeon voyageur](https://fr.wikipedia.org/wiki/IP_over_Avian_Carriers) :bird::wink:.
+
+    N'hésitez pas à nous contacter sur [Matrix](https://matrix.to/#/!kxwgliwjgvfxQmVICx:matrix.org?via=matrix.org&via=osgeo.org/), les réseaux sociaux ([Mastodon](https://mapstodon.space/@geotribu), [LinkedIn](https://www.linkedin.com/company/geotribu/), [Bluesky](https://bsky.app/profile/geotribu.bsky.social)) ou [par email :email:](mailto:geotribu@gmail.com), voir même [pigeon voyageur](https://fr.wikipedia.org/wiki/IP_over_Avian_Carriers) :bird::wink:.
+<!-- markdownlint-enable MD046 -->
