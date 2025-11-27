@@ -53,6 +53,7 @@ jobs:
         env:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           MKDOCS_ENABLE_PLUGIN_CARDS: true
+          MKDOCS_ENABLE_PLUGIN_RSS: true
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
         run: |
           # site name
@@ -71,7 +72,7 @@ jobs:
           sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" mkdocs.yml
 
           # merge different configs
-          python scripts/mkdocs_config_merger.py -c mkdocs.yml
+          python scripts/100_mkdocs_config_merger.py
 
           # build
           mkdocs build --config-file mkdocs.yml --strict
