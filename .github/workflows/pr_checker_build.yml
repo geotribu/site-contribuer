@@ -75,7 +75,7 @@ jobs:
           python scripts/100_mkdocs_config_merger.py
 
           # build
-          properdocs build --config-file properdocs.yml --strict
+          zensical build
 
           # save properdocs.yml for debug
           cp properdocs.yml ${{ env.BUILD_DIR }}
