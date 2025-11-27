@@ -1,238 +1,386 @@
-# Project information
-site_name: Contribuer à Geotribu
-site_description: >-
-  Guides de contribution au site participatif Geotribu et outillage interne.
-
-site_author: Geotribu
-site_url: https://contribuer.geotribu.fr/
-copyright: '<span class="copyleft">&copy;</span> Geotribu'
-
-# Repository
-repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/site-contribuer"]
-repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/site-contribuer"]
-edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/main/content"]
-
-# Custom folder structure
-docs_dir: "./content"
-site_dir: "./build/mkdocs/site"
-
-# Scripts pendant le build
+copyright: <span class="copyleft">&copy;</span> Geotribu
+docs_dir: ./content
+edit_uri: edit/main/content
+extra:
+  analytics:
+    matomo_site_id: 5
+    matomo_url: https://matomo.data-wax.com
+    provider: matomo
+  consent:
+    actions:
+    - accept
+    - reject
+    cookies:
+      analytics: matomo
+    description: "Nous utilisons des cookies pour le go\xFBter mais aussi pour vous\
+      \ proposer des fonctionnalit\xE9s (commentaires, th\xE8me clair ou sombre, etc.)\
+      \ et mesurer l'audience du site.\n"
+    title: "Consentement \U0001F36A"
+  geotribu_main_site: https://geotribu.fr/
+  social:
+  - icon: fontawesome/solid/rss
+    link: https://contribuer.geotribu.fr/feed_rss_created.xml
+    name: S'abonner aux nouveaux contenus via RSS
+  - icon: fontawesome/brands/github-alt
+    link: https://github.com/geotribu/
+    name: L'organisation Github de Geotribu
+  - icon: fontawesome/brands/mastodon
+    link: https://mapstodon.space/@geotribu
+    name: Geotribu sur Mapstodon
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/company/geotribu/
+    name: Les contenus de Geotribu sur LinkedIn
+  - icon: fontawesome/brands/youtube
+    link: https://www.youtube.com/@geotribu
+    name: "Cha\xEEne Youtube de Geotribu"
+  - icon: fontawesome/brands/bluesky
+    link: https://bsky.app/profile/geotribu.bsky.social
+    name: Compte Bluesky de Geotribu
+  - icon: fontawesome/brands/mailchimp
+    link: http://eepurl.com/hL0zVr
+    name: "Abonnez-vous \xE0 la newsletter"
+  - icon: fontawesome/solid/paper-plane
+    link: mailto:<geotribu@gmail.com>
+    name: Nous contacter
+  - icon: fontawesome/solid/piggy-bank
+    link: https://fr.tipeee.com/geotribu
+    name: Le pot commun sur Tipee
+  tags:
+    Bash: code
+    CNIG: institution
+    Centipede: satellite
+    D3.js: js
+    ETL: roue
+    Easter eggs: oeuf
+    Esri: globe
+    ExtJS: js
+    FIG: conference
+    FME: roue
+    FOSS4G: conference
+    Facebook: facebook
+    GeoGames: manette
+    GeoKettle: roue
+    Geotribu: tente
+    Git: git
+    GitHub: git
+    GitLab: git
+    Google: google
+    Google Earth: google
+    Google Maps: google
+    Google Street View: google
+    GraphHopper: route
+    "G\xE9oCapot": moteur
+    "G\xE9oDataDays": conference
+    HTML: html
+    HTML5: html
+    Halloween: citrouille
+    IA: cerveau
+    IGN: institution
+    INSPIRE: ananas
+    IRC: commentaires
+    Input: telephone
+    JavaScript: js
+    LIDAR: satellite
+    Leaflet: feuille
+    Lego: brick
+    Linux: pingouin
+    Mapillary: streetview
+    Markdown: markdown
+    Matrix: commentaires
+    Minecraft: manette
+    MySQL: database
+    NoSQL: database
+    ODK: telephone
+    OSRM: route
+    Open Data Kit: telephone
+    Open Earth View: streetview
+    OpenDroneMap: drone
+    OpenPathView: streetview
+    OpenRouteService: route
+    OpenStreetMap: geoloupe
+    Ordnance Survey: institution
+    PGSession: database
+    PostGIS: database
+    PostgreSQL: database
+    PyCSW: python
+    PyGEOS: python
+    PyQGIS: python
+    PyQt: python
+    PySQL: python
+    PyWPS: python
+    Python: python
+    QField: telephone
+    QGIS: globe
+    R: rstats
+    SQL: database
+    Ubuntu: ubuntu
+    "Wikip\xE9dia": wikipedia
+    Windows: windows
+    atlas: atlas
+    cURL: code
+    collecte: telephone
+    collecte terrain: telephone
+    "conf\xE9rence": conference
+    coulisses: masques
+    "g\xE9o-lecture": atlas
+    jeu: manette
+    "jeux vid\xE9o": manette
+    lint: balai
+    linter: balai
+    livre: atlas
+    open data: open
+    open source: opensource
+    pgDay: database
+    pgRouting: route
+    projection: meridiens
+    route: route
+    routing: route
+    three.js: js
+  theme_insiders_flavor: true
+extra_css:
+- theme/assets/stylesheets/extra.css
+extra_javascript:
+- async: true
+  defer: true
+  path: https://mapstodon.space/embed.js
+- async: true
+  defer: true
+  path: https://platform.twitter.com/widgets.js
 hooks:
-  - hooks/mkdocs/G003_social_cards_adapter.py
-  - hooks/mkdocs/G005_jinja_filters.py
-
-# Plugins
+- hooks/mkdocs/G003_social_cards_adapter.py
+- hooks/mkdocs/G005_jinja_filters.py
+markdown_extensions:
+- abbr
+- admonition
+- attr_list
+- footnotes
+- md_in_html
+- pymdownx.details
+- pymdownx.emoji:
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg ''
+    emoji_index: !!python/name:material.extensions.emoji.twemoji ''
+- pymdownx.highlight:
+    use_pygments: true
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.smartsymbols
+- pymdownx.saneheaders
+- pymdownx.snippets:
+    auto_append:
+    - content/toc_nav_ignored/snippets/glossaire.md
+    base_path:
+    - .
+    check_paths: true
+    url_download: true
+- pymdownx.superfences:
+    custom_fences:
+    - class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format ''
+      name: mermaid
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+- toc:
+    permalink: '#'
 plugins:
-  - awesome-pages
-  - exclude:
-      glob:
-        - "*/templates/*"
-        - "*.yml"
-  - git-authors:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, true]
-      show_contribution: true
-  - git-revision-date-localized:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_DATES, true]
-      enable_creation_date: true
-      fallback_to_build_date: true
-      locale: fr
-  - glightbox:
-      touchNavigation: true
-      effect: zoom
-      width: 90%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - img-rdp-news-thumb
-        - emojione
-        - twemoji
-      auto_caption: true
-      caption_position: bottom
-  - macros:
-      include_dir: content/toc_nav_ignored/snippets
-      module_name: hooks/macros/custom_jinja
-  - meta
-  - minify:
-      minify_html: true
-  - privacy:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
-      cache_dir:
-        !ENV [MKDOCS_PLUGIN_PRIVACY_EXTERNAL_CACHE_DIR, .cache/plugins/privacy]
-      links_attr_map:
-        target: _blank
-      assets_exclude:
-        # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
-        - cdn.jsdelivr.net/npm/mathjax@3/*
-        - giscus.app/*
-        # geotribu
-        - cdn.geotribu.fr/images/*
-        - cdn.geotribu.fr/img/*
-        - geotribu.net/*
-        # external
-        - cdn.jsdelivr.net/**/*/twemoji*
-        - cdnjs.cloudflare.com/ajax/libs/twemoji/*
-        - github.com/**/*.gif
-        - i.imgur.com/*
-        - raw.githubusercontent.com/*
-        - twemoji.maxcdn.com/*
-        - upload.wikimedia.org/*
-        - user-images.githubusercontent.com/**/*.gif
-  - rss:
-      abstract_chars_count: 500
-      categories:
-        - categories
-        - tags
-      comments_path: "#__comments"
-      date_from_meta:
-        as_creation: date
-        datetime_format: "%Y-%m-%d"
-        default_timezone: Europe/Paris
-        default_time: "19:00"
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RSS, false]
-      image: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
-      length: 50
-      match_path: "(articles|edit|guides|internal|rdp)/.*"
-      pretty_print: false
-      use_material_social_cards: true
-      url_parameters:
-        utm_source: "rss-feed"
-        utm_medium: "RSS"
-        utm_campaign: "feed-syndication"
-  - search:
-      lang: fr
-  - social:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, false]
-      cache_dir: !ENV [MKDOCS_PLUGIN_SOCIAL_CACHE_DIR, .cache/plugins/social]
-      cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, false]
-      cards_exclude:
-        - team/*.md
-        - toc_nav_ignored/*.md
-      cards_layout_options:
-        background_color: "#3e93a7"
-        font_family: Ubuntu
-
+- awesome-pages
+- exclude:
+    glob:
+    - '*/templates/*'
+    - '*.yml'
+- git-authors:
+    enabled: true
+    show_contribution: true
+- git-revision-date-localized:
+    enable_creation_date: true
+    enabled: true
+    fallback_to_build_date: true
+    locale: fr
+- glightbox:
+    auto_caption: true
+    caption_position: bottom
+    draggable: true
+    effect: zoom
+    height: auto
+    skip_classes:
+    - img-rdp-news-thumb
+    - emojione
+    - twemoji
+    touchNavigation: true
+    width: 90%
+    zoomable: true
+- macros:
+    include_dir: content/toc_nav_ignored/snippets
+    module_name: hooks/macros/custom_jinja
+- meta
+- minify:
+    minify_html: true
+- privacy:
+    assets_exclude:
+    - cdn.jsdelivr.net/npm/mathjax@3/*
+    - giscus.app/*
+    - cdn.geotribu.fr/images/*
+    - cdn.geotribu.fr/img/*
+    - geotribu.net/*
+    - cdn.jsdelivr.net/**/*/twemoji*
+    - cdnjs.cloudflare.com/ajax/libs/twemoji/*
+    - github.com/**/*.gif
+    - i.imgur.com/*
+    - raw.githubusercontent.com/*
+    - twemoji.maxcdn.com/*
+    - upload.wikimedia.org/*
+    - user-images.githubusercontent.com/**/*.gif
+    cache_dir: .cache/plugins/privacy
+    enabled: true
+    links_attr_map:
+      target: _blank
+- rss:
+    abstract_chars_count: 500
+    categories:
+    - categories
+    - tags
+    comments_path: '#__comments'
+    date_from_meta:
+      as_creation: date
+      datetime_format: '%Y-%m-%d'
+      default_time: '19:00'
+      default_timezone: Europe/Paris
+    enabled: false
+    image: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
+    length: 50
+    match_path: (articles|edit|guides|internal|rdp)/.*
+    pretty_print: false
+    url_parameters:
+      utm_campaign: feed-syndication
+      utm_medium: RSS
+      utm_source: rss-feed
+    use_material_social_cards: true
+- search:
+    lang: fr
+- social:
+    cache_dir: .cache/plugins/social
+    cards: false
+    cards_exclude:
+    - team/*.md
+    - toc_nav_ignored/*.md
+    cards_layout_options:
+      background_color: '#3e93a7'
+      font_family: Ubuntu
+    enabled: false
+- tags:
+    enabled: true
+    listings_sort_by: !!python/name:material.plugins.tags.item_url ''
+    tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold ''
+- git-committers:
+    branch: main
+    cache_dir: .cache/plugins/git-committers/
+    docs_path: content/
+    enabled: false
+    repository: geotribu/site-contribuer
+    token: R4c29x1UcWR3BHYgCyd8
+repo_name: geotribu/site-contribuer
+repo_url: https://github.com/geotribu/site-contribuer
+site_author: Geotribu
+site_description: Guides de contribution au site participatif Geotribu et outillage
+  interne.
+site_dir: ./build/mkdocs/site
+site_name: "Contribuer \xE0 Geotribu"
+site_url: https://contribuer.geotribu.fr/
 theme:
-  name: "material"
-  insiders_flavor: true
-  custom_dir: "./content/theme/"
+  custom_dir: ./content/theme/
   favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
   features:
-    - content.action.edit
-    - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    - content.footnote.tooltips
-    - content.tabs.link
-    - content.tooltips
-    - navigation.instant.preview
-    - navigation.path
-    - navigation.prune
-    - navigation.tabs
-    - navigation.top
-    - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
+  - content.action.edit
+  - content.action.view
+  - content.code.annotate
+  - content.code.copy
+  - content.footnote.tooltips
+  - content.tabs.link
+  - content.tooltips
+  - navigation.instant.preview
+  - navigation.path
+  - navigation.prune
+  - navigation.tabs
+  - navigation.top
+  - navigation.tracking
+  - search.highlight
+  - search.share
+  - search.suggest
+  - toc.follow
   font:
     code: Ubuntu Mono
     text: Ubuntu
+  icon:
+    edit: material/pencil
+    repo: fontawesome/brands/github-alt
+    tag:
+      ananas: material/fruit-pineapple
+      atlas: fontawesome/solid/book-atlas
+      balai: material/broom
+      brick: material/toy-brick
+      cerveau: material/brain
+      citrouille: material/pumpkin
+      code: fontawesome/solid/code
+      commentaires: fontawesome/solid/comments
+      conference: fontawesome/solid/person-chalkboard
+      database: fontawesome/solid/database
+      default: fontawesome/solid/tag
+      drone: material/drone
+      facebook: fontawesome/brands/facebook
+      feuille: fontawesome/solid/leaf
+      geoloupe: fontawesome/solid/magnifying-glass-location
+      git: fontawesome/brands/git-alt
+      globe: fontawesome/solid/earth-europe
+      google: fontawesome/brands/google
+      html: fontawesome/brands/html5
+      institution: fontawesome/solid/building-columns
+      js: fontawesome/brands/js
+      manette: fontawesome/solid/gamepad
+      markdown: fontawesome/brands/markdown
+      masques: fontawesome/solid/masks-theater
+      meridiens: fontawesome/solid/globe
+      moteur: material/engine
+      oeuf: fontawesome/solid/egg
+      open: fontawesome/solid/lock-open
+      opensource: material/open-source-initiative
+      pingouin: simple/linux
+      python: fontawesome/brands/python
+      roue: material/cog-play
+      route: fontawesome/solid/route
+      rstats: fontawesome/brands/r-project
+      satellite: fontawesome/solid/satellite-dish
+      streetview: fontawesome/solid/street-view
+      telephone: material/cellphone-marker
+      tente: material/tent
+      ubuntu: material/ubuntu
+      wikipedia: material/wikipedia
+      windows: fontawesome/brands/windows
+    view: material/eye
+  insiders_flavor: true
   language: fr
   logo: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
+  name: material
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Basculer en mode clair
-
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: amber
-      toggle:
-        icon: material/brightness-7
-        name: Basculer en mode sombre
-
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: amber
-      toggle:
-        icon: material/brightness-4
-        name: Basculer sur le réglage système
-
-# Customization
-extra:
-  geotribu_main_site: https://geotribu.fr/
-  theme_insiders_flavor: true
-  consent:
-    title: Consentement 🍪
-    actions:
-      - accept
-      - reject
-    cookies:
-      analytics: matomo
-    description: >
-      Nous utilisons des cookies pour le goûter mais aussi pour vous proposer
-      des fonctionnalités (commentaires, thème clair ou sombre, etc.) et mesurer
-      l'audience du site.
-
-extra_css:
-  - "theme/assets/stylesheets/extra.css"
-
-extra_javascript:
-  - path: https://mapstodon.space/embed.js
-    defer: true
-    async: true
-  - path: https://platform.twitter.com/widgets.js
-    defer: true
-    async: true
-
-# Extensions to enhance markdown - see: https://squidfunk.github.io/mkdocs-material/getting-started/#extensions
-markdown_extensions:
-  - abbr
-  # Admonition - https://squidfunk.github.io/mkdocs-material/extensions/admonition/
-  - admonition
-  - attr_list
-  # Footnotes - https://squidfunk.github.io/mkdocs-material/reference/footnotes/
-  - footnotes
-  - md_in_html
-  # PyMdown extensions - https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight:
-      use_pygments: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.smartsymbols
-  - pymdownx.saneheaders
-  # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
-  - pymdownx.snippets:
-      auto_append: [content/toc_nav_ignored/snippets/glossaire.md]
-      base_path:
-        - "."
-      check_paths: true
-      url_download: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-  # Permalinks - https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
-  - toc:
-      permalink: "#"
-
+  - media: (prefers-color-scheme)
+    toggle:
+      icon: material/brightness-auto
+      name: Basculer en mode clair
+  - accent: amber
+    media: '(prefers-color-scheme: light)'
+    primary: indigo
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Basculer en mode sombre
+  - accent: amber
+    media: '(prefers-color-scheme: dark)'
+    primary: black
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: "Basculer sur le r\xE9glage syst\xE8me"
 validation:
   links:
     absolute_links: warn

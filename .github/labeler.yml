@@ -1,60 +1,60 @@
 articles:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/articles/**/*.md
+      - changed-files:
+              - any-glob-to-any-file:
+                      - content/articles/**/*.md
 
 dependencies:
-    - changed-files:
-          - any-glob-to-any-file:
-                - requirements/*.txt
-                - requirements.txt
+      - changed-files:
+              - any-glob-to-any-file:
+                      - requirements/*.txt
+                      - requirements.txt
 
 géocapot:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/internal/**/*
+      - changed-files:
+              - any-glob-to-any-file:
+                      - content/internal/**/*
 
 mkdocs:
-    - changed-files:
-          - any-glob-to-any-file:
-                - config/**
-                - content/**/*.pages
-                - hooks/**
-                - mkdocs*.yml
+      - changed-files:
+              - any-glob-to-any-file:
+                      - config/**
+                      - content/**/*.pages
+                      - hooks/**
+                      - mkdocs*.yml
 
 outillage:
-    - changed-files:
-          - any-glob-to-any-file:
-                - .devcontainer/**
-                - .github/**
-                - .pre-commit-config.yaml
-                - .vscode/**/*
-                - .docker
-                - .lincheckrrc
-                - .mailmap
-                - .markdownlint*
-                - docker*
-                - Dockerfile
-                - scripts/**
-    - head-branch:
-          - ^ci
-          - ci
-          - ^tooling
-          - tooling
+      - changed-files:
+              - any-glob-to-any-file:
+                      - .devcontainer/**
+                      - .github/**
+                      - .pre-commit-config.yaml
+                      - .vscode/**/*
+                      - .docker
+                      - .lincheckrrc
+                      - .mailmap
+                      - .markdownlint*
+                      - docker*
+                      - Dockerfile
+                      - scripts/**
+      - head-branch:
+              - ^ci
+              - ci
+              - ^tooling
+              - tooling
 
 rdp:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/rdp/**/*.md
-    - head-branch:
-          - ^rdp
-          - rdp
+      - changed-files:
+              - any-glob-to-any-file:
+                      - content/rdp/**/*.md
+      - head-branch:
+              - ^rdp
+              - rdp
 
 thème:
-    - changed-files:
-          - any-glob-to-any-file:
-                - content/theme/**/*
-                - requirements-insiders.txt
-    - head-branch:
-          - theme
-          - ^theme
+      - changed-files:
+              - any-glob-to-any-file:
+                      - content/theme/**/*
+                      - requirements.txt
+      - head-branch:
+              - theme
+              - ^theme
