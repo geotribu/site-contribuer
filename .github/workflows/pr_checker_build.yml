@@ -84,7 +84,7 @@ jobs:
           rm ${{ env.BUILD_DIR }}/CNAME
           rm ${{ env.BUILD_DIR }}/robots.txt
           rm ${{ env.BUILD_DIR }}/sitemap.xml
-          rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
+          # rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
 
         # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
         # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
