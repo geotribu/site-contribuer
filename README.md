@@ -13,7 +13,6 @@
 
 #### Recommandés
 
-- NodeJS LTS (pour l'index)
 - Visual Studio Code (configuration intégrée)
 
 ### Installation
@@ -21,23 +20,8 @@
 Après avoir cloné ou téléchargé le dépôt, installer les prérequis (de préférence dans un environnement virtuel) :
 
 ```bash
-python -m pip install -U pip
-python -m pip install -U setuptools wheel
-```
-
-### Version gratuite
-
-```bash
-python -m pip install -U -r requirements-free.txt
-```
-
-#### Version Insiders
-
-Pour utiliser la [version Insiders du thème Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/), il faut disposer du *token* lié au compte GitHub de Geotribu :
-
-```bash
-export GH_TOKEN_MATERIAL_INSIDERS=************
-python -m pip install -U -r requirements-insiders.txt
+python -m pip install -U pip setuptools wheel
+python -m pip install -U -r requirements.txt
 ```
 
 ### Générer le site
@@ -48,16 +32,10 @@ Version complète :
 mkdocs build
 ```
 
-Version complète gratuite :
+Version complète :
 
 ```bash
-mkdocs build -f mkdocs-free.yml --dirtyreload
-```
-
-Version minimale (seulement certains plugins) :
-
-```bash
-mkdocs build -f mkdocs-minimal.yml
+mkdocs build -f mkdocs.yml --dirtyreload
 ```
 
 ### Servir le site en local
@@ -68,16 +46,10 @@ Version complète :
 mkdocs serve --dirtyreload
 ```
 
-Version complète gratuite :
+Version complète :
 
 ```bash
-mkdocs serve -f mkdocs-free.yml --dirtyreload
-```
-
-Version minimale (seulement certains plugins) :
-
-```bash
-mkdocs serve --dirtyreload -f mkdocs-minimal.yml
+mkdocs serve -f mkdocs.yml --dirtyreload
 ```
 
 Le site est accessible en local à l'adresse suivante : <http://localhost:8000/>.  
@@ -95,6 +67,5 @@ Afin de pérenniser le site, nous avons ouvert un compte sur Liberapay : <https:
 L'objectif de ce financement est de :
 
 - financer les outils open-source que l'on utilise pour le site :
-    - Material for MkDocs (voir la page sponsor <https://github.com/sponsors/squidfunk>)
-    - GeoRezo (pour le CDN)
+- soutenir GeoRezo (pour le CDN)
 - financer les suffixes du nom de domaine (geotribu.fr/.net/.org)

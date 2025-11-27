@@ -16,7 +16,7 @@ RUN \
     git-fast-import \
     openssh \
   && apk add --no-cache --virtual .build gcc musl-dev \
-  && pip install --no-cache-dir -r requirements-free.txt \
+  && python -m pip install --no-cache-dir -r requirements.txt \
   && apk del .build gcc musl-dev \
   && rm -rf /tmp/*
 

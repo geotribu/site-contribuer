@@ -35,7 +35,6 @@ Il est également recommandé :
 - d'avoir une connexion autorisée vers le [CDN de Geotribu]
 - utiliser, [markdownlint](../internal/markdown_linter.md), le vérificateur automatisé de syntaxe markdown, soit :
     - en activant les vérifications au moment de committer, [les git hooks](../internal/git_hooks_precommit.md)
-    - en installant [Node.js (LTS)](https://nodejs.org) pour pouvoir utiliser markdownlint (voir [Rédiger en Markdown : enjeux de qualité et règles](../guides/markdown_quality.md) et ).
     - en utilisant un IDE avec l'extension markdownlint, comme VS Code par exemple
 
 ----
@@ -51,7 +50,7 @@ La gestion et la mise en ligne du contenu se font via [Git], une suite d'outils 
 Il y a beaucoup de ressources sur la Toile pour installer et configurer [Git].  
 Nous mettons ici une documentation minimaliste destinée à donner la trame globale de l'installation de Git, mais il y a fort à parier que cette documentation soit trop générique. A chacun/e de trouver tuto à son pied si besoin !
 
-=== "Debian (Bash)"
+=== "Debian et dérivés"
     Pour avoir une version récente de Git, il faut ajouter les dépôts communautaires :
 
     ```bash
@@ -131,7 +130,7 @@ git pull origin --prune
 
 Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement supprimée sur le dépôt central (hébergé sur [GitHub]) afin de garder un dépôt propre et lisible. Il faut alors mettre à jour le dépôt local sur votre machine :
 
-=== "Debian (Bash)"
+=== "Debian et dérivés"
     ```bash
     git pull origin
 
@@ -166,12 +165,16 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
 
 ### Installation de Python
 
-=== "Debian (Bash)"
-    ```bash
-    # lister les versions de Python installées
-    ls -1 /usr/bin/python* | grep '[2-3].[0-9]$'
+=== "Debian et dérivés"
+    Normalement, une version de Python est déjà installée sur votre système. Vérifions cela :
 
-    # si aucune version de Python >= 3.10 n'est installée, installons la 3.10 par exemple
+    ```bash title="Lister les versions de Python installées"
+    ls -1 /usr/bin/python* | grep '[2-3].[0-9]$'
+    ```
+
+    Si aucune version de Python >= 3.10 n'est installée, installons la 3.10 par exemple :
+
+    ```sh
     sudo apt install software-properties-common
     sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt update
@@ -188,7 +191,7 @@ Pour éditer localement et visualiser le résultat final avant de publier sur le
 
 Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'installation de Python au niveau du système, on préfère utiliser un environnement virtuel.
 
-=== "Debian (Bash)"
+=== "Debian et dérivés"
     ```bash
     # se rendre à la racine du dépôt local - adapter au dossier dans lequel vous avez cloné le dépôt
     cd ~/git-repos/geotribu/website/
@@ -228,37 +231,12 @@ Pour travailler tranquillement sans risquer de casser quoi que ce soit dans l'in
 
 Toujours dans l'environnement virtuel, il s'agit maintenant d'installer les dépendances (Mkdocs, thème, plugins...) requises pour [générer le site](../internal/generer_les_sites_web_geotribu.md) localement.
 
-La liste des packages à installer dépend de l'accès à la version payante du thème [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/insiders/).
+```sh
+python -m pip install -U -r requirements.txt
+```
 
-=== "Version gratuite du thème"
-
-    ```sh
-    python -m pip install -U -r requirements-free.txt
-    ```
-
-=== "Version payante du thème (jeton *Insider*)"
-
-    Ajouter le jeton d'accès en variable d'environnement : `GH_TOKEN_MATERIAL_INSIDERS`. Par exemple avec Bash :
-
-    ```sh
-    export GH_TOKEN_MATERIAL_INSIDERS=ghp_************
-    ```
-
-    ou avec PowerShell :
-
-    ```powershell
-    $env:GH_TOKEN_MATERIAL_INSIDERS='ghp_************
-    ```
-
-    Puis lancer l'installation des dépendances :
-
-    ```sh
-    python -m pip install -U -r requirements-insiders.txt
-    ```
-
-<!-- markdownlint-enable MD046 -->
-
-Les dépendances du projet sont mises à jour mensuellement. Il est donc recommandé de mettre son environnement virtuel local à jour **avant** de contribuer, en relançant la commande ci-dessus.
+!!! tip "Mettre à jour les dépendances"
+    Les dépendances du projet sont mises à jour mensuellement. Il est donc recommandé de mettre son environnement virtuel local à jour **avant** de contribuer, en relançant la commande ci-dessus.
 
 ----
 
