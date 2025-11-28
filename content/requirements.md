@@ -69,10 +69,10 @@ Voici quelques uns des cas d'usage où l'utilisation d'outils d'intelligence art
 
 Dans tous les cas, l'utilisation d'outils d'intelligence artificielle générative (GenIA) doit être mentionnée explicitement dans le formulaire de contribution voire dans le contenu publié, en précisant les outils utilisés et la nature de leur contribution.
 
-#### Pas de communiqué
+### Pas de communiqué
 
 Même s'il n'y a pas de charte établie, réservez les communiqués de presse ou les copiés/collés de communication commerciale à d'autres sites dont c'est la vocation, comme par exemple [GeoRezo](https://georezo.net/forum/viewforum.php?id=14).
 
-#### Pas d'offre d'emploi
+### Pas d'offre d'emploi
 
 Parce que Geotribu est un site communautaire et non un site de recrutement, les offres d'emploi ne sont **généralement** pas publiées sur Geotribu. Orientez-vous vers des sites spécialisés comme [GeoRezo](https://georezo.net/forum/viewforum.php?id=10).
