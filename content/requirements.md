@@ -47,7 +47,7 @@ Voici quelques critères de publication non exhaustifs qui permettent de cadrer 
 - **la thématique** : le contenu doit être en lien avec la géographie, la géomatique, les systèmes d'information géographique (SIG), la cartographie, la télédétection, les données géospatiales, les technologies géospatiales, l'open data, les logiciels libres géospatiaux, la visualisation, la gouvernance des projets, etc.
 - **la qualité** : même si Geotribu est un site communautaire, le contenu doit être de qualité, bien rédigé, structuré et documenté. La [relecture collaborative](./articles/review.md) est là pour accompagner les auteur/ices.
 - **la légitimité** : ne pas violer les droits d'auteur ou les droits de propriété intellectuelle d'autrui.
-- **le respect** : l'humour et même le "troll" sont dans l'ADN de Geotribu mais les contributions doivent respecter les autres membres de la communauté, éviter les propos offensants, discriminatoires ou diffamatoires.
+- **le respect** : l'humour et même le "trolling" sont dans l'ADN de Geotribu mais les contributions doivent respecter les autres membres de la communauté, éviter les propos offensants, discriminatoires ou diffamatoires.
 
 ----
 
