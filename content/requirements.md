@@ -71,7 +71,7 @@ Dans tous les cas, l'utilisation d'outils d'intelligence artificielle générati
 
 #### Pas de communiqué
 
-Même s'il n'y a pas de charte établie, merci de réserver les communiqués de presse ou les copiés/collés de communication commerciale à d'autres sites dont c'est la vocation comme [GeoRezo](https://georezo.net/forum/viewforum.php?id=14).
+Même s'il n'y a pas de charte établie, réservez les communiqués de presse ou les copiés/collés de communication commerciale à d'autres sites dont c'est la vocation, comme par exemple [GeoRezo](https://georezo.net/forum/viewforum.php?id=14).
 
 #### Pas d'offre d'emploi
 
