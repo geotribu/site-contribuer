@@ -43,7 +43,7 @@ Il y a également certaines limites (dimensionnement ou alignement des images pa
 
 Voici quelques critères de publication non exhaustifs, qui permettent de cadrer les contributions sur Geotribu :
 
-- **l'originalité** : le contenu doit être rédigé avec une prose personnelle axée sur le ressenti et l'expérience, sans être un simple copié-collé d'un autre article ou d'un communiqué de presse. Les traductions d'articles sont autorisées à condition de mentionner la source, l'auteur/ice original/e et d'apporter la preuve de son accord.
+- **l'originalité** : le contenu doit être rédigé avec une prose personnelle axée sur le ressenti et l'expérience (les alexandrins sont aussi éligibles). Les simple copié-collés d'un autre article ou d'un communiqué de presse ne seront pas publiés ni diffusés. Les traductions d'articles sont autorisées à condition de mentionner la source, l'auteur/ice original/e et d'apporter la preuve de son accord.
 - **la thématique** : le contenu doit être en lien avec la géographie, la géomatique, les systèmes d'information géographique (SIG), la cartographie, la télédétection, les données géospatiales, les technologies géospatiales, l'open data, les logiciels libres géospatiaux, la visualisation, la gouvernance des projets, etc.
 - **la qualité** : même si Geotribu est un site communautaire, le contenu doit être pensé à amont, correctement rédigé, structuré et documenté. La [relecture collaborative](./articles/review.md) est là pour accompagner les auteur/ices.
 - **la légitimité** : ne pas violer les droits d'auteur ou les droits de propriété intellectuelle d'autrui.
