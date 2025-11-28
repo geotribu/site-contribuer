@@ -41,7 +41,7 @@ Il y a également certaines limites (dimensionnement ou alignement des images pa
 
 ## Ligne éditoriale
 
-Voici quelques critères de publication non exhaustifs qui permettent de cadrer les contributions sur Geotribu :
+Voici quelques critères de publication non exhaustifs, qui permettent de cadrer les contributions sur Geotribu :
 
 - **l'originalité** : le contenu doit être rédigé avec une prose personnelle axée sur le ressenti et l'expérience, sans être un simple copié-collé d'un autre article ou d'un communiqué de presse. Les traductions d'articles sont autorisées à condition de mentionner la source, l'auteur/ice original/e et d'apporter la preuve de son accord.
 - **la thématique** : le contenu doit être en lien avec la géographie, la géomatique, les systèmes d'information géographique (SIG), la cartographie, la télédétection, les données géospatiales, les technologies géospatiales, l'open data, les logiciels libres géospatiaux, la visualisation, la gouvernance des projets, etc.
