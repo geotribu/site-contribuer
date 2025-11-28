@@ -75,4 +75,4 @@ Même s'il n'y a pas de charte établie, merci de réserver les communiqués de 
 
 #### Pas d'offre d'emploi
 
-Parce que Geotribu est un site communautaire et non un site de recrutement, les offres d'emploi ne sont **généralement** pas publiées sur Geotribu. Merci de vous orienter vers des sites spécialisés comme [GeoRezo](https://georezo.net/forum/viewforum.php?id=10).
+Parce que Geotribu est un site communautaire et non un site de recrutement, les offres d'emploi ne sont **généralement** pas publiées sur Geotribu. Orientez-vous vers des sites spécialisés comme [GeoRezo](https://georezo.net/forum/viewforum.php?id=10).
