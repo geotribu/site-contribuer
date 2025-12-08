@@ -199,7 +199,7 @@ En plus des ressources, à suivre quelques exemples de base.
     En spécifiant entre crochets le numéro de la note, ajouté en bas de la page.
 
     <!-- Footnotes reference -->
-    [^1]: _à mon avis
+    [^1]: _à mon avis_.
 
 <!-- markdownlint-enable MD046 -->
 
