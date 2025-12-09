@@ -21,7 +21,7 @@ tags:
 
 ![icône porte-voix](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône porte-voix"){: .img-thumbnail-left }
 
-Une fois la Pull Request[^pr] validée par un/e membre de l'équipe, la branche de l'article est fusionnée (*merged*) dans la branche principale à la date de publication décidée pendant la phase de relecture.  
+Une fois la Pull Request validée par un/e membre de l'équipe, la branche de l'article est fusionnée (*merged*) dans la branche principale à la date de publication décidée pendant la phase de relecture.  
 Cela déclenche la génération et le déploiement du site web avec le nouveau contenu.
 
 Voici une vidéo de comment cela se déroule dans les coulisses :

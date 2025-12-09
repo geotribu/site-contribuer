@@ -134,7 +134,7 @@ Par défaut, le site est accessible sur <http://localhost:8000> mais il est poss
 Il est également possible d'utiliser Docker. L'avantage est que c'est alors la seule dépendance à installer (plus besoin de Python, NodeJS ou même de Git si vous téléchargez le dépôt). L'inconvénient est que c'est assez lourd pour un site qui se veut léger :wink: !
 
 ```sh
-docker-compose -f "docker-compose-mkdocs.dev.yml" up --build
+docker compose -f "docker-compose-mkdocs.dev.yml" up --build
 ```
 
 Le site est alors accessible sur : <http://0.0.0.0:8000>

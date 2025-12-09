@@ -20,7 +20,7 @@ tags:
 
 ![icône porte-voix](https://cdn.geotribu.fr/img/internal/icons-rdp-news/journalisme.png "icône porte-voix"){: .img-thumbnail-left }
 
-Une fois la Pull Request[^pr] validée par un membre de l'équipe, la branche de la revue de presse est fusionnée (*merged*) dans la branche principale, déclenchant la génération et le déploiement du site web.
+Une fois la Pull Request validée par un membre de l'équipe, la branche de la revue de presse est fusionnée (*merged*) dans la branche principale, déclenchant la génération et le déploiement du site web.
 
 A noter que la branche ayant servi à la revue de presse est supprimée, ainsi que le site de prévisualisation généré.
 
