@@ -1,5 +1,5 @@
 ---
-title: Prérequis, ligne et chartes éditoriales
+title: Prérequis, ligne et charte éditoriales
 categories:
     - contribution
 comments: true
