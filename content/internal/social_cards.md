@@ -8,7 +8,7 @@ comments: true
 date: 2022-09-15
 description: "Sous le GéoCapot : comment l'en-tête des contenus est utilisé pour générer des 'cartes sociales', ces visuels accompagnés d'un résumé qui s'affichent sur les réseaux sociaux."
 icon : material/card-text
-image: "https://cdn.geotribu.fr/img/internal/contribution/social_cards/social_card_exemple_twitter_article.png"
+image: https://cdn.geotribu.fr/img/internal/contribution/social_cards/social_card_exemple_twitter_article.png
 tags:
     - coulisses
     - GéoCapot
@@ -40,7 +40,12 @@ C'est assez important pour un site comme Geotribu, d'abord car ça rend le parta
 
 ![logo Jinja](https://cdn.geotribu.fr/img/logos-icones/logiciels_librairies/jinja.png "logo Jinja"){: .img-thumbnail-left }
 
-Le thème qu'on utilise, [Material for Mkdocs], propose de générer automatiquement des cartes sociales génériques (voir [la documentation](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/)) en croisant les éléments graphiques du site (nom, police, couleur dominante) et ceux de chaque page (titre).
+Le thème qu'on utilise, [Material for Mkdocs], propose de générer automatiquement des cartes sociales génériques (voir [la documentation](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/)) en croisant les éléments graphiques du site (nom, police, couleur dominante) et ceux de chaque page (titre). Par exemple, l'image ci-dessous correspond à la page [Prérequis](../requirements.md) :
+
+![Exemple d'image générée pour la carte de partage social](https://contribuer.geotribu.fr/assets/images/social/requirements.png){: .img-center loading=lazy }
+
+!!! tip
+    Voir la page sur [le choix de l'image d'illustration](../guides/metadata_yaml_frontmatter.md#image-illustration-contenu).
 
 Mais le nombre de contenus gérés dans Geotribu rend le mécanisme assez lourd (une image générée par fichier Markdown) et trop générique alors que la diversité et l'objet des contenus Geotribu (carte, dataviz...) se prête bien à des visuels personnalisés.
 

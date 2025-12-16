@@ -6,6 +6,7 @@ comments: true
 date: 2020-03-20
 description: "Pour contribuer à Geotribu : un compte GitHub, écrire en Markdown et respecter la ligne et la charte éditoriales."
 icon: octicons/checklist-16
+image:
 tags:
     - Markdown
     - GitHub
@@ -57,17 +58,17 @@ Voici quelques critères de publication non exhaustifs, qui permettent de cadrer
 
 De façon générale, les résultats bruts d'outils d'intelligence artificielle générative (GenIA) comme ChatGPT, Gemini, Claude, etc. n'ont pas vocation à être publiés sur Geotribu. D'abord parce que cela contredit [la ligne éditoriale](#ligne-éditoriale) mais aussi parce que :
 
-- d'une part rien n'empêcherait alors de publier 1 000 prompts par semaine (cf [les sites repérés par les enquêtes et l'entension de Next](https://next.ink/208687/extension-next-des-alertes-sur-8-500-sites-genai-et-contre-les-attaques-par-homographes/))
-- d'autre part qu'on n'aurait pas besoin des autres puisqu'on est parfaitement capables d'envoyer les prompts nous mêmes et même d'automatiser la publication !
+- d'une part rien n'empêcherait alors de publier 1000 résultats de prompts par semaine (cf [les sites repérés par les enquêtes et l'extension de Next](https://next.ink/208687/extension-next-des-alertes-sur-8-500-sites-genai-et-contre-les-attaques-par-homographes/))
+- d'autre part que cela rendrait inutile la dynamique collaborative puisqu'on est parfaitement capables d'envoyer les prompts nous mêmes et même d'automatiser la publication !
 
-Il est également déconseillé d'utiliser ces outils pour générer une illustration.
+Il est également déconseillé d'utiliser ces outils pour générer une illustration pour différentes raisons : hallucinations graphiques, impact environnemental, aspect formaté, impact sur le travail des illustrateur/ices, etc. Si vous n'êtes pas inspiré/e ou compétent/e, notez que [le site intègre un mécanisme de génération d'une image d'en-tête](./guides/metadata_yaml_frontmatter.md#image-illustration-contenu). Elle est forcément générique mais ça fait le _job_. Si vous ne trouvez pas cela satisfaisant, passez le mot dans la communauté (par exemple sur notre [espace Matrix](https://matrix.to/#/#geotribu:matrix.org)) pour demander un coup de main pour illustrer votre article.
 
 Voici quelques uns des cas d'usage où l'utilisation d'outils d'intelligence artificielle générative (GenIA) est permise dans le cadre de la contribution de contenu à Geotribu :
 
 - traduction initiale d'un texte rédigé dans une autre langue
 - compensation d'un trouble de type dys* (dyslexie, dysorthographie, etc.) pour la rédaction ou la relecture
 
-Dans tous les cas, l'utilisation d'outils d'intelligence artificielle générative (GenIA) doit être mentionnée explicitement dans le formulaire de contribution voire dans le contenu publié, en précisant les outils utilisés et la nature de leur contribution.
+Dans tous les cas, l'utilisation d'outils d'intelligence artificielle générative (GenIA) doit être mentionnée explicitement dans le formulaire de contribution voire dans le contenu publié, en précisant les outils utilisés, la nature de leur contribution et en partageant les prompts (de préférence le lien vers la "conversation").
 
 ### Pas de communiqué
 

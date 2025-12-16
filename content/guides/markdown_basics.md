@@ -178,6 +178,29 @@ En plus des ressources, à suivre quelques exemples de base.
         + signe plus (\+)
     * mais, pour éviter les effets de bord (espacement de paragraphe, mauvais niveau de retrait...) et selon les règles établies, il est préférable de rester cohérent dans le caractère utilisé, au moins dans un même document
     * en général, on utilise l'astérisque ou alors le tiret.
+
+### Note de bas de page
+
+=== "Markdown"
+
+    ```markdown
+    Lorsque vous faites emploi de sigles ou acronymes, afin d'alléger la lecture il peut être judicieux d'utiliser des notes de bas de page, AMA[^1].
+
+    En spécifiant entre crochets le numéro de la note, ajouté en bas de la page, comme ceci :
+
+    <!-- Footnotes reference -->
+    [^1]: _à mon avis_
+    ```
+
+=== "Rendu"
+
+    Lorsque vous faites emploi de sigles ou acronymes, afin d'alléger la lecture il peut être judicieux d'utiliser des notes de bas de page, AMA[^1].
+
+    En spécifiant entre crochets le numéro de la note, ajouté en bas de la page.
+
+    <!-- Footnotes reference -->
+    [^1]: _à mon avis_.
+
 <!-- markdownlint-enable MD046 -->
 
 [Prochaine étape : respecter et valider la syntaxe :fontawesome-solid-forward:](markdown_quality.md){: .md-button }
