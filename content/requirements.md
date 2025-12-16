@@ -58,7 +58,7 @@ Voici quelques critères de publication non exhaustifs, qui permettent de cadrer
 
 De façon générale, les résultats bruts d'outils d'intelligence artificielle générative (GenIA) comme ChatGPT, Gemini, Claude, etc. n'ont pas vocation à être publiés sur Geotribu. D'abord parce que cela contredit [la ligne éditoriale](#ligne-éditoriale) mais aussi parce que :
 
-- d'une part rien n'empêcherait alors de publier 1000 résultats de prompts par semaine (cf [les sites repérés par les enquêtes et l'entension de Next](https://next.ink/208687/extension-next-des-alertes-sur-8-500-sites-genai-et-contre-les-attaques-par-homographes/))
+- d'une part rien n'empêcherait alors de publier 1000 résultats de prompts par semaine (cf [les sites repérés par les enquêtes et l'extension de Next](https://next.ink/208687/extension-next-des-alertes-sur-8-500-sites-genai-et-contre-les-attaques-par-homographes/))
 - d'autre part que cela rendrait inutile la dynamique collaborative puisqu'on est parfaitement capables d'envoyer les prompts nous mêmes et même d'automatiser la publication !
 
 Il est également déconseillé d'utiliser ces outils pour générer une illustration pour différentes raisons : hallucinations graphiques, impact environnemental, aspect formaté, impact sur le travail des illustrateur/ices, etc. Si vous n'êtes pas inspiré/e ou compétent/e, notez que [le site intègre un mécanisme de génération d'une image d'en-tête](./guides/metadata_yaml_frontmatter.md#image-illustration-contenu). Elle est forcément générique mais ça fait le _job_. Si vous ne trouvez pas cela satisfaisant, passez le mot dans la communauté (par exemple sur notre [espace Matrix](https://matrix.to/#/#geotribu:matrix.org)) pour demander un coup de main pour illustrer votre article.
