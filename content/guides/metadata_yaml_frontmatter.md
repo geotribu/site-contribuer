@@ -48,6 +48,7 @@ En résumé, un/e auteurice a 2 options :
 - soit **utiliser une image de son cru**, respectant [la charte éditoriale](../requirements.md#charte-éditoriale) et les contraintes techniques :
     - Format : PNG ou JPG
     - Dimensions : entre 600x300 et 800x400
+    - Ratio : viser 2/1 ou proche
 
     Par exemple, l'en-tête de [l'article sur BAM (Biodiversité Autour de Moi)]({{ config.extra.geotribu_main_site }}articles/2025/2025-12-11_BAM-widget/) spécifie une image :
 
