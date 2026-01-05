@@ -12,6 +12,7 @@
     "ms-python.python",
     "ms-ceintl.vscode-language-pack-fr",
     "redhat.vscode-yaml",
-    "streetsidesoftware.code-spell-checker-french"
+    "streetsidesoftware.code-spell-checker-french",
+    "tamasfe.even-better-toml"
   ]
 }
