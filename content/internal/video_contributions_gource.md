@@ -43,35 +43,43 @@ C'est un outil qui est connu et largement utilisé dans différents projets (voi
 Gource se basant sur l'historique Git, c'est l'occasion de regarder que l'historique est cohérent et le cas échéant de l'ajuster en éditant le fichier `.mailmap`. Pour regarder l'historique sur une année, on peut utiliser la commande `shortlog` :
 
 ```sh
-git shortlog -nse --since="01 Jan 2024" --before="31 Dec 2024"
+git shortlog -ns --since="01 Jan 2025" --before="31 Dec 2025"
 ```
 
 Ce qui donne par exemple :
 
 ```sh
-764  Julien Moura <dev@ingeoveritas.com>
-233  Florian Boret <florian.boret@data-wax.com>
-122  Geotribot <geotribu+bot@gmail.com>
-50  Guilhem Allaman <dev@guilhemallaman.net>
-45  Nicolas David <nicolas.david@ign.fr>
-36  Florent Fougères <florent.fougeres@gmail.com>
-28  Delphine Montagne <delphine.montagne@univ-pau.fr>
-27  Quy Thy Truong <quythy.truong@oslandia.com>
-20  Aurélien Chaumet <aurelienchaumet17@gmail.com>
-14  Mathilde Ferrey <45847618+mferrey@users.noreply.github.com>
-6  Gabriel Poujol <gpoujol@openig.org>
-5  Arnaud Vandecasteele <arnaud.sig@gmail.com>
-5  Maël Reboux <m.reboux@rennesmetropole.fr>
-3  Jérémy Garniaux <jeremy@mapper.fr>
-2  Jérémie Hanke <70693383+sigps@users.noreply.github.com>
-2  Loïc Bartoletti <loic.bartoletti@oslandia.com>
-2  Michaël Galien <michael.galien@gard.fr>
-2  Yann Chambon <126060687+yannchambon@users.noreply.github.com>
-1  Benoît Blanc <benoitblanc@live.com>
-1  Christian Quest <github@cquest.org>
-1  Jérémie Prud'homme <p.jeremie@gmail.com>
-1  Olivia Guyot <olivia.guyot@camptocamp.com>
-1  Pierre-François Blin <pierrefrancois.blin@gmail.com>
+   382  Guilhem Allaman
+   285  Julien Moura
+    94  Michaël Galien
+    85  Geotribot
+    76  Thomas Szczurek-Gayant
+    66  Karl Tayou
+    35  Nicolas Rochard
+    32  Florian Boret
+    28  Camille Monchicourt
+    25  Marc Ducobu
+    21  Satya Minguez
+    16  Blottiere Paul
+    15  Paul Blottiere
+     8  Jean-Baptiste DESBAS
+     4  Delphine Montagne
+     3  Arnaud Vandecasteele
+     3  Loïc Bartoletti
+     3  Thomas Bouché
+     2  Even Rouault
+     2  Gabriel Poujol
+     2  Jérémie Prud'homme
+     2  Jérémy Garniaux
+     2  Xavier Thauvin
+     1  Célestin Huet
+     1  GeoloicO
+     1  Harrissou Sant-anna
+     1  Loïc Ecault
+     1  Maël Reboux
+     1  Romain Tourte
+     1  Stéphane Mével-Viannay
+     1  Stéphane ROLLE
 ```
 
 ----
@@ -179,7 +187,7 @@ cd ~/Git/Geotribu/website
 Concrètement, on lance la commande qui va lancer l'animation en plein écran, filmer l'écran et encoder/compresser le tout dans un fichier mp4 :
 
 ```sh
-gource --load-config gource.ini -o - | ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i - -vcodec libx265 -preset fast -pix_fmt yuv420p -crf 26 -threads 0 -bf 0 ./geotribu_history.mp4
+gource --load-config gource.ini -o - | ffmpeg -y -r 25 -f image2pipe -vcodec ppm -i - -vcodec libx265 -preset fast -pix_fmt yuv420p -crf 26 -threads 0 -bf 0 ./geotribu_history.mp4
 ```
 
 Décortiquons :
@@ -189,7 +197,7 @@ Décortiquons :
 1. `|`: C'est le symbole de tube (_pipe_) qui prend la sortie de la première commande (`gource`) et la transmet à la deuxième commande (`ffmpeg`).
 1. `ffmpeg`: c'est la bibliothèque de traitement multimédia qu'on utilise pour encoder la vidéo dans un fichier
 1. `-y`: écraser automatiquement les fichiers de sortie existants sans poser de questions.
-1. `-r 30`: débit d'images de sortie (30 images par seconde dans ce cas).
+1. `-r 25`: débit d'images de sortie (25 images par seconde dans ce cas).
 1. `-f image2pipe`: on indique le format d'entrée, qui est une série d'images en flux (_image2pipe_).
 1. `-vcodec ppm`: codec vidéo utilisé pour le flux d'entrée, qui est PPM (_Portable Pixel Map_)
 1. `-i -`: on indique à `ffmpeg` de prendre l'entrée depuis la sortie standard (_stdout_) de la commande précédente (`gource`).
