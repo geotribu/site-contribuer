@@ -209,6 +209,37 @@ Décortiquons :
 1. `-bf 0`: on désactive l'utilisation de cadres B (B-frames) pour la compression vidéo.
 1. `geotribu_history.mp4`: fichier de sortie qui contiendra la vidéo finale.
 
+## Combiner plusieurs dépôts
+
+`Gource` permet également de créer une vidéo qui montre les contributions sur plusieurs dépôts !
+
+Pour cela, il est nécessaire de d'abord créer des logs sur les différents dépôts, qui doivent être clonés en local :
+
+```sh
+mkdir -p gource_2025
+
+gource --output-custom-log gource_2025/english-blog.txt english-blog
+gource --output-custom-log gource_2025/infra.txt infra
+gource --output-custom-log gource_2025/qchat.txt qchat
+gource --output-custom-log gource_2025/qtribu.txt qtribu
+gource --output-custom-log gource_2025/site-contribuer.txt site-contribuer
+gource --output-custom-log gource_2025/slides.txt slides
+gource --output-custom-log gource_2025/website.txt website
+```
+
+Puis créer un fichier de log qui les incorpore tous :
+
+```sh
+cd gource_2025
+cat english-blog.txt infra.txt qchat.txt qtribu.txt site-contribuer.txt slides.txt website.txt | sort -n > 2025_combined.txt
+```
+
+Enfin même commande pour lancer la génération gource !
+
+```sh
+gource --load-config gource.ini -o - gource_2025/2025_combined.txt | ffmpeg -y -r 25 -f image2pipe -vcodec ppm -i - -vcodec libx265 -preset fast -pix_fmt yuv420p -crf 26 -threads 0 -bf 0 ./geotribu_history.mp4
+```
+
 ----
 
 ## Ressources
