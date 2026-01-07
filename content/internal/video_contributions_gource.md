@@ -43,43 +43,42 @@ C'est un outil qui est connu et largement utilisé dans différents projets (voi
 Gource se basant sur l'historique Git, c'est l'occasion de regarder que l'historique est cohérent et le cas échéant de l'ajuster en éditant le fichier `.mailmap`. Pour regarder l'historique sur une année, on peut utiliser la commande `shortlog` :
 
 ```sh
-git shortlog -ns --since="01 Jan 2025" --before="31 Dec 2025"
+git shortlog -nse --since="01 Jan 2025" --before="31 Dec 2025"
 ```
 
-Ce qui donne par exemple :
+Ce qui donne par exemple (les adresses mails ont été remplacées par des fausses ici) :
 
 ```sh
-   382  Guilhem Allaman
-   285  Julien Moura
-    94  Michaël Galien
-    85  Geotribot
-    76  Thomas Szczurek-Gayant
-    66  Karl Tayou
-    35  Nicolas Rochard
-    32  Florian Boret
-    28  Camille Monchicourt
-    25  Marc Ducobu
-    21  Satya Minguez
-    16  Blottiere Paul
-    15  Paul Blottiere
-     8  Jean-Baptiste DESBAS
-     4  Delphine Montagne
-     3  Arnaud Vandecasteele
-     3  Loïc Bartoletti
-     3  Thomas Bouché
-     2  Even Rouault
-     2  Gabriel Poujol
-     2  Jérémie Prud'homme
-     2  Jérémy Garniaux
-     2  Xavier Thauvin
-     1  Célestin Huet
-     1  GeoloicO
-     1  Harrissou Sant-anna
-     1  Loïc Ecault
-     1  Maël Reboux
-     1  Romain Tourte
-     1  Stéphane Mével-Viannay
-     1  Stéphane ROLLE
+   382  Guilhem Allaman <dev@users.noreply.github.com>
+   285  Julien Moura <1596222+Guts@users.noreply.github.com>
+    94  Michaël Galien <64089998+michael-cd30@users.noreply.github.com>>
+    85  Geotribot <49699333+dependabot[bot]@users.noreply.github.com>
+    76  Thomas Szczurek-Gayant <121474664+thomas-szczurek@users.noreply.github.com>
+    66  Karl Tayou <49986468+TANK2003@users.noreply.github.com>
+    35  Nicolas Rochard <Doctor-Who@users.noreply.github.com>
+    32  Florian Boret <figeofr@users.noreply.github.com>
+    31  Paul Blottiere <blottiere.paul@users.noreply.github.com>
+    28  Camille Monchicourt <camille.monchicourt@users.noreply.github.com>
+    25  Marc Ducobu <marc.ducobu@users.noreply.github.com>
+    21  Satya Minguez <97035327+Satya-cd30@users.noreply.github.com>
+     8  Jean-Baptiste DESBAS <jean-baptiste.desbas@hautsdefrance.fr>
+     4  Delphine Montagne <17273438+KazeNoOni@users.noreply.github.com>
+     3  Arnaud Vandecasteele <arnaud.sig@users.noreply.github.com>
+     3  Loïc Bartoletti <lbartoletti@users.noreply.github.com>
+     3  Thomas Bouché <53937041+ThomasBouche@users.noreply.github.com>
+     2  Even Rouault <even.rouault@users.noreply.github.com>
+     2  Gabriel Poujol <gpoujol@users.noreply.github.com>
+     2  Jérémie Prud'homme <p.jeremie@users.noreply.github.com>
+     2  Jérémy Garniaux <jeremy@users.noreply.github.com>
+     2  Xavier Thauvin <xavier.thauvin@users.noreply.github.com>
+     1  Célestin Huet <celestin.huet@users.noreply.github.com>
+     1  Harrissou Sant-anna <delazj@users.noreply.github.com>
+     1  Loïc Ecault <loic.ecault@users.noreply.github.com>
+     1  Loïc Moisan <loic.moisan.perso@users.noreply.github.com>
+     1  Maël Reboux <m.reboux@users.noreply.github.com>
+     1  Romain Tourte <rtourte@users.noreply.github.com>
+     1  Stéphane Mével-Viannay <mviewer@users.noreply.github.com>
+     1  Stéphane Rolle <47242457+stephanerolle@users.noreply.github.com>
 ```
 
 ----
