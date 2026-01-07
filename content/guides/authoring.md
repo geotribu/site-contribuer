@@ -73,7 +73,7 @@ title: Élisabeth Amélie Eugénie en Bavière
 subtitle: Princesse Sissi
 categories:
     - contributeur
-social:
+social_accounts:
     - bluesky:
     - github: https://github.com/psissi37
     - gitlab:
