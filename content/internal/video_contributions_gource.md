@@ -88,9 +88,9 @@ Ce qui donne par exemple (les adresses mails ont été remplacées par des fauss
 !!! note
     L'installation sur Windows est plutôt facile de mémoire (enfin [celle de ffmpeg](https://fr.wikihow.com/installer-FFmpeg-sur-Windows) semble un peu exotique), donc je n'en parle pas ici.
 
-> Sur une distribution basée sur Debian (Ubuntu 22.04 à date) :
+> Sur une distribution basée sur Debian (Ubuntu 24.04 à date) :
 
-Il se trouve que la version disponible dans les dépôts officiels est (à date) la `0.51`. Il est préférable d'utiliser la dernière version (`0.54` à date) depuis les sources.
+Il se trouve que la version disponible dans les dépôts officiels est (à date) la `0.54`.
 
 ### Dépendances
 
