@@ -93,7 +93,7 @@ Pour faciliter la maintenance, nous utilisons l'outil [pre-commit](https://pre-c
 
 ### Crochets Git configurés sur Geotribu
 
-Les _git hooks_ sont listés dans le fichier de configuration de pre-commit situé dans le dépôt du site : [.pre-commit-config.yaml]({{ config.repo_url }}/blob/master/.pre-commit-config.yaml).
+Les _git hooks_ sont listés dans le fichier de configuration de pre-commit situé dans le dépôt du site : [.pre-commit-config.yaml](https://github.com/geotribu/website/blob/master/.pre-commit-config.yaml).
 
 Voici une liste non exhaustive :
 

@@ -7,7 +7,7 @@ categories:
 comments: true
 date: 2021-09-30
 description: "Cycle de vie d'une revue de presse sur Geotribu (GeoRDP) : création, contribution, validation, publication, diffusion."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
+image:
 license: default
 tags:
     - guide
@@ -17,7 +17,7 @@ tags:
 
 # Processus global d'une revue de presse
 
-1. Une branche est créée et une revue de presse vide est poussée par un membre de l'équipe (= ayant les droits d'écriture sur le dépôt du site : [{{ config.repo_name }}]({{ config.repo_url }}))
+1. Une branche est créée et une revue de presse vide est poussée par un membre de l'équipe, c'est-à-dire ayant les droits d'écriture sur le dépôt du site : <https://github.com/geotribu/website/)>
 2. Une Pull Request est créée proposant de fusionner la branche de la RDP dans la branche principale
 3. Les contributions sont ouvertes :
     - soit via des commits directement sur la branche de la revue de presse
