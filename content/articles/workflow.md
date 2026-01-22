@@ -157,7 +157,7 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
 
     ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
 
-6. Demander la relecture sur Slack, dans [le canal `Articles`](https://geotribu.slack.com/archives/C0165UARRBQ)
+6. Demander la relecture sur Matrix
 
 ----
 

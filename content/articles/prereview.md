@@ -79,7 +79,7 @@ GitHub ne gérant qu'un modèle de description de PR et étant donné qu'il est 
 - pour modifier ton article via l'interface de GitHub,  tu peux le retrouver facilement via l'icône crayon en haut de la page sur le site de prévisualisation ([cf. documentation](https://contribuer.geotribu.fr/edit/fix_content_from_website/)). Sinon :
   - [article]()
   - [page auteur/ice]()
-- le dossier dédié pour les illustrations de l'article sur notre "[CDN](https://contribuer.geotribu.fr/guides/cdn-images-hebergement/)" : <https://cdn.geotribu.fr/tinyfilemanager.php>. Si besoin des accès, contacter en message privé (Mastodon, mail, Slack,...)
+- le dossier dédié pour les illustrations de l'article sur notre "[CDN](https://contribuer.geotribu.fr/guides/cdn-images-hebergement/)" : <https://cdn.geotribu.fr/tinyfilemanager.php>. Si besoin des accès, contacter en message privé (Mastodon, mail, Matrix,...)
 - [site temporaire de prévisualisation de l'article]() - merci de ne pas le diffuser
 
 ## Ressources
@@ -147,9 +147,9 @@ C'est vraiment **IMPORTANT** pour le confort de l'auteur/ice :pray:
 
 ----
 
-### Structure du message Slack pour notifier l'équipe
+### Structure du message Matrix pour notifier la communauté
 
-L'objectif est d'ouvrir un fil de discussion interne par article soumis à relecture en résumant les informations essentielles. Le message est à publier dans le canal `#articles` et à adapter au sujet de l'article. Structure type :
+L'objectif est d'ouvrir un fil de discussion interne par article soumis à relecture en résumant les informations essentielles. Le message est à publier dans le canal principal et à adapter au sujet de l'article. Structure type :
 
 ```markdown title="Structure du message à l'équipe"
 :gdal:  Nouvel article de Nicolas Rochard sur la génération de COG avec GDAL :filet_de_but:
@@ -159,5 +159,5 @@ L'objectif est d'ouvrir un fil de discussion interne par article soumis à relec
 
 :date: 11 février
 
-@canal à vos tipex et plus belles suggestions de correction !
+@room à vos tipex et plus belles suggestions de correction !
 ```
