@@ -39,7 +39,7 @@ Il est alors temps de lancer la diffusion sur les réseaux sociaux pour relayer 
 
 - sur LinkedIn, via [la page officielle de Geotribu](https://www.linkedin.com/company/geotribu/), avec [les hashtags `#Geotribu`](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) et [`#GeoRDP`](https://www.linkedin.com/feed/hashtag/?keywords=geordp)
 - Sur Mastodon, via [le compte officiel de Geotribu](https://mapstodon.space/@geotribu/)
-- sur Twitter, via [le compte officiel de Geotribu](https://twitter.com/geotribu/)
+- sur Bluesky, via [le compte officiel de Geotribu](https://bsky.app/profile/geotribu.bsky.social)
 
 ### Exemple de structure de message
 
