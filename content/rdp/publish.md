@@ -1,6 +1,6 @@
 ---
 title: "Publier et diffuser une revue de presse"
-subtitle: "Merger > attendre > poster sur les réseaux sociaux"
+subtitle: "Merger > attendre > diffuser"
 authors:
     - Geotribu
 categories:
@@ -8,7 +8,8 @@ categories:
 comments: true
 date: 2021-09-30
 description: "Publication et diffusion d'une revue de presse de Geotribu (GeoRDP)."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
+icon: material/bullhorn-variant-outline
+image:
 license: default
 tags:
     - guide

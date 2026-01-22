@@ -1,5 +1,6 @@
 ---
-title: "Processus global"
+title: Processus global d'une revue de presse
+subtitle: Naissance et cycle de vie d'une GeoRDP
 authors:
     - Geotribu
 categories:
@@ -7,6 +8,7 @@ categories:
 comments: true
 date: 2021-09-30
 description: "Cycle de vie d'une revue de presse sur Geotribu (GeoRDP) : création, contribution, validation, publication, diffusion."
+icon: material/progress-pencil
 image:
 license: default
 tags:

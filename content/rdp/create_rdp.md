@@ -1,5 +1,6 @@
 ---
 title: "Créer une revue de presse"
+subitle: Et le géoHumain créa une GeoRDP
 authors:
     - Geotribu
     - Julien MOURA
@@ -8,7 +9,8 @@ categories:
 comments: true
 date: 2021-12-29
 description: "Guide de création d'une revue de presse (GeoRDP) sur Geotribu : méthodologie, script bash, GitHub Workflow, etc."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
+icon: material/newspaper
+image:
 license: default
 tags:
     - GeoRDP
