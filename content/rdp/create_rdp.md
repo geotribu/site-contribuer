@@ -186,10 +186,7 @@ Exemple si la GeoRDP devait être publiée le 17 septembre 2021 : `content/rdp/2
 
 #### Structure type et modèle
 
-Les revues de presse sont structurées de la même façon d'une édition à l'autre, facilitant leur consultation et les traitements automatiques. Le plus simple est donc de copier/coller la structure type à partir du modèle maintenu à jour :
-
-[depuis GitHub :fontawesome-brands-github-alt:](https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp.md){: .md-button }
-{: align=middle }
+Les revues de presse sont structurées de la même façon d'une édition à l'autre, facilitant leur consultation et les traitements automatiques. Le plus simple est donc de copier/coller la structure type à partir du [modèle maintenu à jour sur GitHub](https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp.md)
 
 Ensuite, il faut mettre à jour certains éléments dans [l'en-tête du fichier](../guides/metadata_yaml_frontmatter.md), mettre à jour les valeurs de `title:`, `date:` et `description:`.
 
