@@ -188,11 +188,11 @@ Exemple si la GeoRDP devait être publiée le 17 septembre 2021 : `content/rdp/2
 
 Les revues de presse sont structurées de la même façon d'une édition à l'autre, facilitant leur consultation et les traitements automatiques. Le plus simple est donc de copier/coller la structure type à partir du [modèle maintenu à jour sur GitHub](https://raw.githubusercontent.com/geotribu/website/master/content/rdp/templates/template_rdp.md)
 
-Ensuite, il faut mettre à jour certains éléments dans [l'en-tête du fichier](../guides/metadata_yaml_frontmatter.md), mettre à jour les valeurs de `title:`, `date:` et `description:`.
+Ensuite, il faut mettre à jour certains éléments dans [l'en-tête du fichier](../guides/metadata_yaml_frontmatter.md), mettre à jour les valeurs de `title:`, `date:` et `description:`. L'image est à choisir plutôt juste avant la publication en piochant dans celles des news retenues (voir [aussi cette page sur les images](../guides/metadata_yaml_frontmatter.md/#image-illustration-contenu)).
 
 Les lignes concernées sont surlignées ci-dessous (attention, cela peut varier selon le modèle utilisé) :
 
-```markdown hl_lines="2 17" title="Lignes à éditer dans le modèle de revue de presse"
+```markdown hl_lines="2 7 8" linenums="1" title="Lignes à éditer dans le modèle de revue de presse"
 ---
 title: "Revue de presse du 21 août 2021"
 authors:
@@ -200,7 +200,6 @@ authors:
 categories:
     - revue de presse
 date: 2021-08-21
-description: ""
 description: "Description de 160 caractères maximum qui résume la RDP. Cette description est présente dans le flux RSS, la newsletter, les moteurs de recherche, en page d'accueil... "
 image: "Image d'illustration de la RDP qui sert ensuite dans la mise en avant : réseaux sociaux, flux RSS... 400x800 en PNG"
 license: default
@@ -210,15 +209,6 @@ tags:
     - tag 2
     - ...
 ---
-
-# Revue de presse du {{ page.meta.date | date_localized }}
-
-## Intro
-
-![icône news générique](https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png "icône news générique"){: .img-thumbnail-left }
-
-[Commenter cette revue de presse :fontawesome-solid-comments:](#__comments "Aller aux commentaires"){: .md-button }
-{: align=middle }
 
 [...]
 ```
