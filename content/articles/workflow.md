@@ -149,7 +149,7 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
 
     ![Github - Pull Request button](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_button.png "GitHub - Créer une Pull Request"){: .img-right loading=lazy }
 
-3. S'il n'existe pas encore, créer un fichier avec une brève description de l'auteur/rice dans `content/team/prenom-nom.md`, puis intégrer ce bloc [en suivant le guide adéquat](../guides/authoring.md/#bloc-auteur)
+3. S'il n'existe pas encore, créer un fichier avec une brève description de l'auteur/rice dans `content/team/prenom-nom.md`, puis intégrer ce bloc [en suivant le guide adéquat](../guides/authoring.md#bloc-auteur)
 
 4. [Créer la Pull Request](https://github.com/geotribu/website/compare) en choisissant la branche de l'article comme source (`head`) et la branche principale (`master` ou `main`) comme destination (`ref`).
 
@@ -157,7 +157,7 @@ Si vous n'avez pas l'habitude des plateformes basées sur [Git], sachez qu'il va
 
     ![GitHub Pull Request form](https://cdn.geotribu.fr/img/internal/contribution/github_pull-request_form_article.png "GitHub - Formulaire de Pull Request"){: .img-center loading=lazy }
 
-6. Demander la relecture sur Slack, dans [le canal `Articles`](https://geotribu.slack.com/archives/C0165UARRBQ)
+6. Demander la relecture sur Matrix
 
 ----
 

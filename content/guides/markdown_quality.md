@@ -39,7 +39,7 @@ Cette page détaille les principes de la rédaction en [Markdown] pour Geotribu.
 La syntaxe est encadrée par un ensemble de règles :
 
 - [règles de référence](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
-- [règles configurées dans Geotribu]({{ config.repo_url }}/blob/master/.markdownlint.json)
+- [règles configurées dans Geotribu](https://github.com/geotribu/website/blob/master/.markdownlint.json)
 
 Quelques règles de base sont listées ci-dessous, notamment celles pour lesquelles il y a fréquemment des erreurs.
 

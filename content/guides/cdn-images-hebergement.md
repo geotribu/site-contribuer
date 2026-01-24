@@ -95,6 +95,7 @@ Ce n'est évidemment pas exhaustif et il n'y a pas de brigade des images dans l'
 
 ## Ressources
 
+- [FramaToolbox](https://framatoolbox.org/abc/fr/) pour convertir les images en ligne
 - [EzGIF](https://ezgif.com/resize/) pour manipuler, redimensionner et optimiser les GIF en ligne
 - [ImageOptim](https://imageoptim.com/), opimisation des JPEG et PNG
 - [Reshot](https://www.reshot.com/), icônes et images libres de droits

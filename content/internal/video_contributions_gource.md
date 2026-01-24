@@ -23,9 +23,9 @@ tags:
 
 Le(s) site(s) Geotribu étant basés sur Git, on profite ainsi de l'outillage de l'écosystème ; GitHub bien sûr mais aussi d'autres outils moins connus.
 
-Cette page décrit comment on peut utiliser Gource pour générer des vidéos rétrospectives sur les contributions au site (voir [un exemple sur la rétrospective 2022]({{ config.extra.geotribu_main_site }}articles/2023/2023-01-30_voeux-geotribu-2023/#retrospective-2022)). Ou celle portant sur l'année 2023 :
+Cette page décrit comment on peut utiliser Gource pour générer des vidéos rétrospectives sur les contributions au site (voir [un exemple sur la rétrospective 2022]({{ config.extra.geotribu_main_site }}articles/2023/2023-01-30_voeux-geotribu-2023/#retrospective-2022)). Ou celle portant sur l'année 2024 :
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/cHQzkNkLeW8?si=Xwck99pK8GVk2Vy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe title="Rétrospective 2024 des contributions au site principal de Geotribu" width="100%" height="420" src="https://video.osgeo.org/videos/embed/39101d03-465e-491c-8894-c5d1254e9b1d?warningTitle=0" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 
 C'est un outil qui est connu et largement utilisé dans différents projets (voir [ici l'exemple de MapServer]({{ config.extra.geotribu_main_site }}rdp/2020/rdp_2020-05-15/?h=gource#mapserver-760)). Dans la communauté géomatique, on a régulièrement la vidéo retraçant les contributions à OpenStreetMap sur une fenêtre spatio-temporelle. A titre d'expérience personnelle, je l'avais utilisé pour retracer le tavail de développement sur le plugin QGIS d'Isogeo : <https://www.youtube.com/watch?v=URoH0osLY_4>.
 
@@ -43,35 +43,42 @@ C'est un outil qui est connu et largement utilisé dans différents projets (voi
 Gource se basant sur l'historique Git, c'est l'occasion de regarder que l'historique est cohérent et le cas échéant de l'ajuster en éditant le fichier `.mailmap`. Pour regarder l'historique sur une année, on peut utiliser la commande `shortlog` :
 
 ```sh
-git shortlog -nse --since="01 Jan 2024" --before="31 Dec 2024"
+git shortlog -nse --since="01 Jan 2025" --before="31 Dec 2025"
 ```
 
-Ce qui donne par exemple :
+Ce qui donne par exemple (les adresses mails ont été remplacées par des fausses ici) :
 
 ```sh
-764  Julien Moura <dev@ingeoveritas.com>
-233  Florian Boret <florian.boret@data-wax.com>
-122  Geotribot <geotribu+bot@gmail.com>
-50  Guilhem Allaman <dev@guilhemallaman.net>
-45  Nicolas David <nicolas.david@ign.fr>
-36  Florent Fougères <florent.fougeres@gmail.com>
-28  Delphine Montagne <delphine.montagne@univ-pau.fr>
-27  Quy Thy Truong <quythy.truong@oslandia.com>
-20  Aurélien Chaumet <aurelienchaumet17@gmail.com>
-14  Mathilde Ferrey <45847618+mferrey@users.noreply.github.com>
-6  Gabriel Poujol <gpoujol@openig.org>
-5  Arnaud Vandecasteele <arnaud.sig@gmail.com>
-5  Maël Reboux <m.reboux@rennesmetropole.fr>
-3  Jérémy Garniaux <jeremy@mapper.fr>
-2  Jérémie Hanke <70693383+sigps@users.noreply.github.com>
-2  Loïc Bartoletti <loic.bartoletti@oslandia.com>
-2  Michaël Galien <michael.galien@gard.fr>
-2  Yann Chambon <126060687+yannchambon@users.noreply.github.com>
-1  Benoît Blanc <benoitblanc@live.com>
-1  Christian Quest <github@cquest.org>
-1  Jérémie Prud'homme <p.jeremie@gmail.com>
-1  Olivia Guyot <olivia.guyot@camptocamp.com>
-1  Pierre-François Blin <pierrefrancois.blin@gmail.com>
+   382  Guilhem Allaman <dev@users.noreply.github.com>
+   285  Julien Moura <1596222+Guts@users.noreply.github.com>
+    94  Michaël Galien <64089998+michael-cd30@users.noreply.github.com>>
+    85  Geotribot <49699333+dependabot[bot]@users.noreply.github.com>
+    76  Thomas Szczurek-Gayant <121474664+thomas-szczurek@users.noreply.github.com>
+    66  Karl Tayou <49986468+TANK2003@users.noreply.github.com>
+    35  Nicolas Rochard <Doctor-Who@users.noreply.github.com>
+    32  Florian Boret <figeofr@users.noreply.github.com>
+    31  Paul Blottiere <blottiere.paul@users.noreply.github.com>
+    28  Camille Monchicourt <camille.monchicourt@users.noreply.github.com>
+    25  Marc Ducobu <marc.ducobu@users.noreply.github.com>
+    21  Satya Minguez <97035327+Satya-cd30@users.noreply.github.com>
+     8  Jean-Baptiste DESBAS <jean-baptiste.desbas@hautsdefrance.fr>
+     4  Delphine Montagne <17273438+KazeNoOni@users.noreply.github.com>
+     3  Arnaud Vandecasteele <arnaud.sig@users.noreply.github.com>
+     3  Loïc Bartoletti <lbartoletti@users.noreply.github.com>
+     3  Thomas Bouché <53937041+ThomasBouche@users.noreply.github.com>
+     2  Even Rouault <even.rouault@users.noreply.github.com>
+     2  Gabriel Poujol <gpoujol@users.noreply.github.com>
+     2  Jérémie Prud'homme <p.jeremie@users.noreply.github.com>
+     2  Jérémy Garniaux <jeremy@users.noreply.github.com>
+     2  Xavier Thauvin <xavier.thauvin@users.noreply.github.com>
+     1  Célestin Huet <celestin.huet@users.noreply.github.com>
+     1  Harrissou Sant-anna <delazj@users.noreply.github.com>
+     1  Loïc Ecault <loic.ecault@users.noreply.github.com>
+     1  Loïc Moisan <loic.moisan.perso@users.noreply.github.com>
+     1  Maël Reboux <m.reboux@users.noreply.github.com>
+     1  Romain Tourte <rtourte@users.noreply.github.com>
+     1  Stéphane Mével-Viannay <mviewer@users.noreply.github.com>
+     1  Stéphane Rolle <47242457+stephanerolle@users.noreply.github.com>
 ```
 
 ----
@@ -81,9 +88,9 @@ Ce qui donne par exemple :
 !!! note
     L'installation sur Windows est plutôt facile de mémoire (enfin [celle de ffmpeg](https://fr.wikihow.com/installer-FFmpeg-sur-Windows) semble un peu exotique), donc je n'en parle pas ici.
 
-> Sur une distribution basée sur Debian (Ubuntu 22.04 à date) :
+> Sur une distribution basée sur Debian (Ubuntu 24.04 à date) :
 
-Il se trouve que la version disponible dans les dépôts officiels est (à date) la `0.51`. Il est préférable d'utiliser la dernière version (`0.54` à date) depuis les sources.
+Il se trouve que la version disponible dans les dépôts officiels est (à date) la `0.54`.
 
 ### Dépendances
 
@@ -179,7 +186,7 @@ cd ~/Git/Geotribu/website
 Concrètement, on lance la commande qui va lancer l'animation en plein écran, filmer l'écran et encoder/compresser le tout dans un fichier mp4 :
 
 ```sh
-gource --load-config gource.ini -o - | ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i - -vcodec libx265 -preset fast -pix_fmt yuv420p -crf 26 -threads 0 -bf 0 ./geotribu_history.mp4
+gource --load-config gource.ini -o - | ffmpeg -y -r 25 -f image2pipe -vcodec ppm -i - -vcodec libx265 -preset fast -pix_fmt yuv420p -crf 26 -threads 0 -bf 0 ./geotribu_history.mp4
 ```
 
 Décortiquons :
@@ -189,7 +196,7 @@ Décortiquons :
 1. `|`: C'est le symbole de tube (_pipe_) qui prend la sortie de la première commande (`gource`) et la transmet à la deuxième commande (`ffmpeg`).
 1. `ffmpeg`: c'est la bibliothèque de traitement multimédia qu'on utilise pour encoder la vidéo dans un fichier
 1. `-y`: écraser automatiquement les fichiers de sortie existants sans poser de questions.
-1. `-r 30`: débit d'images de sortie (30 images par seconde dans ce cas).
+1. `-r 25`: débit d'images de sortie (25 images par seconde dans ce cas).
 1. `-f image2pipe`: on indique le format d'entrée, qui est une série d'images en flux (_image2pipe_).
 1. `-vcodec ppm`: codec vidéo utilisé pour le flux d'entrée, qui est PPM (_Portable Pixel Map_)
 1. `-i -`: on indique à `ffmpeg` de prendre l'entrée depuis la sortie standard (_stdout_) de la commande précédente (`gource`).
@@ -200,6 +207,37 @@ Décortiquons :
 1. `-threads 0`: on indique à `ffmpeg` d'utiliser autant de threads que possible pour l'encodage.
 1. `-bf 0`: on désactive l'utilisation de cadres B (B-frames) pour la compression vidéo.
 1. `geotribu_history.mp4`: fichier de sortie qui contiendra la vidéo finale.
+
+## Combiner plusieurs dépôts
+
+`Gource` permet également de créer une vidéo qui montre les contributions sur plusieurs dépôts !
+
+Pour cela, il est nécessaire de d'abord créer des logs sur les différents dépôts, qui doivent être clonés en local :
+
+```sh
+mkdir -p gource_2025
+
+gource --output-custom-log gource_2025/english-blog.txt english-blog
+gource --output-custom-log gource_2025/infra.txt infra
+gource --output-custom-log gource_2025/qchat.txt qchat
+gource --output-custom-log gource_2025/qtribu.txt qtribu
+gource --output-custom-log gource_2025/site-contribuer.txt site-contribuer
+gource --output-custom-log gource_2025/slides.txt slides
+gource --output-custom-log gource_2025/website.txt website
+```
+
+Puis créer un fichier de log qui les incorpore tous :
+
+```sh
+cd gource_2025
+cat english-blog.txt infra.txt qchat.txt qtribu.txt site-contribuer.txt slides.txt website.txt | sort -n > 2025_combined.txt
+```
+
+Enfin même commande pour lancer la génération gource !
+
+```sh
+gource --load-config gource.ini -o - gource_2025/2025_combined.txt | ffmpeg -y -r 25 -f image2pipe -vcodec ppm -i - -vcodec libx265 -preset fast -pix_fmt yuv420p -crf 26 -threads 0 -bf 0 ./geotribu_history.mp4
+```
 
 ----
 

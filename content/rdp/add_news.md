@@ -1,5 +1,6 @@
 ---
-title: Ajouter une news
+title: Proposer une news pour la GeoRDP
+subtitle: Simple, basique et collaboratif
 authors:
     - Geotribu
 categories:
@@ -28,8 +29,8 @@ Bref, appliquons le principe du *fair-use* au bénévolat :hugging: !
 
 Il est possible de proposer une news :
 
-[via GitHub :fontawesome-solid-ticket:](https://github.com/geotribu/website/issues/new?assignees=Guts&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml){: .md-button }
-[avec le plugin QGIS :simple-qgis:](https://qtribu.geotribu.fr){: .md-button }
+[via GitHub :fontawesome-solid-ticket:](https://github.com/geotribu/website/issues/new?assignees=Guts,gounux&labels=contribution+externe%2Crdp%2Ctriage&template=RDP_NEWS.yml){: .md-button }
+[avec le plugin QGIS :simple-qgis:](https://qtribu.geotribu.fr/){: .md-button }
 [par email :fontawesome-solid-paper-plane:](mailto:geotribu+rdp@gmail.com?subject=Contribution à la GeoRDP){: .md-button }
 {: align=middle }
 
