@@ -1,6 +1,6 @@
 ---
 title: "Publier et diffuser une revue de presse"
-subtitle: "Merger > attendre > poster sur les réseaux sociaux"
+subtitle: "Merger > attendre > diffuser"
 authors:
     - Geotribu
 categories:
@@ -8,7 +8,8 @@ categories:
 comments: true
 date: 2021-09-30
 description: "Publication et diffusion d'une revue de presse de Geotribu (GeoRDP)."
-image: "https://cdn.geotribu.fr/img/articles-blog-rdp/collaboration_world.png"
+icon: material/bullhorn-variant-outline
+image:
 license: default
 tags:
     - guide
@@ -39,7 +40,7 @@ Il est alors temps de lancer la diffusion sur les réseaux sociaux pour relayer 
 
 - sur LinkedIn, via [la page officielle de Geotribu](https://www.linkedin.com/company/geotribu/), avec [les hashtags `#Geotribu`](https://www.linkedin.com/feed/hashtag/?keywords=geotribu) et [`#GeoRDP`](https://www.linkedin.com/feed/hashtag/?keywords=geordp)
 - Sur Mastodon, via [le compte officiel de Geotribu](https://mapstodon.space/@geotribu/)
-- sur Twitter, via [le compte officiel de Geotribu](https://twitter.com/geotribu/)
+- sur Bluesky, via [le compte officiel de Geotribu](https://bsky.app/profile/geotribu.bsky.social)
 
 ### Exemple de structure de message
 
