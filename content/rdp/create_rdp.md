@@ -1,6 +1,6 @@
 ---
 title: "Créer une revue de presse"
-subitle: Et le géoHumain créa une GeoRDP
+subtitle: Et le géoHumain créa la GeoRDP
 authors:
     - Geotribu
     - Julien MOURA
