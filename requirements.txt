@@ -17,3 +17,5 @@ mkdocs-material[imaging]>=9.7.0,<9.8
 mkdocs-minify-plugin==0.8.0
 mkdocs-redirects==1.2.2
 mkdocs-rss-plugin>=1.17.7,<1.18
+
+zensical>=0.0.12,<0.1

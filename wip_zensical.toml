@@ -1,0 +1,60 @@
+[project]
+edit_uri = "edit/main/content"
+repo_name = "geotribu/site-contribuer"
+repo_url = "https://github.com/geotribu/site-contribuer"
+copyright = '<span class="copyleft">&copy;</span> Geotribu'
+docs_dir = "content"
+site_author = "Geotribu"
+site_description = "Guides de contribution au site participatif Geotribu et outillage interne."
+site_name = "Contribuer à Geotribu"
+site_url = "https://contribuer.geotribu.fr/"
+
+extra_css = ["theme/assets/stylesheets/extra.css"]
+
+[project.plugins.offline]
+enabled = true
+
+[project.theme]
+favicon = "theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png"
+features = [
+    "content.action.edit",
+    "content.action.view",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+    "navigation.path",
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    "toc.follow",
+]
+font.code = "JetBrains Mono"
+font.text = "Inter"
+language = "fr"
+
+[project.theme.icon]
+edit = "material/pencil"
+repo = "fontawesome/brands/github-alt"
+view = "material/eye"
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Basculer en mode clair"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Basculer en mode sombre"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Basculer sur le réglage système"
