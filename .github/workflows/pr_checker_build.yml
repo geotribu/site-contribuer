@@ -49,7 +49,7 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
-      - name: Build in strict mode
+      - name: Build
         env:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           MKDOCS_ENABLE_PLUGIN_CARDS: true
@@ -75,7 +75,7 @@ jobs:
           python scripts/100_mkdocs_config_merger.py
 
           # build
-          mkdocs build --config-file mkdocs.yml --strict
+          zensical build
 
           # save mkdocs.yml for debug
           cp mkdocs.yml ${{ env.BUILD_DIR }}
@@ -84,11 +84,11 @@ jobs:
           rm ${{ env.BUILD_DIR }}/CNAME
           rm ${{ env.BUILD_DIR }}/robots.txt
           rm ${{ env.BUILD_DIR }}/sitemap.xml
-          rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
+          # rm ${{ env.BUILD_DIR }}/sitemap.xml.gz
 
         # Minimize risk of upload failure by bundling files to a single compressed archive (tar + zstd).
         # Bundles build dir and env file into a compressed archive, nested file paths will be preserved.
-      - name: "Prepare artifact for transfer"
+      - name: Prepare artifact for transfer
         run: |
           # Save ENV for transfer
           echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"                 >> pr.env
