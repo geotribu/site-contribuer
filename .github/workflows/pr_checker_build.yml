@@ -54,7 +54,7 @@ jobs:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           MKDOCS_ENABLE_PLUGIN_CARDS: true
           MKDOCS_ENABLE_PLUGIN_RSS: true
-          NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" style="float: right;"></a>'
+          NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Netlify_logo.svg" style="float: right;"></a>'
         run: |
           # site name
           sed -i "s|^site_name:.*|site_name: Contribution Geotribu PREVIEW |" mkdocs.yml
