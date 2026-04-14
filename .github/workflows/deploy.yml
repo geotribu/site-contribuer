@@ -7,7 +7,7 @@ on:
       - ".github/workflows/deploy.yml"
       - "config/*.yml"
       - "content/**"
-      - "mkdocs.yml"
+      - "properdocs.yml"
       - "requirements.txt"
 
   # Allows you to run this workflow manually from the Actions tab
@@ -60,8 +60,8 @@ jobs:
 
       - name: Build static website
         run: |
-          python scripts/100_mkdocs_config_merger.py -c mkdocs.yml
-          mkdocs build --config-file mkdocs.yml --strict
+          python scripts/100_mkdocs_config_merger.py -c properdocs.yml
+          properdocs build --strict
         env:
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
           MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true

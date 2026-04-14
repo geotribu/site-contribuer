@@ -92,16 +92,16 @@
             "problemMatcher": []
         },
         {
-            "label": "Mkdocs - Générer le site (config PROD)",
+            "label": "properdocs - Générer le site (config PROD)",
             "group": "build",
             "command": "${config:python.defaultInterpreterPath}",
             "args": [
                 "-m",
-                "mkdocs",
+                "properdocs",
                 "build",
                 "--strict",
                 "--config-file",
-                "mkdocs.yml"
+                "properdocs.yml"
             ],
             "presentation": {
                 "echo": true,
@@ -114,15 +114,15 @@
             "problemMatcher": []
         },
         {
-            "label": "Mkdocs - Servir le site localement (config GRATUITE)",
+            "label": "properdocs - Servir le site localement (config GRATUITE)",
             "group": "test",
             "command": "${config:python.defaultInterpreterPath}",
             "args": [
                 "-m",
-                "mkdocs",
+                "properdocs",
                 "serve",
                 "-f",
-                "mkdocs-free.yml",
+                "properdocs-free.yml",
                 "--dirtyreload"
             ],
             "presentation": {

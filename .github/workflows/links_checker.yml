@@ -35,7 +35,7 @@ jobs:
 
       - name: Build static website
         run: |
-          mkdocs build --clean --config-file mkdocs.yml --quiet
+          properdocs build --clean --config-file properdocs.yml --quiet
         env:
           MKDOCS_ENABLE_PLUGIN_RSS: true
 

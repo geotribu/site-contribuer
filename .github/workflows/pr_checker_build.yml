@@ -57,28 +57,28 @@ jobs:
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Netlify_logo.svg" style="float: right;"></a>'
         run: |
           # site name
-          sed -i "s|^site_name:.*|site_name: Contribution Geotribu PREVIEW |" mkdocs.yml
+          sed -i "s|^site_name:.*|site_name: Contribution Geotribu PREVIEW |" properdocs.yml
 
-          # Adjust mkdocs.yml for preview build
-          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" mkdocs.yml
+          # Adjust properdocs.yml for preview build
+          sed -i "s|^site_url:.*|site_url: https://${NETLIFY_SITE_PREFIX}--${NETLIFY_SITE_NAME}.netlify.app/ |" properdocs.yml
 
           # Insert sponsor branding into page content (Provider OSS plan requirement):
           # Upstream does not provide a nicer maintainable way to do this..
           # Prepends HTML to copyright text and then aligns to the right side.
-          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" mkdocs.yml
+          sed -i "s|^copyright: '|copyright: '${NETLIFY_BRANDING}|" properdocs.yml
 
           # set repo and branch
-          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" mkdocs.yml
-          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" mkdocs.yml
+          sed -i "s|^repo_url:.*|repo_url: https://github.com/$GITHUB_REPOSITORY |" properdocs.yml
+          sed -i "s|^edit_uri:.*|edit_uri: edit/$GITHUB_HEAD_REF/content |" properdocs.yml
 
           # merge different configs
           python scripts/100_mkdocs_config_merger.py
 
           # build
-          mkdocs build --config-file mkdocs.yml --strict
+          properdocs build --config-file properdocs.yml --strict
 
-          # save mkdocs.yml for debug
-          cp mkdocs.yml ${{ env.BUILD_DIR }}
+          # save properdocs.yml for debug
+          cp properdocs.yml ${{ env.BUILD_DIR }}
 
           # remove files reserved for production
           rm ${{ env.BUILD_DIR }}/CNAME
