@@ -68,7 +68,7 @@ Merci pour la proposition d'article 🙏 !
 GitHub ne gérant qu'un modèle de description de PR et étant donné qu'il est utilisé pour les Revues de Presse, il faut remplacer le texte par défaut par celui ci-dessous.  
 À noter que les lignes surlignées dans le bloc ci-dessous **sont à adapter** en fonction de l'article et de l'auteur/ice.
 
-```markdown title="Texte à insérer dans la description de la PR, sous le texte de l'auteur/ice" hl_lines="8-11"
+```markdown title="Texte à insérer dans la description de la PR, sous le texte de l'auteur/ice" hl_lines="14-17"
 
 ----
 
