@@ -74,12 +74,18 @@ GitHub ne gérant qu'un modèle de description de PR et étant donné qu'il est 
 
 :information_source: Message automatique à lire et remplir :arrow_down:
 
+
+> [!IMPORTANT]
+> Rappel : votre contribution doit émaner de votre originalité et non découler d'un copier/coller issu d'un prompt.
+
+- [ ] j'ai connaissance de [la ligne et de la charte éditoriales de Geotribu](https://contribuer.geotribu.fr/requirements/#ligne-editoriale) et je garantis que ma contribution est conforme, notamment avec les lignes directrices concernant l'usage de l'IA.
+
 ## Liens importants
 
 - pour modifier ton article via l'interface de GitHub,  tu peux le retrouver facilement via l'icône crayon en haut de la page sur le site de prévisualisation ([cf. documentation](https://contribuer.geotribu.fr/edit/fix_content_from_website/)). Sinon :
   - [article]()
   - [page auteur/ice]()
-- le dossier dédié pour les illustrations de l'article sur notre "[CDN](https://contribuer.geotribu.fr/guides/cdn-images-hebergement/)" : <https://cdn.geotribu.fr/tinyfilemanager.php>. Si besoin des accès, contacter en message privé (Mastodon, mail, Matrix,...)
+- le dossier dédié pour les illustrations de l'article sur notre "[CDN](https://contribuer.geotribu.fr/guides/cdn-images-hebergement/)" : <https://cdn.geotribu.fr/tinyfilemanager.php?p=articles-blog-rdp%2Farticles>. Si besoin des accès, nous contacter en message privé (Mastodon, mail, Matrix,...)
 - [site temporaire de prévisualisation de l'article]() - merci de ne pas le diffuser
 
 ## Ressources
@@ -87,25 +93,28 @@ GitHub ne gérant qu'un modèle de description de PR et étant donné qu'il est 
 Pour info, voici quelques extraits de notre guide de contribution :
 
 - [comprendre et compléter l'en-tête](https://contribuer.geotribu.fr/guides/metadata_yaml_frontmatter/)
+- [**choisir une licence**](https://contribuer.geotribu.fr/guides/licensing/)
+- [**signer son article**](https://contribuer.geotribu.fr/guides/authoring/)
 - [intégrer une image](https://contribuer.geotribu.fr/guides/image/)
-- [choisir une licence](https://contribuer.geotribu.fr/guides/licensing/)
-- [signer un article](https://contribuer.geotribu.fr/guides/authoring/)
+- [rechercher une image déjà publiée sur Geotribu](https://contribuer.geotribu.fr/guides/cdn-images-recherche/)
+- [intégrer une vidéo](https://contribuer.geotribu.fr/guides/video/)
+- [intégrer un encart (_admonition_)](https://contribuer.geotribu.fr/guides/admonition/)
+- [utiliser des émojis](https://contribuer.geotribu.fr/guides/emoji/)
+- [intégrer des schémas / diagrammes](https://contribuer.geotribu.fr/guides/diagrams/)
 
 ## 📢 Diffusion
 
 Une fois l'article publié, il sera alors temps de le diffuser. Il sera automatiquement intégré au [flux RSS](http://geotribu.fr/feed_rss_created.xml) et à [la newsletter](http://geotribu.fr/newsletter/signup/).
 
-Mais la publication sur les réseaux sociaux est manuelle.
-
-Nous avons des comptes officiels sur ces réseaux sociaux :
+La publication sur les réseaux sociaux est **manuelle**. Geotribu dispose de comptes officiels suivants :
 
 - [BlueSky](https://bsky.app/profile/geotribu.bsky.social)
-- ~~[Facebook](https://www.facebook.com/geotribu) - inactif~~
-- [LinkedIn](https://www.linkedin.com/company/geotribu/) avec [le hashtag #Geotribu](https://www.linkedin.com/feed/hashtag/?keywords=geotribu)
+- ~~[Facebook](https://www.facebook.com/geotribu)~~ - inactif
+- [LinkedIn](https://www.linkedin.com/company/geotribu/)
 - [Mastodon](https://mapstodon.space/@geotribu)
 - ~~[X/Twitter](https://twitter.com/geotribu)~~ - inactif
 
-Merci d'indiquer en commentaire tes comptes à utiliser pour être cité/e dans les messages et de cocher ci-après la "stratégie" de diffusion qui te convient pour chaque réseau.
+Merci d'indiquer dans ta page auteur/ice et en commentaire tes comptes à utiliser pour être cité/e dans les messages et de cocher ci-après la "stratégie" de diffusion qui te convient pour chaque réseau.
 
 ### BlueSky
 
