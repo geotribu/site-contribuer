@@ -70,13 +70,13 @@ def on_page_markdown(
     is_insiders = config.extra.get("theme_insiders_flavor")
 
     # vérifie que le plugin social est bien installé et configuré
-    if not config.plugins.get("material/social"):
+    if not config.plugins.get("materialx/social"):
         logger.warning(
             f"[{hook_name}] Le plugin social du thème Material n'est pas présent. Ce hook est donc inutile."
         )
         return
 
-    social_plugin: SocialPlugin = config.plugins.get("material/social")
+    social_plugin: SocialPlugin = config.plugins.get("materialx/social")
 
     # vérifie que le plugin est activé
     if not social_plugin.config.enabled or not social_plugin.config.cards:

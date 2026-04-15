@@ -116,7 +116,7 @@ plugins:
         font_family: Ubuntu
 
 theme:
-  name: "material"
+  name: materialx
   insiders_flavor: true
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png

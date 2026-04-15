@@ -29,13 +29,13 @@ python -m pip install -U -r requirements.txt
 Version complète :
 
 ```bash
-mkdocs build
+properdocs build
 ```
 
 Version complète :
 
 ```bash
-mkdocs build -f mkdocs.yml --dirtyreload
+properdocs build -f properdocs.yml --dirtyreload
 ```
 
 ### Servir le site en local
@@ -43,13 +43,13 @@ mkdocs build -f mkdocs.yml --dirtyreload
 Version complète :
 
 ```bash
-mkdocs serve --dirtyreload
+properdocs serve --dirtyreload
 ```
 
 Version complète :
 
 ```bash
-mkdocs serve -f mkdocs.yml --dirtyreload
+properdocs serve -f properdocs.yml --dirtyreload
 ```
 
 Le site est accessible en local à l'adresse suivante : <http://localhost:8000/>.  
