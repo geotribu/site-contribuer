@@ -167,6 +167,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Basculer sur le réglage système
+  topbar_style: primary
 
 # Customization
 extra:
