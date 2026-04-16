@@ -4,6 +4,7 @@ description: "Classement des contenus de Geotribu par mot-clé."
 hide:
   - navigation
   - footer
+icon: material/tag-outline
 license: none
 # theme customizations
 search:
