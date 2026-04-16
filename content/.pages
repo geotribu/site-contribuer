@@ -1,9 +1,10 @@
 nav:
     - "Accueil":
-        - index.md
-        - requirements.md
-        - tags.md
-        - Site principal: http://geotribu.fr/
+          - index.md
+          - requirements.md
+          - tags.md
+          - "🏡 Site principal": https://geotribu.fr/
+          - "💂‍♀️ Blog anglophone": https://blog.geotribu.net/
     - rdp
     - articles
     - guides
