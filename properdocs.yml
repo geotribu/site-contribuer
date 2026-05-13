@@ -121,6 +121,7 @@ theme:
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
   features:
+    - content.action.agents
     - content.action.edit
     - content.action.view
     - content.code.annotate
