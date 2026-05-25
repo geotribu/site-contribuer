@@ -61,7 +61,7 @@ jobs:
       - name: Build static website
         run: |
           python scripts/100_mkdocs_config_merger.py -c properdocs.yml
-          properdocs build --strict
+          zensical build --strict
         env:
           MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS: true
           MKDOCS_ENABLE_PLUGIN_GIT_COMMITTERS: true
