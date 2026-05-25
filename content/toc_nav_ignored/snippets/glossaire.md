@@ -11,6 +11,7 @@
 [osm2pgsql]: https://osm2pgsql.org/
 [Osmium]: https://osmcode.org/osmium-tool/
 [pre-commit]: https://pre-commit.com/
+[Properdocs]: https://www.properdocs.org/
 [Python]: https://www.python.org/
 [StackEdit]: https://stackedit.io/
 [Upmath]: https://upmath.me/
