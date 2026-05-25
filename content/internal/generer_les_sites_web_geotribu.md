@@ -42,7 +42,7 @@ Depuis leur choix de créer un tout nouveau projet Zensical (sur lequel Geotribu
 
 ### Fusionner les configurations
 
-Le site grossissant à mesure des usages et contenus, la maintenance s'est complxifiée, avec un fichier de configuration mkdocs/properdocs.yml rendu parfois illisibile par certaines configurations verbeuses.  
+Le site grossissant à mesure des usages et contenus, la maintenance s'est complexifiée, avec un fichier de configuration `mkdocs/properdocs.yml` rendu parfois illisibile par certaines configurations verbeuses.  
 
 La gestion de certains plugins et extensions a été modularisée dans des fichiers YAML séparés et certains éléments sont générés via des scripts (comme les derniers contenus).
 
