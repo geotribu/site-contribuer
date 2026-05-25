@@ -29,14 +29,8 @@ plugins:
         - "*/templates/*"
         - "*.yml"
   - git-authors:
-<<<<<<< HEAD:properdocs.yml
-      enabled: true
-      add_co_authors: true
-||||||| parent of 92ba97f (update(mkdocs): restore simple version):mkdocs.yml
-      enabled: true
-=======
       enabled: !ENV [MKDOCS_ENABLE_PLUGIN_GIT_AUTHORS, true]
->>>>>>> 92ba97f (update(mkdocs): restore simple version):mkdocs.yml
+      add_co_authors: true
       show_contribution: true
       show_email_address: false
       sort_authors_by: contribution
@@ -122,7 +116,7 @@ plugins:
         font_family: Ubuntu
 
 theme:
-  name: "material"
+  name: materialx
   insiders_flavor: true
   custom_dir: "./content/theme/"
   favicon: theme/assets/images/geotribu/geotribu_logo_tipi_seul_carre.png
@@ -174,6 +168,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Basculer sur le réglage système
+  topbar_style: primary
 
 # Customization
 extra:
