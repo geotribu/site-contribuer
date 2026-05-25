@@ -74,6 +74,9 @@ jobs:
           # merge different configs
           python scripts/100_mkdocs_config_merger.py
 
+          # rename properdocs to mkdocs to fit zensical
+          mv properdocs.yml mkdocs.yml
+
           # build
           zensical build
 
