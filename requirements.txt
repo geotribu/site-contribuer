@@ -1,6 +1,6 @@
 # Development
 # -----------------------
-pre-commit>=4.6.0
+pre-commit>=4.6.1
 
 # Project requirements
 # -----------------------
