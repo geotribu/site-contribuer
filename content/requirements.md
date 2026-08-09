@@ -56,7 +56,7 @@ Voici quelques critères de publication non exhaustifs, qui permettent de cadrer
 
 ### Utilisation d'outils d'intelligence artificielle générative (GenIA)
 
-De façon générale, les résultats bruts d'outils d'intelligence artificielle générative (GenIA) comme ChatGPT, Gemini, Claude, etc. n'ont pas vocation à être publiés sur Geotribu. D'abord parce que cela contredit [la ligne éditoriale](#ligne-éditoriale) mais aussi parce que :
+De façon générale, les résultats bruts d'outils d'intelligence artificielle générative (GenIA) comme ChatGPT, Gemini, Claude, etc. n'ont pas vocation à être publiés sur Geotribu. D'abord parce que cela contredit [la ligne éditoriale](#ligne-editoriale) mais aussi parce que :
 
 - d'une part rien n'empêcherait alors de publier 1000 résultats de prompts par semaine (cf [les sites repérés par les enquêtes et l'extension de Next](https://next.ink/208687/extension-next-des-alertes-sur-8-500-sites-genai-et-contre-les-attaques-par-homographes/))
 - d'autre part que cela rendrait inutile la dynamique collaborative puisqu'on est parfaitement capables d'envoyer les prompts nous mêmes et même d'automatiser la publication !

@@ -22,7 +22,7 @@ Une news est constituée d'éléments obligatoires :
 
 - une [catégorie](#sections-categories) qui correspond aux [sections de la revue de presse](#sections-categories) et qui est un titre de niveau 2 (`##` en Markdown, `h2` en HTML)
 - un titre de niveau 3 (`###` en Markdown, `h3` en HTML)
-- une [icône](#icones-de-news)
+- une [icône](#icones)
 - un texte
 
 Et d'éléments facultatifs :

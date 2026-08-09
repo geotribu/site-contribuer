@@ -150,7 +150,7 @@ Pour aligner une image à droite, utiliser : `{: .img-right }`.
 
     La balise `{: .img-right }` permet d'aligner l'image à droite en laissant le texte autour, sans changer les dimensions.
 
-### Lightbox (mode galerie)
+### Lightbox (mode galerie) { #lightbox }
 
 Grâce au plugin [Mkdocs GLightbox](https://blueswen.github.io/mkdocs-glightbox/), les images sont automatiquement visibles dans un mode galerie (communément appelé _[lightbox]_) sans syntaxe additionnelle (depuis cette [_Pull Request_ d'octobre 2022](https://github.com/geotribu/website/pull/720)).
 

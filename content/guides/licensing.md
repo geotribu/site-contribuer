@@ -37,7 +37,7 @@ Une licence par défaut a été choisie par [l'équipe]({{ config.extra.geotribu
 
 ## Choisir une autre licence
 
-Chaque auteur/e peut également choisir d'indiquer une licence différente ou bien de mettre davantage en avant la licence par défaut en insérant un bloc plus complet directement dans le corps du contenu, généralement après le [le bloc auteur](authoring.md#bloc-auteur).
+Chaque auteur/e peut également choisir d'indiquer une licence différente ou bien de mettre davantage en avant la licence par défaut en insérant un bloc plus complet directement dans le corps du contenu, généralement après le [le bloc auteur](authoring.md#bloc-signature).
 
 ### Syntaxe
 

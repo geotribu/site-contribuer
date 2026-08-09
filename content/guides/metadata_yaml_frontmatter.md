@@ -45,7 +45,7 @@ L'en-tête est défini en haut de la page par un ensemble de clés/valeurs encad
 
 En résumé, un/e auteurice a 2 options :
 
-- soit **utiliser une image de son cru**, respectant [la charte éditoriale](../requirements.md#charte-éditoriale) et les contraintes techniques :
+- soit **utiliser une image de son cru**, respectant [la charte éditoriale](../requirements.md#charte-editoriale) et les contraintes techniques :
     - Format : PNG ou JPG
     - Dimensions : entre 600x300 et 800x400
     - Ratio : viser 2/1 ou proche
