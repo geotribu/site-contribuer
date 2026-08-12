@@ -79,6 +79,9 @@ plugins:
         - twemoji.maxcdn.com/*
         - upload.wikimedia.org/*
         - user-images.githubusercontent.com/**/*.gif
+  - related-content:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_RELATED_CONTENT, false]
+      section_title: "Voir aussi"
   - rss:
       abstract_chars_count: 500
       categories:

@@ -53,6 +53,7 @@ jobs:
         env:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           MKDOCS_ENABLE_PLUGIN_CARDS: true
+          MKDOCS_ENABLE_PLUGIN_RELATED_CONTENT: true
           MKDOCS_ENABLE_PLUGIN_RSS: true
           NETLIFY_BRANDING: '<a href="https://www.netlify.com/"><img alt="Deploys by Netlify" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Netlify_logo.svg" style="float: right;"></a>'
         run: |
