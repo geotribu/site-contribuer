@@ -15,6 +15,8 @@ comments: false
 hide:
   - tags
   - toc
+related_content:
+  exclude_from_scoring: true
 ---
 
 La contribution à Geotribu est réservée aux personnes qui répondent à ces deux préalables :
