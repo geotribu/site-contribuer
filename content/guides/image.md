@@ -54,7 +54,7 @@ Cette page détaille les différentes possibilités d'intégration d'une image s
 
 Pour la suite, prenons deux exemples :
 
-- une image _externe_, c'est-à-dire hébergée ailleurs que sur le [CDN de Geotribu] : <https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg> du **globe terrestre** de Coronelli, issue de cette page Wikipedia <https://fr.wikipedia.org/wiki/Globes_de_Coronelli>
+- une image _externe_, c'est-à-dire hébergée ailleurs que sur le [CDN de Geotribu] : <https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/330px-Coronelli_globe_terrestre.jpg> du **globe terrestre** de Coronelli, issue de cette page Wikipedia <https://fr.wikipedia.org/wiki/Globes_de_Coronelli>
 - une image _interne_, hébergée sur le [CDN de Geotribu] : <https://cdn.geotribu.fr/img/internal/contribution/embed_image/coronelli_globe_celeste.jpg> du **globe céleste** de Coronelli, issue de la même page Wikipedia mais téléversée sur le [CDN de Geotribu]
 
 ----
@@ -75,12 +75,12 @@ En `markdown`, intégrer une image se fait via la syntaxe suivante :
     ![Texte de remplacement au cas où l'image ne soit pas accessible](https://url_de_l_image.extension "Légende de l'image"){: balises d'attributs HTML }
 
     <!-- avec notre image externe, ça donne donc -->
-    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia)")
+    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/330px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia)")
     ```
 
 === "Rendu"
 
-    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia)")
+    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/330px-Coronelli_globe_terrestre.jpg "Globe terrestre de Coronelli (Wikipedia)")
 
 !!! tip "Infobulle"
     On note que la légende est ajoutée en infobulle qui apparaît au survol prolongé de la souris sur l'image.
@@ -121,14 +121,14 @@ C'est le style le plus appliqué pour les images d'illustration des contenus : `
 === "Markdown"
 
     ```markdown
-    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg){: .img-center }
+    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/330px-Coronelli_globe_terrestre.jpg){: .img-center }
 
     La balise `{: .img-center }` centre l'image par rapport au contenu.
     ```
 
 === "Rendu"
 
-    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/360px-Coronelli_globe_terrestre.jpg){: .img-center }
+    ![Image de Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Coronelli_globe_terrestre.jpg/330px-Coronelli_globe_terrestre.jpg){: .img-center }
 
     La balise `{: .img-center }` centre l'image par rapport au contenu.
 

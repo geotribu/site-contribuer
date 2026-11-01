@@ -76,7 +76,6 @@ Switched to a new branch 'rdp/2023-01-06'
 
 !!! important
     Avant d'ajouter du contenu sur une branche déjà existante, bien penser à récupérer les changements faits par les autres contributeurs avant, en faisant : `git fetch --prune` puis `git pull --prune`
-    ```  
 
 ### 3. Ajouter sa news
 
