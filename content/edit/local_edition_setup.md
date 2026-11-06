@@ -152,7 +152,7 @@ Après qu'une branche ait été fusionnée (*merged*), elle est automatiquement 
     git remote prune origin
 
     # supprimer les branches qui ont été fusionnées
-    git branch -vv | where {$_ -match '\[origin/.*: gone\]'} | foreach { git branch -d $_.split(" ", [StringSplitOptions]'RemoveEmptyEntries')[0]}
+    git branch -vv | where {$_ -match '\[origin/.*: gone\]'} | foreach { git branch -D $_.split(" ", [StringSplitOptions]'RemoveEmptyEntries')[0]}
     ```
 
 ----
